@@ -325,7 +325,7 @@
     max-width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    padding-inline: max(24px, calc((100vw - 1180px) / 2));
+    padding-inline: 0;
     overscroll-behavior-inline: contain;
     scrollbar-width: none;
     scroll-padding-inline: max(24px, calc((100vw - 1180px) / 2));
@@ -670,7 +670,7 @@
     }
 
     .gallery-track {
-        padding-inline: 16px;
+        padding-inline: 0;
         scroll-padding-inline: 16px;
         scroll-snap-type: x mandatory;
     }

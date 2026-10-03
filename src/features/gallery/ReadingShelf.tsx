@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, type RefObject } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type RefObject } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { motion } from "motion/react";
@@ -50,15 +50,29 @@ export function ReadingShelf({
 }: ReadingShelfProps) {
   const firstItem = useRef(items[0]?.id);
   const lastCentered = useRef<string | null>(null);
+  const [viewportWidth, setViewportWidth] = useState(0);
+  const sidePadding = Math.max(0, (viewportWidth - CARD_STRIDE) / 2);
   const virtualizer = useVirtualizer({
     horizontal: true,
     count: items.length + (hasNextPage ? 1 : 0),
     getScrollElement: () => carousel.current,
     estimateSize: () => CARD_STRIDE,
     overscan: 6,
+    paddingStart: sidePadding,
+    paddingEnd: sidePadding,
   });
   const visible = virtualizer.getVirtualItems();
   const selectedIndex = items.findIndex((item) => item.id === selected.id);
+
+  useLayoutEffect(() => {
+    const element = carousel.current;
+    if (!element) return;
+    const measure = () => setViewportWidth(element.clientWidth);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [carousel]);
 
   // Keep the same card under the pointer when an earlier page is prepended.
   useLayoutEffect(() => {
@@ -68,12 +82,13 @@ export function ReadingShelf({
     firstItem.current = items[0]?.id;
   }, [items, carousel]);
 
-  useEffect(() => {
-    if (selectedIndex >= 0 && lastCentered.current !== selected.id) {
-      virtualizer.scrollToIndex(selectedIndex, { align: "center" });
-      lastCentered.current = selected.id;
+  useLayoutEffect(() => {
+    const centeredKey = `${selected.id}:${viewportWidth}`;
+    if (selectedIndex >= 0 && viewportWidth > 0 && lastCentered.current !== centeredKey) {
+      virtualizer.scrollToIndex(selectedIndex, { align: "center", behavior: "auto" });
+      lastCentered.current = centeredKey;
     }
-  }, [selectedIndex, selected.id, virtualizer]);
+  }, [selectedIndex, selected.id, viewportWidth, virtualizer]);
 
   useEffect(() => {
     const last = visible.at(-1);
