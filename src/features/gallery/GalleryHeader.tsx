@@ -2,7 +2,7 @@ import type { ChangeEvent, RefObject } from "react";
 import { Search } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "../../components/ui/button";
-import { INITIAL_EASE } from "./reading";
+import { INITIAL_EASE, UI_EASE } from "./reading";
 import type { Profile } from "./types";
 
 type GalleryHeaderProps = {
@@ -10,6 +10,7 @@ type GalleryHeaderProps = {
   query: string;
   searchInput: RefObject<HTMLInputElement | null>;
   signingOut: boolean;
+  quickEntrance?: boolean;
   onQueryChange: (event: ChangeEvent<HTMLInputElement>) => void;
   onSignIn: () => void;
   onSignOut: () => void;
@@ -20,6 +21,7 @@ export function GalleryHeader({
   query,
   searchInput,
   signingOut,
+  quickEntrance = false,
   onQueryChange,
   onSignIn,
   onSignOut,
@@ -27,9 +29,17 @@ export function GalleryHeader({
   return (
     <motion.header
       className="gallery-header"
-      initial={{ opacity: 0, filter: "blur(10px)", transform: "translateY(20%)" }}
+      initial={
+        quickEntrance
+          ? { opacity: 0 }
+          : { opacity: 0, filter: "blur(10px)", transform: "translateY(20%)" }
+      }
       animate={{ opacity: 1, filter: "blur(0px)", transform: "translateY(0%)" }}
-      transition={{ duration: 1, delay: 0.1, ease: INITIAL_EASE }}
+      transition={
+        quickEntrance
+          ? { duration: 0.18, ease: UI_EASE }
+          : { duration: 1, delay: 0.1, ease: INITIAL_EASE }
+      }
     >
       <div className="gallery-header-inner">
         <a className="gallery-home" href="/">

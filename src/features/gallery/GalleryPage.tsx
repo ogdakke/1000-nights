@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { type InfiniteData, useInfiniteQuery, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { CoverImage } from "./CoverArtwork";
@@ -20,10 +20,27 @@ const EMPTY_READINGS: Reading[] = [];
 
 function GalleryLoading() {
   return (
-    <div className="gallery-loading" aria-label="Loading the reading gallery" aria-live="polite">
-      <span className="gallery-loading-line gallery-loading-title" />
-      <span className="gallery-loading-line gallery-loading-author" />
-      <span className="gallery-loading-line gallery-loading-copy" />
+    <section className="gallery-stage gallery-loading" aria-label="Loading the reading" aria-live="polite">
+      <div className="gallery-loading-copy">
+        <span className="gallery-loading-line gallery-loading-title" />
+        <span className="gallery-loading-line gallery-loading-author" />
+        <span className="gallery-loading-line gallery-loading-description" />
+        <span className="gallery-loading-line gallery-loading-action" />
+      </div>
+      <span className="gallery-loading-artwork" aria-hidden="true" />
+    </section>
+  );
+}
+
+function GalleryShelfLoading() {
+  return (
+    <div className="gallery-shelf gallery-loading-shelf" aria-hidden="true">
+      <div className="gallery-loading-shelf-toolbar" />
+      <div className="gallery-loading-shelf-track">
+        {Array.from({ length: 9 }, (_, index) => (
+          <span key={index} />
+        ))}
+      </div>
     </div>
   );
 }
@@ -34,13 +51,15 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   const searchInput = useRef<HTMLInputElement>(null);
   const carousel = useRef<HTMLDivElement>(null);
   const firstReveal = useRef(true);
-  const pendingEdge = useRef<{
-    edge: "first" | "last";
+  const pendingMove = useRef<{
+    fromId: string;
+    direction: -1 | 1;
     intent: NavigationIntent;
   } | null>(null);
+  const initialRoute = useRef(route);
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
-  const [page, setPage] = useState(1);
+  const [anchorPage, setAnchorPage] = useState(1);
   const [notice, setNotice] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [intent, setIntent] = useState<NavigationIntent>("initial");
@@ -50,17 +69,15 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     if (nextSearch === search) return;
     const timeout = window.setTimeout(() => {
       setSearch(nextSearch);
-      setPage(1);
-      pendingEdge.current = { edge: "first", intent: "pointer" };
+      setAnchorPage(1);
+      setSelectedId(null);
+      pendingMove.current = null;
+      initialRoute.current = undefined;
+      carousel.current?.scrollTo({ left: 0 });
+      if (route) void navigate({ to: "/app", replace: true });
     }, 250);
     return () => window.clearTimeout(timeout);
-  }, [query, search]);
-
-  const readings = useQuery({
-    queryKey: ["readings", page, search],
-    queryFn: () => getReadings(page, search),
-    placeholderData: keepPreviousData,
-  });
+  }, [query, search, route, navigate]);
 
   const routedReading = useQuery({
     queryKey: ["reading", route?.author, route?.title],
@@ -68,6 +85,29 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     enabled: Boolean(route),
     retry: false,
   });
+
+  const initialPage = initialRoute.current && !search && routedReading.data
+    ? Math.floor((routedReading.data.night - 1) / 10) + 1
+    : anchorPage;
+  const readings = useInfiniteQuery({
+    queryKey: ["readings", search, initialPage],
+    queryFn: ({ pageParam }) => getReadings(pageParam, search),
+    initialPageParam: initialPage,
+    getNextPageParam: (lastPage) =>
+      lastPage.page * lastPage.pageSize < lastPage.total ? lastPage.page + 1 : undefined,
+    getPreviousPageParam: (firstPage) => firstPage.page > 1 ? firstPage.page - 1 : undefined,
+    enabled: !initialRoute.current || Boolean(routedReading.data || routedReading.isError || search),
+  });
+
+  useEffect(() => {
+    if (!initialRoute.current) return;
+    if (routedReading.data && !search) {
+      setAnchorPage(Math.floor((routedReading.data.night - 1) / 10) + 1);
+      initialRoute.current = undefined;
+    } else if (routedReading.isError) {
+      initialRoute.current = undefined;
+    }
+  }, [routedReading.data, routedReading.isError, search]);
 
   const profile = useQuery({ queryKey: ["profile"], queryFn: getProfile });
 
@@ -77,14 +117,17 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     onMutate: async ({ reading, status }) => {
       setNotice("");
       await client.cancelQueries({ queryKey: ["readings"] });
-      const snapshots = client.getQueriesData<ReadingPage>({ queryKey: ["readings"] });
-      client.setQueriesData<ReadingPage>({ queryKey: ["readings"] }, (current) =>
+      const snapshots = client.getQueriesData<InfiniteData<ReadingPage, number>>({ queryKey: ["readings"] });
+      client.setQueriesData<InfiniteData<ReadingPage, number>>({ queryKey: ["readings"] }, (current) =>
         current
           ? {
               ...current,
-              items: current.items.map((item) =>
-                item.id === reading.id ? { ...item, progress: status } : item,
-              ),
+              pages: current.pages.map((page) => ({
+                ...page,
+                items: page.items.map((item) =>
+                  item.id === reading.id ? { ...item, progress: status } : item,
+                ),
+              })),
             }
           : current,
       );
@@ -109,17 +152,20 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   });
 
   const data = readings.data;
-  const items = data?.items ?? EMPTY_READINGS;
-  const pageCount = Math.ceil((data?.total ?? 0) / 30);
+  const items = useMemo(() => data?.pages.flatMap((page) => page.items) ?? EMPTY_READINGS, [data]);
+  const total = data?.pages[0]?.total ?? 0;
   const routeMatch = route
     ? items.find((reading) => routeMatches(reading, route.author, route.title))
     : null;
   const routedItem = routedReading.data;
   const selected = route
-    ? routeMatch ?? routedItem ?? (routedReading.isError ? items[0] : null)
+    ? routeMatch ?? (readings.isSuccess ? routedItem : null) ??
+      (routedReading.isError && readings.isSuccess ? items[0] : null)
     : items.find((reading) => reading.id === selectedId) ?? items[0] ?? null;
+  const quickRouteEntrance = Boolean(route && firstReveal.current);
 
   function selectReading(reading: Reading, nextIntent: NavigationIntent, replace = false) {
+    pendingMove.current = null;
     if (nextIntent !== "initial") firstReveal.current = false;
     setIntent(nextIntent);
     setSelectedId(reading.id);
@@ -129,19 +175,15 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   }
 
   useEffect(() => {
-    if (!routedItem) return;
-    setSelectedId(routedItem.id);
-    const routedPage = Math.floor((routedItem.night - 1) / 10) + 1;
-    if (!search && routedPage !== page) setPage(routedPage);
-  }, [page, routedItem, search]);
-
-  useEffect(() => {
-    if (!data || data.page !== page || items.length === 0) return;
-    if (pendingEdge.current) {
-      const { edge, intent: pendingIntent } = pendingEdge.current;
-      const next = edge === "last" ? items.at(-1) : items[0];
-      pendingEdge.current = null;
-      if (next) selectReading(next, pendingIntent, true);
+    if (!data || items.length === 0) return;
+    if (pendingMove.current) {
+      const { fromId, direction, intent: pendingIntent } = pendingMove.current;
+      const fromIndex = items.findIndex((item) => item.id === fromId);
+      const next = items[fromIndex + direction];
+      if (next) {
+        pendingMove.current = null;
+        selectReading(next, pendingIntent);
+      }
       return;
     }
     if (routeMatch) {
@@ -152,19 +194,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     if (!selectedId || !items.some((reading) => reading.id === selectedId)) {
       selectReading(items[0], "initial", true);
     }
-  }, [data, items, page, route, routeMatch, routedReading.isError, selectedId]);
-
-  useEffect(() => {
-    if (!selected?.id) return;
-    const selectedCard = carousel.current?.querySelector<HTMLElement>(
-      `[data-reading-id="${CSS.escape(selected.id)}"]`,
-    );
-    selectedCard?.scrollIntoView({
-      behavior: intent === "keyboard" ? "auto" : "smooth",
-      block: "nearest",
-      inline: "center",
-    });
-  }, [intent, selected?.id]);
+  }, [data, items, route, routeMatch, routedReading.isError, selectedId]);
 
   function moveSelection(direction: -1 | 1, nextIntent: NavigationIntent) {
     if (!selected || items.length === 0) return;
@@ -174,14 +204,12 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
       selectReading(next, nextIntent);
       return;
     }
-    const nextPage = page + direction;
-    if (nextPage < 1 || nextPage > pageCount) return;
-    pendingEdge.current = {
-      edge: direction === 1 ? "first" : "last",
-      intent: nextIntent,
-    };
+    if (direction === 1 && !readings.hasNextPage) return;
+    if (direction === -1 && !readings.hasPreviousPage) return;
+    pendingMove.current = { fromId: selected.id, direction, intent: nextIntent };
     setIntent(nextIntent);
-    setPage(nextPage);
+    if (direction === 1) void readings.fetchNextPage();
+    else void readings.fetchPreviousPage();
   }
 
   useEffect(() => {
@@ -208,7 +236,8 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   const selectedPosition = useMemo(() => {
     if (!selected || !data) return 0;
     const localIndex = items.findIndex((item) => item.id === selected.id);
-    return (data.page - 1) * data.pageSize + Math.max(localIndex, 0) + 1;
+    if (localIndex < 0) return (selected.night - 1) * 3 + selected.position;
+    return (data.pages[0].page - 1) * data.pages[0].pageSize + localIndex + 1;
   }, [data, items, selected]);
 
   function signIn() {
@@ -256,6 +285,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
           query={query}
           searchInput={searchInput}
           signingOut={logout.isPending}
+          quickEntrance={Boolean(route)}
           onQueryChange={(event) => setQuery(event.target.value)}
           onSignIn={signIn}
           onSignOut={() => logout.mutate()}
@@ -279,6 +309,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
               reading={selected}
               intent={intent}
               firstReveal={firstReveal}
+              quickEntrance={quickRouteEntrance}
               saving={
                 updateProgress.isPending && updateProgress.variables?.reading.id === selected.id
               }
@@ -287,15 +318,25 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
           )}
         </main>
 
-        {selected && items.length > 0 ? (
+        {!selected && (readings.isPending || (route && routedReading.isPending)) ? (
+          <GalleryShelfLoading />
+        ) : selected && items.length > 0 ? (
           <ReadingShelf
             carousel={carousel}
             items={items}
             selected={selected}
             position={selectedPosition}
-            total={data?.total ?? 0}
-            canGoBack={page > 1 || selected.id !== items[0]?.id}
-            canGoForward={page < pageCount || selected.id !== items.at(-1)?.id}
+            total={total}
+            canGoBack={readings.hasPreviousPage || selected.id !== items[0]?.id}
+            canGoForward={readings.hasNextPage || selected.id !== items.at(-1)?.id}
+            hasNextPage={readings.hasNextPage}
+            hasPreviousPage={readings.hasPreviousPage}
+            isFetchingNextPage={readings.isFetchingNextPage}
+            isFetchingPreviousPage={readings.isFetchingPreviousPage}
+            hasLoadError={readings.isFetchNextPageError}
+            quickEntrance={quickRouteEntrance}
+            onLoadNext={() => void readings.fetchNextPage()}
+            onLoadPrevious={() => void readings.fetchPreviousPage()}
             onMove={(direction) => moveSelection(direction, "pointer")}
             onSelect={(reading) => selectReading(reading, "pointer")}
           />

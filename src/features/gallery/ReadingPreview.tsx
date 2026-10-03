@@ -11,12 +11,19 @@ type ReadingPreviewProps = {
   reading: Reading;
   intent: NavigationIntent;
   firstReveal: MutableRefObject<boolean>;
+  quickEntrance?: boolean;
   saving: boolean;
   onProgressChange: (status: ReadingStatus | null) => void;
 };
 
-function reveal(intention: NavigationIntent, first: boolean, artwork = false) {
+function reveal(
+  intention: NavigationIntent,
+  first: boolean,
+  artwork = false,
+  quickEntrance = false,
+) {
   if (intention === "keyboard") return false;
+  if (first && quickEntrance) return { opacity: 0, transform: "translateY(0px)" };
   return first
     ? { opacity: 0, filter: "blur(10px)", transform: `translateY(${artwork ? 20 : 8}px)` }
     : { opacity: 0, filter: "blur(4px)", transform: "translateY(0px)" };
@@ -26,6 +33,7 @@ export function ReadingPreview({
   reading,
   intent,
   firstReveal,
+  quickEntrance = false,
   saving,
   onProgressChange,
 }: ReadingPreviewProps) {
@@ -34,7 +42,9 @@ export function ReadingPreview({
   const transition =
     intent === "keyboard"
       ? { duration: 0 }
-      : first
+      : first && quickEntrance
+        ? { duration: 0.18, ease: UI_EASE }
+        : first
         ? { duration: 1, delay: 0.3, ease: INITIAL_EASE }
         : { duration: 0.18, ease: UI_EASE };
   const exit =
@@ -43,12 +53,12 @@ export function ReadingPreview({
       : { opacity: 0, filter: "blur(4px)", transition: { duration: 0.1, ease: UI_EASE } };
 
   return (
-    <section className="gallery-stage" aria-labelledby="selected-reading-title" data-has-image={reading.image_url ? "true" : "false"}>
+    <section className="gallery-stage" aria-labelledby="selected-reading-title" data-has-image="true">
       <AnimatePresence initial={first} mode="wait">
         <motion.div
           className="gallery-copy"
           key={reading.id}
-          initial={reveal(intent, first)}
+          initial={reveal(intent, first, false, quickEntrance)}
           animate={{ opacity: 1, filter: "blur(0px)", transform: "translateY(0px)" }}
           exit={exit}
           transition={transition}
@@ -101,17 +111,17 @@ export function ReadingPreview({
       </AnimatePresence>
 
       <AnimatePresence initial={first} mode="wait">
-        {reading.image_url ? <motion.figure
+        <motion.figure
           className="gallery-artwork"
           key={reading.id}
-          initial={reveal(intent, first, true)}
+          initial={reveal(intent, first, true, quickEntrance)}
           animate={{ opacity: 1, filter: "blur(0px)", transform: "translateY(0px)" }}
           exit={exit}
-          transition={first ? { ...transition, delay: 0.34 } : transition}
+          transition={first && !quickEntrance ? { ...transition, delay: 0.34 } : transition}
         >
           <CoverArtwork reading={reading} />
           {reading.image_source_url ? <figcaption className="gallery-image-credit"><a href={reading.image_source_url} target="_blank" rel="noopener noreferrer">Image: {reading.image_credit || "source"}</a></figcaption> : null}
-        </motion.figure> : null}
+        </motion.figure>
       </AnimatePresence>
     </section>
   );

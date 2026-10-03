@@ -1,8 +1,14 @@
-import { Outlet, createRootRoute, createRoute, createRouter } from "@tanstack/react-router";
+import { createRootRoute, createRoute, createRouter, useRouterState } from "@tanstack/react-router";
 import { GalleryPage } from "./features/gallery/GalleryPage";
 
+function GalleryRoot() {
+  const path = useRouterState({ select: (state) => state.location.pathname });
+  const match = /^\/read\/([^/]+)\/([^/]+)\/?$/.exec(path);
+  return <GalleryPage route={match ? { author: match[1], title: match[2] } : undefined} />;
+}
+
 const rootRoute = createRootRoute({
-  component: Outlet,
+  component: GalleryRoot,
   notFoundComponent: () => (
     <main className="route-not-found">
       <h1>Page not found</h1>
@@ -14,15 +20,11 @@ const rootRoute = createRootRoute({
 const libraryRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/app",
-  component: GalleryPage,
 });
 
 const readingRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/read/$author/$title",
-  component: function ReadingGalleryRoute() {
-    return <GalleryPage route={readingRoute.useParams()} />;
-  },
 });
 
 const routeTree = rootRoute.addChildren([libraryRoute, readingRoute]);
