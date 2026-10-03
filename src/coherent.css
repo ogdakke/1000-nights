@@ -215,13 +215,21 @@ button,
 /* Header */
 .site-header,
 .app-header {
-    position: sticky;
-    top: 0;
     z-index: 20;
     padding-top: env(safe-area-inset-top, 0px);
-    background: rgba(245, 245, 247, 0.82);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background: transparent;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.app-header {
+    position: sticky;
+    top: 0;
 }
 
 .header-inner {
@@ -254,9 +262,12 @@ button,
     transition: background-color 160ms ease, color 160ms ease;
 }
 
-.site-header nav .nav-cta {
-    color: var(--accent);
+.site-header nav .nav-cta.button {
+    min-height: 40px;
+    padding: 0 16px;
+    color: rgba(255, 255, 255, 0.94);
     font-weight: 560;
+    transition: transform 120ms var(--ease-out), color 160ms ease, opacity 160ms ease;
 }
 
 .account-name {
@@ -276,13 +287,17 @@ button,
         color: var(--ink);
     }
 
-    .site-header nav .nav-cta:hover {
-        background: var(--accent-soft);
-        color: var(--accent-hover);
+    .site-header nav .nav-cta.button:hover {
+        background: transparent;
+        color: rgba(255, 255, 255, 0.94);
     }
 }
 
 /* Landing */
+.landing main {
+    padding-top: calc(56px + env(safe-area-inset-top, 0px));
+}
+
 .landing main,
 .hero,
 .hero-copy,
@@ -293,7 +308,7 @@ button,
 
 .hero {
     display: grid;
-    min-height: calc(100svh - 56px);
+    min-height: calc(100svh - 56px - env(safe-area-inset-top, 0px));
     grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
     align-items: center;
     gap: clamp(48px, 7vw, 96px);
@@ -506,6 +521,7 @@ button,
 }
 
 .invitation {
+    scroll-margin-top: calc(56px + env(safe-area-inset-top, 0px));
     background: var(--surface);
 }
 
@@ -1011,6 +1027,10 @@ button,
         padding-inline: 9px;
     }
 
+    .site-header nav .nav-cta.button {
+        padding-inline: 14px;
+    }
+
     .preview-action {
         display: none;
     }
@@ -1067,8 +1087,6 @@ button,
 }
 
 @media (prefers-reduced-transparency: reduce) {
-    .site-header,
-    .app-header,
     .select-popup {
         background: var(--surface);
         backdrop-filter: none;
