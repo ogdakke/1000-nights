@@ -524,17 +524,16 @@
     .gallery-stage {
         width: calc(100% - 32px);
         grid-template-columns: minmax(0, 1fr);
-        gap: 30px;
-        padding-block: 26px 42px;
+        gap: 0;
+        padding-block: 28px 36px;
     }
 
     .gallery-artwork {
-        width: min(43vw, 180px);
-        grid-row: 1;
+        display: none;
     }
 
     .gallery-copy {
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .gallery-stage[data-has-image="false"] .gallery-copy {
