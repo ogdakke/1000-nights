@@ -34,70 +34,88 @@
         <nav aria-label="Primary navigation">
           <a href="#about">How it works</a>
           <a href="/api/auth/github">Sign in</a>
-          <a class="nav-cta button button-primary" href="/app/">Reading list</a>
+          <a class="nav-cta button button-primary" href="/app/">Browse library</a>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero shell">
-        <div class="hero-copy">
-          <div class="landing-reveal landing-reveal-copy">
-            <h1>Read one good thing tonight.</h1>
-          </div>
-          <div class="landing-reveal landing-reveal-copy">
-            <p class="hero-sub">
-              A story, a poem, and an essay for each of a thousand nights. Choose a piece, open the
-              original source, and keep your place.
-            </p>
-          </div>
-          <div class="landing-reveal landing-reveal-action">
-            <a class="button button-primary" href="/app/">Browse readings <span>↗</span></a>
-          </div>
-          <div class="landing-reveal landing-reveal-action">
-            <p class="hero-note">3,000 readings across 1,000 nights</p>
-          </div>
+      <section class="hero">
+        <div class="landing-backdrop" aria-hidden="true">
+          <img src="/images/gutenberg-57333.jpg" alt="" />
+          <div class="landing-backdrop-wash"></div>
         </div>
-        <div class="landing-reveal landing-reveal-preview">
-          <div class="library-preview" aria-label="A preview of night one">
-            <div class="preview-heading">
-              <strong>Night 1</strong>
-              <span>3 readings</span>
+        <div class="hero-stage shell">
+          <div class="hero-copy">
+            <div class="landing-reveal landing-reveal-copy">
+              <h1>Read one good thing tonight.</h1>
             </div>
-            <div class="preview-list">
-              <div class="preview-reading">
-                <div><strong>The Duel</strong><span>Short story · Anton Chekhov</span></div>
-                <span class="preview-action">Open ↗</span>
-              </div>
-              <div class="preview-reading">
-                <div><strong>The Song of Songs</strong><span>Poem · KJV</span></div>
-                <span class="preview-action">Open ↗</span>
-              </div>
-              <div class="preview-reading">
-                <div><strong>Good Bad Books</strong><span>Essay · George Orwell</span></div>
-                <span class="preview-action">Open ↗</span>
-              </div>
+            <div class="landing-reveal landing-reveal-copy">
+              <p class="hero-sub">
+                A hand-picked story, poem, and essay for every evening. Start anywhere, read at
+                your own pace, and keep your place.
+              </p>
+            </div>
+            <div class="hero-actions landing-reveal landing-reveal-action">
+              <a class="button button-primary" href="/app/">Browse the library</a>
+              <a class="hero-text-link" href="/read/anton-chekhov/the-duel">Preview tonight’s read</a>
+            </div>
+          </div>
+          <figure class="hero-artwork landing-reveal landing-reveal-artwork">
+            <a href="/read/anton-chekhov/the-duel" aria-label="Preview The Duel by Anton Chekhov">
+              <img src="/images/gutenberg-57333.jpg" alt="Cover of The Duel by Anton Chekhov" />
+            </a>
+            <figcaption><strong>The Duel</strong><span>Anton Chekhov</span></figcaption>
+          </figure>
+        </div>
+        <div class="landing-shelf landing-reveal landing-reveal-shelf">
+          <div class="landing-shelf-heading shell">
+            <span>Tonight’s shelf</span>
+            <a href="/app/">See all 3,000 readings</a>
+          </div>
+          <div class="landing-shelf-track" aria-label="Featured readings">
+            <div class="landing-shelf-list">
+              <a class="landing-book is-featured" href="/read/anton-chekhov/the-duel">
+                <img src="/images/gutenberg-57333.jpg" alt="" />
+                <span><strong>The Duel</strong><small>Anton Chekhov</small></span>
+              </a>
+              <a class="landing-book" href="/read/biblical-kjv/the-song-of-songs-chapter-2">
+                <img src="/images/gutenberg-10.jpg" alt="" />
+                <span><strong>The Song of Songs</strong><small>Biblical, KJV</small></span>
+              </a>
+              <a class="landing-book" href="/read/george-orwell/good-bad-books">
+                <img src="/images/author-george-orwell.jpg" alt="" />
+                <span><strong>Good Bad Books</strong><small>George Orwell</small></span>
+              </a>
+              <a class="landing-book" href="/read/william-shakespeare/tomorrow-and-tomorrow-macbeth">
+                <img src="/images/gutenberg-100.jpg" alt="" />
+                <span><strong>Tomorrow, and tomorrow</strong><small>William Shakespeare</small></span>
+              </a>
+              <a class="landing-book" href="/read/arthur-conan-doyle/the-red-headed-league">
+                <img src="/images/gutenberg-1661.jpg" alt="" />
+                <span><strong>The Red-Headed League</strong><small>Arthur Conan Doyle</small></span>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section class="invitation" id="about">
         <div class="shell invitation-grid">
-          <h2>Three readings.<br />No pressure.</h2>
+          <h2>A thousand nights.<br />At your own pace.</h2>
           <div class="invitation-text">
             <p>
-              Each night has a short story, a poem, and an essay. Read one or read all three. There
-              is no streak to protect and no pace to keep.
+              Every night pairs a short story, a poem, and an essay. Read one or all three. There is
+              no streak to protect and no pace to keep.
             </p>
             <p>
-              The library points to works hosted by publishers and public archives. Your shelf
-              stores only the progress you choose to record.
+              Open each work from its original publisher or public archive, then mark it for later
+              or keep track of what you have finished.
             </p>
-            <a href="/app/">Explore the reading list <span>↗</span></a>
+            <a href="/app/">Explore the library <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
       <section class="closing shell">
-        <p>What will you read tonight?</p>
+        <p>Something worth reading,<br />every night.</p>
         <a class="button button-primary" href="/app/">Find your next read</a>
       </section>
     </main>

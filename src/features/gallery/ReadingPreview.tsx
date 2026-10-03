@@ -68,7 +68,7 @@ export function ReadingPreview({
         >
           <h1 id="selected-reading-title">{reading.title}</h1>
           <p className="gallery-author">{reading.author || "Author not listed"}</p>
-          <p className="gallery-description">{preview.description}</p>
+          {preview.description ? <p className="gallery-description">{preview.description}</p> : null}
 
           <div className="gallery-actions">
             {!isUnavailable(reading) && (reading.resolved_url || reading.original_url) ? (

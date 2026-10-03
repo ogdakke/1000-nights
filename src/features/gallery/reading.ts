@@ -11,10 +11,13 @@ export const statusOptions: SelectOption[] = [
   { label: "Finished", value: "read" },
 ];
 
-const previewNotes: Record<
-  string,
-  { description: string; length?: string; published?: string }
-> = {
+type PreviewNote = {
+  description?: string;
+  length?: string;
+  published?: string;
+};
+
+const previewNotes: Record<string, PreviewNote> = {
   "the-duel": {
     description:
       "A Russian physician confronts a civil servant who wants to abandon both his lover and the life he has built on the Caucasian coast.",
@@ -104,11 +107,7 @@ export function readingKind(reading: Reading) {
 }
 
 export function previewFor(reading: Reading) {
-  return (
-    previewNotes[slugify(reading.title)] ?? {
-      description: `Selected for Night ${reading.night} of A Thousand Nights. Open the original text when you are ready to begin.`,
-    }
-  );
+  return previewNotes[slugify(reading.title)] ?? {};
 }
 
 export function coverFor(reading: Reading) {

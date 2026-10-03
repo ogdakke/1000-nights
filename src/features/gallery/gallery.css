@@ -288,10 +288,14 @@
 }
 
 .gallery-shelf {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    flex: none;
+    right: 0;
+    bottom: 0;
+    left: 0;
     padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    background: transparent;
+    pointer-events: none;
 }
 
 .gallery-shelf-toolbar {
@@ -304,6 +308,7 @@
     color: var(--faint);
     font-size: 0.6875rem;
     font-variant-numeric: tabular-nums;
+    pointer-events: auto;
 }
 
 .gallery-shelf-arrows {
@@ -331,6 +336,7 @@
     scroll-padding-inline: max(24px, calc((100vw - 1180px) / 2));
     scroll-snap-type: x proximity;
     scroll-behavior: auto;
+    pointer-events: auto;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -357,14 +363,14 @@
 .gallery-track .gallery-virtual-list {
     position: relative;
     display: block;
-    height: 160px;
+    height: 184px;
     margin: 0;
-    padding: 8px 0 2px;
+    padding: 22px 0 2px;
 }
 
 .gallery-track li.gallery-virtual-item {
     position: absolute;
-    top: 8px;
+    top: 22px;
     left: 0;
     width: 82px;
     scroll-snap-align: none;
@@ -410,8 +416,24 @@
     transition: none;
 }
 
+.gallery-card .book-cover::after {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.055);
+    content: "";
+    opacity: 0;
+    pointer-events: none;
+    transition: none;
+}
+
 .gallery-card:not([data-active]) .book-cover {
-    opacity: 0.78;
+    opacity: 1;
+}
+
+.gallery-card:not([data-active]) .book-cover::after {
+    opacity: 1;
 }
 
 .gallery-card[data-active] .book-cover {
@@ -506,7 +528,7 @@
 }
 
 .gallery-loading-shelf {
-    min-height: 215px;
+    min-height: 239px;
     opacity: 0;
     overflow: hidden;
     animation: gallery-loading-reveal 120ms var(--ease-out) 160ms forwards;
@@ -520,9 +542,9 @@
 
 .gallery-loading-shelf-track {
     display: flex;
-    height: 160px;
+    height: 184px;
     gap: 18px;
-    padding: 8px max(24px, calc((100vw - 1180px) / 2)) 2px;
+    padding: 22px max(24px, calc((100vw - 1180px) / 2)) 2px;
 }
 
 .gallery-loading-shelf-track span {
@@ -589,6 +611,10 @@
         transform: translateY(-3px);
     }
 
+    .gallery-card:hover .book-cover::after {
+        opacity: 0;
+    }
+
     .gallery-card[data-active]:hover .book-cover {
         transform: translateY(-5px) scale(1.055);
     }
@@ -628,7 +654,7 @@
         width: calc(100% - 32px);
         grid-template-columns: minmax(0, 1fr);
         gap: 0;
-        padding-block: 28px 36px;
+        padding: 28px 0 calc(190px + env(safe-area-inset-bottom, 0px));
     }
 
     .gallery-artwork {
