@@ -121,7 +121,6 @@ export function ReadingShelf({
           </Button>
         </div>
         <span aria-live="polite">{position.toLocaleString()} of {total.toLocaleString()}</span>
-        {(isFetchingNextPage || isFetchingPreviousPage) && <span className="gallery-loading-more">Loading more…</span>}
       </motion.div>
 
       <div

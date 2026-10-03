@@ -387,12 +387,6 @@
     font-size: 0.75rem;
 }
 
-.gallery-loading-more {
-    margin-inline-start: auto;
-    color: var(--faint);
-    font-size: 0.6875rem;
-}
-
 .gallery-card {
     width: 100%;
     border: 0;
