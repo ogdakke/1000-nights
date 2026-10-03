@@ -1,4 +1,4 @@
-import type { Profile, Reading, ReadingPage, ReadingStatus } from "./types";
+import type { JourneyPage, Profile, Reading, ReadingPage, ReadingStatus } from "./types";
 
 export async function requestJson<T>(url: string, init?: RequestInit): Promise<T> {
   const response = await fetch(url, init);
@@ -15,14 +15,18 @@ export function getReadings(page: number, search: string) {
   );
 }
 
-export function getReading(author: string, title: string) {
+export function getReading(author: string, title: string, night?: number) {
   return requestJson<Reading>(
-    `/api/reading?author=${encodeURIComponent(author)}&title=${encodeURIComponent(title)}`,
+    `/api/reading?author=${encodeURIComponent(author)}&title=${encodeURIComponent(title)}${night ? `&night=${night}` : ""}`,
   );
 }
 
 export function getProfile() {
   return requestJson<Profile>("/api/profile");
+}
+
+export function getJourney(page: number) {
+  return requestJson<JourneyPage>(`/api/journey?page=${page}`);
 }
 
 export function saveProgress(reading: Reading, status: ReadingStatus | null) {

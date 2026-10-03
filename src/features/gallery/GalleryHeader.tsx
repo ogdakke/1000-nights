@@ -60,6 +60,7 @@ export function GalleryHeader({
         <div className="gallery-account">
           {profile?.user ? (
             <>
+              <a className="gallery-progress-link" href="/progress">My journey</a>
               <span>{profile.user.name}</span>
               <Button variant="ghost" size="small" onClick={onSignOut} disabled={signingOut}>
                 Sign out

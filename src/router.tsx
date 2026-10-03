@@ -1,10 +1,13 @@
 import { createRootRoute, createRoute, createRouter, useRouterState } from "@tanstack/react-router";
 import { GalleryPage } from "./features/gallery/GalleryPage";
+import { JourneyPage } from "./features/journey/JourneyPage";
 
 function GalleryRoot() {
   const path = useRouterState({ select: (state) => state.location.pathname });
+  if (path === "/progress" || path === "/progress/") return <JourneyPage />;
   const match = /^\/read\/([^/]+)\/([^/]+)\/?$/.exec(path);
-  return <GalleryPage route={match ? { author: match[1], title: match[2] } : undefined} />;
+  const night = Number.parseInt(new URLSearchParams(window.location.search).get("night") || "", 10);
+  return <GalleryPage route={match ? { author: match[1], title: match[2], night: Number.isInteger(night) && night >= 1 && night <= 1000 ? night : undefined } : undefined} />;
 }
 
 const rootRoute = createRootRoute({
@@ -27,7 +30,12 @@ const readingRoute = createRoute({
   path: "/read/$author/$title",
 });
 
-const routeTree = rootRoute.addChildren([libraryRoute, readingRoute]);
+const progressRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/progress",
+});
+
+const routeTree = rootRoute.addChildren([libraryRoute, readingRoute, progressRoute]);
 
 export const router = createRouter({
   routeTree,

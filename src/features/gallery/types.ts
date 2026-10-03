@@ -34,5 +34,15 @@ export type Profile = {
   authAvailable: boolean;
 };
 
-export type ReadingRouteParams = { author: string; title: string };
+export type JourneyNight = { night: number; total: number; finished: number };
+export type JourneyReading = Reading & { finished_at?: string };
+export type JourneyPage = {
+  nights: JourneyNight[];
+  tonight: JourneyReading[];
+  history: JourneyReading[];
+  page: number;
+  hasMoreHistory: boolean;
+};
+
+export type ReadingRouteParams = { author: string; title: string; night?: number };
 export type NavigationIntent = "initial" | "pointer" | "keyboard";

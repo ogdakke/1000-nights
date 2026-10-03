@@ -157,6 +157,7 @@ export function ReadingShelf({
                 key={reading.id}
                 style={{ transform: `translateX(${virtualItem.start}px)` }}
                 data-night-start={showNightGroups && reading.position === 1 || undefined}
+                data-has-night-marker={Boolean(nightLabel) || undefined}
                 aria-setsize={total}
                 aria-posinset={selectedIndex >= 0 ? position - selectedIndex + virtualItem.index : undefined}
               >

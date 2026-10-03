@@ -376,8 +376,13 @@
     scroll-snap-align: none;
 }
 
+.gallery-virtual-item[data-has-night-marker] {
+    z-index: 2;
+}
+
 .gallery-night-marker {
     position: absolute;
+    z-index: 2;
     top: -17px;
     left: 0;
     max-width: 96px;

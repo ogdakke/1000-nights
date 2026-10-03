@@ -4,6 +4,8 @@ A reading program with external links, search, and private reading progress. The
 
 The gallery requests readings in 30-item pages as the shelf scrolls and virtualizes the cards so the DOM stays small. The normal shelf shows all 3,000 scheduled readings, grouped by night. Search pages through distinct works and lists the nights when each recurs; direct work URLs begin near their matching reading.
 
+Signed-in readers can open `/progress` to see the next night with unfinished readings, mark those readings finished, review completed nights in ten 100-night chapters, and browse their finished readings. Links from the journey include the scheduled night so repeated works open the correct appearance.
+
 ## Run locally
 
 1. `pnpm install`

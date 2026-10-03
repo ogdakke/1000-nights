@@ -80,8 +80,8 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   }, [query, search, route, navigate]);
 
   const routedReading = useQuery({
-    queryKey: ["reading", route?.author, route?.title],
-    queryFn: () => getReading(route?.author ?? "", route?.title ?? ""),
+    queryKey: ["reading", route?.author, route?.title, route?.night],
+    queryFn: () => getReading(route?.author ?? "", route?.title ?? "", route?.night),
     enabled: Boolean(route),
     retry: false,
   });
@@ -155,8 +155,8 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   const items = useMemo(() => data?.pages.flatMap((page) => page.items) ?? EMPTY_READINGS, [data]);
   const total = data?.pages[0]?.total ?? 0;
   const routeMatch = route
-    ? items.find((reading) => reading.id === selectedId && routeMatches(reading, route.author, route.title)) ??
-      items.find((reading) => routeMatches(reading, route.author, route.title))
+    ? items.find((reading) => reading.id === selectedId && routeMatches(reading, route.author, route.title) && (!route.night || reading.night === route.night)) ??
+      items.find((reading) => routeMatches(reading, route.author, route.title) && (!route.night || reading.night === route.night))
     : null;
   const routedItem = routedReading.data;
   const selected = route
@@ -171,7 +171,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     setIntent(nextIntent);
     setSelectedId(reading.id);
     const params = readingParams(reading);
-    client.setQueryData(["reading", params.author, params.title], reading);
+    client.setQueryData(["reading", params.author, params.title, undefined], reading);
     void navigate({ to: "/read/$author/$title", params, replace });
   }
 

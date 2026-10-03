@@ -71,15 +71,17 @@ async function readingBySlug(request: Request, env: Env) {
   const url = new URL(request.url);
   const authorSlug = url.searchParams.get("author") ?? "";
   const titleSlug = url.searchParams.get("title") ?? "";
+  const requestedNight = Number.parseInt(url.searchParams.get("night") ?? "", 10);
+  const night = Number.isInteger(requestedNight) && requestedNight >= 1 && requestedNight <= 1000 ? requestedNight : null;
   const validSlug = /^[a-z0-9](?:[a-z0-9-]{0,198}[a-z0-9])?$/;
   if (!validSlug.test(authorSlug) || !validSlug.test(titleSlug))
     return respond({ error: "Invalid reading path." }, 400);
 
   const current = await reader(request, env);
   const match = await env.DB.prepare(
-    `SELECT readings.*, ${current ? "progress.status" : "NULL"} AS progress FROM readings ${current ? "LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?" : ""} WHERE readings.author_slug = ? AND readings.title_slug = ? ORDER BY night, position LIMIT 1`,
+    `SELECT readings.*, ${current ? "progress.status" : "NULL"} AS progress FROM readings ${current ? "LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?" : ""} WHERE readings.author_slug = ? AND readings.title_slug = ? ${night ? "AND readings.night = ?" : ""} ORDER BY night, position LIMIT 1`,
   )
-    .bind(...(current ? [current.id] : []), authorSlug, titleSlug)
+    .bind(...(current ? [current.id] : []), authorSlug, titleSlug, ...(night ? [night] : []))
     .first<Record<string, unknown>>();
   return match ? respond(match) : respond({ error: "Reading not found." }, 404);
 }
@@ -105,6 +107,42 @@ async function profile(request: Request, env: Env) {
     user: current,
     counts: Object.fromEntries(rows.results.map((r) => [r.status, r.count])),
     authAvailable: true,
+  });
+}
+
+async function journey(request: Request, env: Env) {
+  const current = await reader(request, env);
+  if (!current) return respond({ error: "Sign in to see your reading journey." }, 401);
+  const url = new URL(request.url);
+  const page = Math.min(1000, Math.max(1, Number.parseInt(url.searchParams.get("page") ?? "1", 10) || 1));
+  const nights = await env.DB.prepare(
+    `SELECT readings.night AS night, count(*) AS total,
+      sum(CASE WHEN progress.status = 'read' THEN 1 ELSE 0 END) AS finished
+     FROM readings LEFT JOIN progress
+       ON progress.reading_id = readings.id AND progress.user_id = ?
+     GROUP BY readings.night ORDER BY readings.night`,
+  ).bind(current.id).all<{ night: number; total: number; finished: number }>();
+  const firstUnfinished = nights.results.find((night) => night.finished < night.total);
+  const tonight = firstUnfinished
+    ? await env.DB.prepare(
+        `SELECT readings.*, progress.status AS progress FROM readings
+         LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?
+         WHERE readings.night = ? ORDER BY readings.position`,
+      ).bind(current.id, firstUnfinished.night).all()
+    : { results: [] };
+  const history = await env.DB.prepare(
+    `SELECT readings.*, progress.status AS progress, progress.updated_at AS finished_at
+     FROM progress JOIN readings ON readings.id = progress.reading_id
+     WHERE progress.user_id = ? AND progress.status = 'read'
+     ORDER BY progress.updated_at DESC, readings.night DESC, readings.position DESC
+     LIMIT 24 OFFSET ?`,
+  ).bind(current.id, (page - 1) * 24).all();
+  return respond({
+    nights: nights.results,
+    tonight: tonight.results,
+    history: history.results,
+    page,
+    hasMoreHistory: history.results.length === 24,
   });
 }
 
@@ -231,6 +269,7 @@ export default {
       if (url.pathname === "/api/reading" && request.method === "GET")
         return readingBySlug(request, env);
       if (url.pathname === "/api/profile" && request.method === "GET") return profile(request, env);
+      if (url.pathname === "/api/journey" && request.method === "GET") return journey(request, env);
       if (url.pathname === "/api/progress" && request.method === "POST")
         return progress(request, env);
       if (url.pathname === "/api/auth/github" && request.method === "GET")
@@ -253,6 +292,8 @@ export default {
       if (
         url.pathname === "/app" ||
         url.pathname.startsWith("/app/") ||
+        url.pathname === "/progress" ||
+        url.pathname.startsWith("/progress/") ||
         url.pathname.startsWith("/read/")
       )
         return env.ASSETS.fetch(new URL("/app/index.html", request.url));
