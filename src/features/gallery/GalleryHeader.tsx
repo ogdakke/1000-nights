@@ -1,7 +1,7 @@
 import type { ChangeEvent, RefObject } from "react";
 import { Search } from "lucide-react";
 import { motion } from "motion/react";
-import { Button } from "../../components/ui/button";
+import { Button, buttonVariants } from "../../components/ui/button";
 import { INITIAL_EASE, UI_EASE } from "./reading";
 import type { Profile } from "./types";
 
@@ -60,14 +60,15 @@ export function GalleryHeader({
         <div className="gallery-account">
           {profile?.user ? (
             <>
-              <a className="gallery-progress-link" href="/progress">My journey</a>
-              <span>{profile.user.name}</span>
-              <Button variant="ghost" size="small" onClick={onSignOut} disabled={signingOut}>
+              <a className={buttonVariants({ variant: "secondary", size: "small" })} href="/progress">
+                My journey
+              </a>
+              <Button variant="contrast" size="small" onClick={onSignOut} disabled={signingOut}>
                 Sign out
               </Button>
             </>
           ) : (
-            <Button variant="ghost" size="small" onClick={onSignIn} disabled={!profile}>
+            <Button variant="secondary" size="small" onClick={onSignIn} disabled={!profile}>
               Sign in
             </Button>
           )}

@@ -342,14 +342,6 @@
   outline-offset: 3px;
 }
 
-.gallery-progress-link {
-  border-radius: 999px;
-  padding: 9px 12px;
-  color: var(--muted);
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-
 @keyframes journey-reveal {
   from {
     opacity: 0;
@@ -363,8 +355,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .journey-back:hover,
-  .gallery-progress-link:hover {
+  .journey-back:hover {
     background: rgba(29, 29, 31, 0.045);
     color: var(--ink);
   }
@@ -460,10 +451,6 @@
     grid-column: 2;
   }
 
-  .gallery-progress-link {
-    padding-inline: 7px;
-    font-size: 0.75rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

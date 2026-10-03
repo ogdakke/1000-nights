@@ -8,6 +8,7 @@ export const buttonVariants = cva("button", {
     variant: {
       primary: "button-primary",
       secondary: "button-secondary",
+      contrast: "button-contrast",
       ghost: "button-ghost",
     },
     size: {

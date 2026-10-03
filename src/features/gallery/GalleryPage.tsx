@@ -325,6 +325,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
           <ReadingShelf
             carousel={carousel}
             items={items}
+            firstItemIndex={((data?.pages[0].page ?? 1) - 1) * (data?.pages[0].pageSize ?? 30)}
             selected={selected}
             position={selectedPosition}
             total={total}
@@ -335,6 +336,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
             hasPreviousPage={readings.hasPreviousPage}
             isFetchingNextPage={readings.isFetchingNextPage}
             isFetchingPreviousPage={readings.isFetchingPreviousPage}
+            hasPreviousLoadError={readings.isFetchPreviousPageError}
             hasLoadError={readings.isFetchNextPageError}
             quickEntrance={quickRouteEntrance}
             onLoadNext={() => void readings.fetchNextPage()}

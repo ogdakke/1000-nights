@@ -12,6 +12,7 @@ const CARD_STRIDE = 100;
 type ReadingShelfProps = {
   carousel: RefObject<HTMLDivElement | null>;
   items: Reading[];
+  firstItemIndex: number;
   selected: Reading;
   position: number;
   total: number;
@@ -22,6 +23,7 @@ type ReadingShelfProps = {
   hasPreviousPage: boolean;
   isFetchingNextPage: boolean;
   isFetchingPreviousPage: boolean;
+  hasPreviousLoadError: boolean;
   hasLoadError: boolean;
   quickEntrance?: boolean;
   onLoadNext: () => void;
@@ -33,6 +35,7 @@ type ReadingShelfProps = {
 export function ReadingShelf({
   carousel,
   items,
+  firstItemIndex,
   selected,
   position,
   total,
@@ -43,6 +46,7 @@ export function ReadingShelf({
   hasPreviousPage,
   isFetchingNextPage,
   isFetchingPreviousPage,
+  hasPreviousLoadError,
   hasLoadError,
   quickEntrance = false,
   onLoadNext,
@@ -50,15 +54,17 @@ export function ReadingShelf({
   onMove,
   onSelect,
 }: ReadingShelfProps) {
-  const firstItem = useRef(items[0]?.id);
   const lastCentered = useRef<string | null>(null);
   const [viewportWidth, setViewportWidth] = useState(0);
   const sidePadding = Math.max(0, (viewportWidth - CARD_STRIDE) / 2);
+  const previousLoadThreshold = sidePadding + firstItemIndex * CARD_STRIDE + Math.max(viewportWidth / 2, CARD_STRIDE * 6);
+  const lastItemIndex = firstItemIndex + items.length - 1;
   const virtualizer = useVirtualizer({
     horizontal: true,
-    count: items.length + (hasNextPage ? 1 : 0),
+    count: total,
     getScrollElement: () => carousel.current,
     estimateSize: () => CARD_STRIDE,
+    getItemKey: (index) => items[index - firstItemIndex]?.id ?? index,
     overscan: 6,
     paddingStart: sidePadding,
     paddingEnd: sidePadding,
@@ -76,27 +82,30 @@ export function ReadingShelf({
     return () => observer.disconnect();
   }, [carousel]);
 
-  // Keep the same card under the pointer when an earlier page is prepended.
-  useLayoutEffect(() => {
-    const oldFirst = firstItem.current;
-    const added = oldFirst ? items.findIndex((item) => item.id === oldFirst) : 0;
-    if (added > 0 && carousel.current) carousel.current.scrollLeft += added * CARD_STRIDE;
-    firstItem.current = items[0]?.id;
-  }, [items, carousel]);
-
   useLayoutEffect(() => {
     const centeredKey = `${selected.id}:${viewportWidth}`;
     if (selectedIndex >= 0 && viewportWidth > 0 && lastCentered.current !== centeredKey) {
-      virtualizer.scrollToIndex(selectedIndex, { align: "center", behavior: "auto" });
+      virtualizer.scrollToIndex(firstItemIndex + selectedIndex, { align: "center", behavior: "auto" });
       lastCentered.current = centeredKey;
     }
-  }, [selectedIndex, selected.id, viewportWidth, virtualizer]);
+  }, [firstItemIndex, selectedIndex, selected.id, viewportWidth, virtualizer]);
 
   useEffect(() => {
     const last = visible.at(-1);
-    if (last && last.index >= items.length - 4 && hasNextPage && !isFetchingNextPage && !hasLoadError)
+    if (last && last.index >= lastItemIndex - 3 && hasNextPage && !isFetchingNextPage && !hasLoadError)
       onLoadNext();
-  }, [visible, items.length, hasNextPage, isFetchingNextPage, hasLoadError, onLoadNext]);
+  }, [visible, lastItemIndex, hasNextPage, isFetchingNextPage, hasLoadError, onLoadNext]);
+
+  // Start loading before the first card reaches the viewport's left edge.
+  // Recheck after a page arrives in case the user is still near the loaded boundary.
+  useEffect(() => {
+    const element = carousel.current;
+    if (
+      element && viewportWidth > 0 && hasPreviousPage && !isFetchingPreviousPage &&
+      !hasPreviousLoadError &&
+      element.scrollLeft <= previousLoadThreshold
+    ) onLoadPrevious();
+  }, [items, viewportWidth, previousLoadThreshold, hasPreviousPage, isFetchingPreviousPage, hasPreviousLoadError, onLoadPrevious, carousel]);
 
   return (
     <section className="gallery-shelf" aria-label="Reading gallery">
@@ -129,19 +138,28 @@ export function ReadingShelf({
         className="gallery-track"
         ref={carousel}
         onScroll={(event) => {
-          if (event.currentTarget.scrollLeft < CARD_STRIDE * 3 && hasPreviousPage && !isFetchingPreviousPage)
+          if (
+            event.currentTarget.scrollLeft <= previousLoadThreshold &&
+            hasPreviousPage && !isFetchingPreviousPage && !hasPreviousLoadError
+          )
             onLoadPrevious();
         }}
       >
         <ol className="gallery-virtual-list" style={{ width: virtualizer.getTotalSize() }}>
           {visible.map((virtualItem) => {
-            const reading = items[virtualItem.index];
-            if (!reading)
+            const reading = items[virtualItem.index - firstItemIndex];
+            if (!reading && virtualItem.index === lastItemIndex + 1 && hasNextPage)
               return (
-                <li className="gallery-virtual-item gallery-load-item" key="load-next" style={{ transform: `translateX(${virtualItem.start}px)` }}>
+                <li className="gallery-virtual-item gallery-load-item" key={virtualItem.key} style={{ transform: `translateX(${virtualItem.start}px)` }}>
                   <button type="button" onClick={onLoadNext} disabled={isFetchingNextPage}>
                     {hasLoadError ? "Retry" : "More"}
                   </button>
+                </li>
+              );
+            if (!reading)
+              return (
+                <li className="gallery-virtual-item" key={virtualItem.key} style={{ transform: `translateX(${virtualItem.start}px)` }} aria-hidden="true">
+                  <span className="gallery-card-placeholder" />
                 </li>
               );
             const active = reading.id === selected.id;
@@ -159,7 +177,7 @@ export function ReadingShelf({
                 data-night-start={showNightGroups && reading.position === 1 || undefined}
                 data-has-night-marker={Boolean(nightLabel) || undefined}
                 aria-setsize={total}
-                aria-posinset={selectedIndex >= 0 ? position - selectedIndex + virtualItem.index : undefined}
+                aria-posinset={virtualItem.index + 1}
               >
                 {nightLabel && <span className="gallery-night-marker" title={nightTitle} aria-hidden="true">{nightLabel}</span>}
                 <button

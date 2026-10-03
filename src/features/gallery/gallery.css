@@ -154,15 +154,6 @@
     gap: 4px;
 }
 
-.gallery-account > span {
-    max-width: 150px;
-    overflow: hidden;
-    color: var(--muted);
-    font-size: 0.75rem;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 .gallery-main {
     position: relative;
     z-index: 1;
@@ -445,7 +436,16 @@
 }
 
 .gallery-card .book-cover img {
+    opacity: 1;
     transition: none;
+}
+
+.gallery-card-placeholder {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    border-radius: 5px;
+    background: rgba(29, 29, 31, 0.06);
 }
 
 .gallery-card .book-cover::after {
@@ -670,7 +670,6 @@
         grid-row: 2;
     }
 
-    .gallery-account > span,
     .gallery-search kbd {
         display: none;
     }
