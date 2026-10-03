@@ -1,40 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { ArrowUpRight, ChevronLeft, ChevronRight, Search } from "lucide-react";
 import {
-  BookOpen,
-  Check,
-  ChevronLeft,
-  ChevronRight,
-  ExternalLink,
-  Search,
-  Sparkles,
-  UserRound,
-} from "lucide-react";
-import { Slot } from "@radix-ui/react-slot";
-import { cva, type VariantProps } from "class-variance-authority";
-import { clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
-import "./style.css";
+  keepPreviousData,
+  QueryClient,
+  QueryClientProvider,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
+import { Button } from "./components/ui/button";
+import { Select, type SelectOption } from "./components/ui/select";
+import "./coherent.css";
 
-const cx = (...classes: Parameters<typeof clsx>) => twMerge(clsx(...classes));
-const button = cva("ui-button", {
-  variants: {
-    variant: { gold: "ui-button-gold", outline: "ui-button-outline", ghost: "ui-button-ghost" },
-    size: { normal: "", small: "ui-button-small" },
-  },
-  defaultVariants: { variant: "gold", size: "normal" },
-});
-function Button({
-  asChild = false,
-  variant,
-  size,
-  className,
-  ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement> &
-  VariantProps<typeof button> & { asChild?: boolean }) {
-  const Component = asChild ? Slot : "button";
-  return <Component className={cx(button({ variant, size }), className)} {...props} />;
-}
+type ReadingStatus = "want_to_read" | "reading" | "read";
+
 type Reading = {
   id: string;
   night: number;
@@ -46,8 +26,9 @@ type Reading = {
   resolved_url: string | null;
   link_status: string;
   evidence: string | null;
-  progress: string | null;
+  progress: ReadingStatus | null;
 };
+
 type Page = { items: Reading[]; total: number; page: number; pageSize: number };
 type Profile = {
   user: { id: string; name: string; avatar_url: string | null } | null;
@@ -55,270 +36,327 @@ type Profile = {
   authAvailable: boolean;
 };
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: 1,
+      staleTime: 30_000,
+    },
+  },
+});
+
+const statusOptions: SelectOption[] = [
+  { label: "Not saved", value: "none" },
+  { label: "Save", value: "want_to_read" },
+  { label: "Reading", value: "reading" },
+  { label: "Finished", value: "read" },
+];
+
+async function requestJson<T>(url: string, init?: RequestInit): Promise<T> {
+  const response = await fetch(url, init);
+  if (!response.ok) {
+    const body = (await response.json().catch(() => null)) as { error?: string } | null;
+    throw new Error(body?.error || "The library could not be reached.");
+  }
+  return response.json() as Promise<T>;
+}
+
+function groupByNight(items: Reading[]) {
+  return items.reduce<Array<{ night: number; items: Reading[] }>>((groups, reading) => {
+    const current = groups.at(-1);
+    if (current?.night === reading.night) current.items.push(reading);
+    else groups.push({ night: reading.night, items: [reading] });
+    return groups;
+  }, []);
+}
+
+function readingKind(reading: Reading) {
+  const value =
+    reading.kind?.replaceAll("_", " ") ||
+    ["Reading", "Short story", "Poem", "Essay"][reading.position] ||
+    "Reading";
+  return value.charAt(0).toUpperCase() + value.slice(1);
+}
+
+function LoadingRows() {
+  return (
+    <div className="night-list" aria-label="Loading readings" aria-live="polite">
+      {[0, 1].map((group) => (
+        <section className="night-group loading-group" key={group}>
+          <span className="skeleton skeleton-heading" />
+          {[0, 1, 2].map((row) => (
+            <div className="reading reading-skeleton" key={row}>
+              <div>
+                <span className="skeleton skeleton-title" />
+                <span className="skeleton skeleton-author" />
+              </div>
+            </div>
+          ))}
+        </section>
+      ))}
+    </div>
+  );
+}
+
 function App() {
+  const client = useQueryClient();
+  const searchInput = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
-  const [data, setData] = useState<Page | null>(null);
-  const [profile, setProfile] = useState<Profile | null>(null);
-  const [error, setError] = useState("");
-  const [busy, setBusy] = useState(false);
+  const [notice, setNotice] = useState("");
+
   useEffect(() => {
-    const t = window.setTimeout(() => {
-      setSearch(query);
+    const timeout = window.setTimeout(() => {
+      setSearch(query.trim());
       setPage(1);
-    }, 300);
-    return () => clearTimeout(t);
+    }, 250);
+    return () => window.clearTimeout(timeout);
   }, [query]);
+
   useEffect(() => {
-    let live = true;
-    setBusy(true);
-    fetch(`/api/readings?page=${page}&q=${encodeURIComponent(search)}`)
-      .then((r) => {
-        if (!r.ok) throw new Error("Catalog unavailable");
-        return r.json() as Promise<Page>;
-      })
-      .then((d) => {
-        if (live) {
-          setData(d);
-          setError("");
-        }
-      })
-      .catch((e) => {
-        if (live) setError(e.message);
-      })
-      .finally(() => {
-        if (live) setBusy(false);
-      });
-    return () => {
-      live = false;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        searchInput.current?.focus();
+      }
     };
-  }, [page, search]);
-  useEffect(() => {
-    fetch("/api/profile")
-      .then((r) => r.json() as Promise<Profile>)
-      .then(setProfile)
-      .catch(() => {});
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
-  async function update(reading: Reading, status: string | null) {
-    if (!profile?.user) {
-      if (profile?.authAvailable) location.href = "/api/auth/github";
-      else setError("Sign-in is being configured. You can still browse the library.");
+
+  const readings = useQuery({
+    queryKey: ["readings", page, search],
+    queryFn: () => requestJson<Page>(`/api/readings?page=${page}&q=${encodeURIComponent(search)}`),
+    placeholderData: keepPreviousData,
+  });
+
+  const profile = useQuery({
+    queryKey: ["profile"],
+    queryFn: () => requestJson<Profile>("/api/profile"),
+  });
+
+  const updateProgress = useMutation({
+    mutationFn: ({ reading, status }: { reading: Reading; status: ReadingStatus | null }) =>
+      requestJson<{ ok: true }>("/api/progress", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ readingId: reading.id, status }),
+      }),
+    onMutate: async ({ reading, status }) => {
+      setNotice("");
+      await client.cancelQueries({ queryKey: ["readings"] });
+      const snapshots = client.getQueriesData<Page>({ queryKey: ["readings"] });
+      client.setQueriesData<Page>({ queryKey: ["readings"] }, (current) =>
+        current
+          ? {
+              ...current,
+              items: current.items.map((item) =>
+                item.id === reading.id ? { ...item, progress: status } : item,
+              ),
+            }
+          : current,
+      );
+      return { snapshots };
+    },
+    onError: (error, _variables, context) => {
+      context?.snapshots.forEach(([key, value]) => client.setQueryData(key, value));
+      setNotice(error.message || "Progress could not be saved.");
+    },
+    onSettled: () => {
+      void client.invalidateQueries({ queryKey: ["profile"] });
+    },
+  });
+
+  const logout = useMutation({
+    mutationFn: () => requestJson<{ ok: true }>("/api/auth/logout", { method: "POST" }),
+    onSuccess: () => window.location.reload(),
+    onError: (error) => setNotice(error.message),
+  });
+
+  function signIn() {
+    if (profile.data?.authAvailable) window.location.href = "/api/auth/github";
+    else setNotice("Sign-in has not been configured for this environment yet.");
+  }
+
+  function setProgress(reading: Reading, status: ReadingStatus | null) {
+    if (!profile.data?.user) {
+      signIn();
       return;
     }
-    const response = await fetch("/api/progress", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ readingId: reading.id, status }),
-    });
-    if (!response.ok) {
-      setError("Progress could not be saved.");
-      return;
-    }
-    setData(
-      (old) =>
-        old && {
-          ...old,
-          items: old.items.map((item) =>
-            item.id === reading.id ? { ...item, progress: status } : item,
-          ),
-        },
-    );
-    fetch("/api/profile")
-      .then((r) => r.json() as Promise<Profile>)
-      .then(setProfile)
-      .catch(() => {});
+    updateProgress.mutate({ reading, status });
   }
-  async function logout() {
-    await fetch("/api/auth/logout", { method: "POST" });
-    location.reload();
-  }
+
+  const data = readings.data;
+  const groups = groupByNight(data?.items ?? []);
+  const error = readings.error instanceof Error ? readings.error.message : "";
   const pageCount = Math.ceil((data?.total ?? 0) / 30);
+  const readCount = profile.data?.counts?.read ?? 0;
+
   return (
-    <div className="app-layout">
+    <div className="app-layout simple-library">
       <header className="app-header">
-        <a className="wordmark" href="/">
-          ✦ <span>A Thousand Nights</span>
-        </a>
-        <div className="app-header-right">
-          <span className="header-label">The reading room</span>
-          {profile?.user ? (
-            <button className="profile-button" onClick={logout} title="Sign out">
-              <UserRound size={17} />
-              {profile.user.name}
-              <span className="signout">Sign out</span>
-            </button>
-          ) : profile?.authAvailable ? (
-            <Button asChild size="small">
-              <a href="/api/auth/github">Sign in</a>
-            </Button>
-          ) : (
-            <span className="header-label">Sign-in soon</span>
-          )}
-        </div>
-      </header>
-      <main className="catalog-shell">
-        <aside className="sidebar">
-          <div className="sidebar-top">
-            <p className="eyebrow">Your journey</p>
-            <h2>
-              One night
-              <br />
-              at a time.
-            </h2>
-            <div className="sidebar-rule" />
-            <p className="sidebar-description">
-              A thousand evenings of stories, poems and essays. Follow the path or wander wherever
-              curiosity leads.
-            </p>
-          </div>
-          <div className="progress-panel">
-            <div className="progress-icon">
-              <BookOpen size={19} />
-            </div>
-            <p className="progress-label">Your reading shelf</p>
-            {profile?.user ? (
+        <div className="header-inner shell">
+          <a className="header-link" href="/">About</a>
+          <div className="app-header-actions">
+            {profile.data?.user ? (
               <>
-                <strong>
-                  {profile.counts?.read ?? 0} <span>read</span>
-                </strong>
-                <p>
-                  {profile.counts?.reading ?? 0} in progress · {profile.counts?.want_to_read ?? 0}{" "}
-                  saved
-                </p>
+                <span className="account-name">{profile.data.user.name}</span>
+                <Button
+                  variant="ghost"
+                  size="small"
+                  onClick={() => logout.mutate()}
+                  disabled={logout.isPending}
+                >
+                  Sign out
+                </Button>
               </>
             ) : (
-              <>
-                <strong>
-                  Begin <span>anywhere</span>
-                </strong>
-                <p>Sign in to mark readings and keep your place.</p>
-              </>
+              <Button variant="ghost" size="small" onClick={signIn} disabled={profile.isPending}>
+                Sign in
+              </Button>
             )}
           </div>
-          <div className="sidebar-bottom">✦ &nbsp; An archive of links, not texts</div>
-        </aside>
-        <section className="catalog">
-          <div className="catalog-heading">
-            <div>
-              <p className="eyebrow">The complete program</p>
-              <h1>
-                Explore the <em>library.</em>
-              </h1>
-              <p>Find a work, open its source, and return when you are ready.</p>
-            </div>
-            <div className="catalog-count">
-              <Sparkles size={17} />
-              <span>{data?.total ?? "3,000"} readings</span>
-            </div>
-          </div>
-          <label className="search-box">
-            <Search size={20} />
+        </div>
+      </header>
+
+      <main className="simple-library-shell">
+        <section className="library">
+          <header className="simple-library-heading">
+            <h1>Reading list</h1>
+            <p>
+              {profile.data?.user
+                ? `${readCount.toLocaleString()} finished · ${profile.data.counts?.reading ?? 0} reading · ${profile.data.counts?.want_to_read ?? 0} saved`
+                : "A short story, a poem, and an essay for each night."}
+            </p>
+          </header>
+
+          <label className="search-field">
+            <Search aria-hidden="true" size={18} strokeWidth={1.8} />
             <input
+              ref={searchInput}
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search by title or author"
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search titles and authors"
               aria-label="Search readings"
             />
-            <span>⌘ K</span>
+            <kbd>⌘ K</kbd>
           </label>
-          <div className="list-meta">
-            <span>{search ? `Results for “${search}”` : "All readings"}</span>
-            <span>{data?.total ?? 0} works</span>
+
+          <div className="list-meta" aria-live="polite">
+            <span>{search ? `Results for "${search}"` : `${data?.total ?? 0} readings`}</span>
+            {readings.isFetching && data ? <span>Updating...</span> : null}
           </div>
-          {error && (
+
+          {(notice || error) && (
             <p className="error" role="alert">
-              {error}
+              {notice || error}
             </p>
           )}
-          {busy && <p className="loading">Opening the shelves…</p>}
-          {!busy && data?.items.length === 0 && (
-            <div className="empty">No readings found. Try another title or author.</div>
-          )}
-          <div className="reading-list">
-            {data?.items.map((item) => (
-              <article className="reading" key={item.id}>
-                <div className="night-badge">
-                  <small>NIGHT</small>
-                  <strong>{String(item.night).padStart(3, "0")}</strong>
-                </div>
-                <div className="reading-main">
-                  <div className="reading-kicker">
-                    {item.kind?.replaceAll("_", " ") ||
-                      ["Short story", "Poem", "Essay"][item.position] ||
-                      "Reading"}
-                    <span>·</span>
-                    <span className={`audit audit-${item.link_status.replace(/[^a-z0-9]/gi, "-")}`}>
-                      {item.link_status.replace(/_/g, " ")}
-                    </span>
+
+          {readings.isPending ? (
+            <LoadingRows />
+          ) : groups.length === 0 ? (
+            <div className="empty">
+              <strong>No matches</strong>
+              <span>Try another title or author.</span>
+            </div>
+          ) : (
+            <div className="night-list">
+              {groups.map((group) => (
+                <section className="night-group" key={group.night}>
+                  <h2>Night {group.night}</h2>
+                  <div className="night-readings">
+                    {group.items.map((item) => {
+                      const link = item.resolved_url || item.original_url;
+                      const isUnavailable = ["broken", "mismatch", "content_mismatch"].includes(
+                        item.link_status,
+                      );
+                      const needsAttention = !item.link_status.includes("verified");
+                      const itemIsUpdating =
+                        updateProgress.isPending &&
+                        updateProgress.variables?.reading.id === item.id;
+
+                      return (
+                        <article className="reading" key={item.id}>
+                          <div className="reading-main">
+                            <h3>{item.title}</h3>
+                            <p>
+                              <span>{readingKind(item)}</span>
+                              <span aria-hidden="true"> · </span>
+                              <span>{item.author || "Author not listed"}</span>
+                              {needsAttention ? (
+                                <>
+                                  <span aria-hidden="true"> · </span>
+                                  <span className={isUnavailable ? "link-problem" : "link-note"}>
+                                    {isUnavailable ? "Link unavailable" : "Link not fully verified"}
+                                  </span>
+                                </>
+                              ) : null}
+                            </p>
+                            {item.evidence && needsAttention ? (
+                              <details>
+                                <summary>Link details</summary>
+                                <span>{item.evidence}</span>
+                              </details>
+                            ) : null}
+                          </div>
+                          <div className="reading-actions">
+                            {link && !isUnavailable ? (
+                              <a
+                                className="open-reading"
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`Open ${item.title}`}
+                              >
+                                Open
+                                <ArrowUpRight aria-hidden="true" size={15} strokeWidth={1.9} />
+                              </a>
+                            ) : null}
+                            <Select
+                              aria-label={`Reading status: ${item.title}`}
+                              options={statusOptions}
+                              value={item.progress ?? "none"}
+                              disabled={itemIsUpdating}
+                              onValueChange={(value) =>
+                                setProgress(
+                                  item,
+                                  value === "none" ? null : (value as ReadingStatus),
+                                )
+                              }
+                            />
+                          </div>
+                        </article>
+                      );
+                    })}
                   </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.author || "Author not listed"}</p>
-                  {item.evidence && item.link_status !== "verified" && (
-                    <details>
-                      <summary>Link note</summary>
-                      <span>{item.evidence}</span>
-                    </details>
-                  )}
-                </div>
-                <div className="reading-actions">
-                  {!["broken", "mismatch", "content_mismatch"].includes(item.link_status) &&
-                  (item.resolved_url || item.original_url) ? (
-                    <a
-                      className="open-link"
-                      href={item.resolved_url || item.original_url || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Open ${item.title}`}
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  ) : (
-                    <span className="missing-link">No link</span>
-                  )}
-                  <select
-                    className="status-select"
-                    value={item.progress || ""}
-                    onChange={(e) => update(item, e.target.value || null)}
-                    aria-label={`Reading status: ${item.title}`}
-                  >
-                    <option value="">No status</option>
-                    <option value="want_to_read">Save for later</option>
-                    <option value="reading">Reading</option>
-                    <option value="read">Read</option>
-                  </select>
-                  <button
-                    className={cx("read-toggle", item.progress === "read" && "is-read")}
-                    onClick={() => update(item, item.progress === "read" ? null : "read")}
-                    title={item.progress === "read" ? "Mark unread" : "Mark read"}
-                    aria-label={`${item.progress === "read" ? "Mark unread" : "Mark read"}: ${item.title}`}
-                  >
-                    <Check size={18} />
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
+                </section>
+              ))}
+            </div>
+          )}
+
           {pageCount > 1 && (
             <nav className="pagination" aria-label="Catalog pages">
               <Button
-                variant="outline"
+                variant="secondary"
                 size="small"
                 disabled={page === 1}
-                onClick={() => setPage(page - 1)}
+                onClick={() => setPage((current) => current - 1)}
               >
-                <ChevronLeft size={16} /> Previous
+                <ChevronLeft aria-hidden="true" data-icon="inline-start" /> Previous
               </Button>
               <span>
-                Page {page} of {pageCount}
+                {page} of {pageCount}
               </span>
               <Button
-                variant="outline"
+                variant="secondary"
                 size="small"
                 disabled={page >= pageCount}
-                onClick={() => setPage(page + 1)}
+                onClick={() => setPage((current) => current + 1)}
               >
-                Next <ChevronRight size={16} />
+                Next <ChevronRight aria-hidden="true" data-icon="inline-end" />
               </Button>
             </nav>
           )}
@@ -328,4 +366,10 @@ function App() {
   );
 }
 
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
+  </React.StrictMode>,
+);

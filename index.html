@@ -2,81 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
     <meta
       name="description"
       content="One thousand evenings of stories, poems, and essays. Explore the reading program and keep your place."
     />
-    <title>A Thousand Nights · A reading journey</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="theme-color" content="#f5f5f7" />
+    <title>A Thousand Nights · Read slowly</title>
+    <link rel="stylesheet" href="/src/coherent.css" />
   </head>
   <body class="landing">
-    <header class="site-header shell">
-      <a class="wordmark" href="/">✦ <span>A Thousand Nights</span></a>
-      <nav>
-        <a href="#about">The journey</a
-        ><a class="nav-cta" href="/app/">Enter the library <span>↗</span></a>
-      </nav>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <nav aria-label="Primary navigation">
+          <a href="#about">How it works</a>
+          <a href="/api/auth/github">Sign in</a>
+          <a class="nav-cta" href="/app/">Reading list</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero shell">
         <div class="hero-copy">
-          <p class="eyebrow">An invitation to read slowly</p>
-          <h1>There are worlds<br />waiting after <em>dark.</em></h1>
-          <p class="hero-sub">
-            A story, a poem, and an essay for each of a thousand nights. Follow the original reading
-            program, discover the works, and keep your place along the way.
-          </p>
-          <a class="button button-gold" href="/app/">Begin your first night <span>→</span></a>
-          <p class="hero-note">3,000 readings · 1,000 nights · one quiet ritual</p>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit-a"></div>
-          <div class="orbit orbit-b"></div>
-          <div class="moon"></div>
-          <div class="star star-a">✦</div>
-          <div class="star star-b">✧</div>
-          <div class="star star-c">✶</div>
-          <div class="book">
-            <div class="book-title">A THOUSAND<br />NIGHTS</div>
-            <div class="book-rule"></div>
-            <div class="book-mark">✦</div>
-            <div class="book-sub">A READING PROGRAM</div>
+          <div class="landing-reveal landing-reveal-copy">
+            <h1>Read one good thing tonight.</h1>
           </div>
-          <div class="pedestal"></div>
+          <div class="landing-reveal landing-reveal-copy">
+            <p class="hero-sub">
+              A story, a poem, and an essay for each of a thousand nights. Choose a piece, open the
+              original source, and keep your place.
+            </p>
+          </div>
+          <div class="landing-reveal landing-reveal-action">
+            <a class="button button-primary" href="/app/">Browse readings <span>↗</span></a>
+          </div>
+          <div class="landing-reveal landing-reveal-action">
+            <p class="hero-note">3,000 readings across 1,000 nights</p>
+          </div>
+        </div>
+        <div class="landing-reveal landing-reveal-preview">
+          <div class="library-preview" aria-label="A preview of night one">
+            <div class="preview-heading">
+              <strong>Night 1</strong>
+              <span>3 readings</span>
+            </div>
+            <div class="preview-list">
+              <div class="preview-reading">
+                <div><strong>The Duel</strong><span>Short story · Anton Chekhov</span></div>
+                <span class="preview-action">Open ↗</span>
+              </div>
+              <div class="preview-reading">
+                <div><strong>The Song of Songs</strong><span>Poem · KJV</span></div>
+                <span class="preview-action">Open ↗</span>
+              </div>
+              <div class="preview-reading">
+                <div><strong>Good Bad Books</strong><span>Essay · George Orwell</span></div>
+                <span class="preview-action">Open ↗</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="invitation" id="about">
         <div class="shell invitation-grid">
-          <div>
-            <p class="eyebrow">A small ceremony</p>
-            <h2>Make room for<br /><em>the next page.</em></h2>
-          </div>
+          <h2>Three readings.<br />No pressure.</h2>
           <div class="invitation-text">
             <p>
-              Every night brings three doors: a short story, a poem, and an essay. Open one or all
-              three. The pace is yours.
+              Each night has a short story, a poem, and an essay. Read one or read all three. There
+              is no streak to protect and no pace to keep.
             </p>
             <p>
-              The library points to works hosted elsewhere. Your shelf holds only the links you
-              choose and the progress you record.
+              The library points to works hosted by publishers and public archives. Your shelf
+              stores only the progress you choose to record.
             </p>
-            <a href="/app/">Explore the reading list <span>→</span></a>
+            <a href="/app/">Explore the reading list <span>↗</span></a>
           </div>
         </div>
       </section>
       <section class="closing shell">
-        <span class="ornament">✦</span>
-        <p>Open a book. Stay a while.</p>
-        <a class="button button-outline" href="/app/">Find your next read <span>→</span></a>
+        <p>What will you read tonight?</p>
+        <a class="button button-primary" href="/app/">Find your next read</a>
       </section>
     </main>
-    <footer class="shell"><span>A Thousand Nights</span><span>Read at your own pace.</span></footer>
   </body>
 </html>
