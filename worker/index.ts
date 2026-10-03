@@ -62,6 +62,23 @@ async function catalog(request: Request, env: Env) {
   return respond({ items: rows.results, total: count?.total ?? 0, page, pageSize: 30 });
 }
 
+async function readingBySlug(request: Request, env: Env) {
+  const url = new URL(request.url);
+  const authorSlug = url.searchParams.get("author") ?? "";
+  const titleSlug = url.searchParams.get("title") ?? "";
+  const validSlug = /^[a-z0-9](?:[a-z0-9-]{0,198}[a-z0-9])?$/;
+  if (!validSlug.test(authorSlug) || !validSlug.test(titleSlug))
+    return respond({ error: "Invalid reading path." }, 400);
+
+  const current = await reader(request, env);
+  const match = await env.DB.prepare(
+    `SELECT readings.*, ${current ? "progress.status" : "NULL"} AS progress FROM readings ${current ? "LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?" : ""} WHERE readings.author_slug = ? AND readings.title_slug = ? ORDER BY night, position LIMIT 1`,
+  )
+    .bind(...(current ? [current.id] : []), authorSlug, titleSlug)
+    .first<Record<string, unknown>>();
+  return match ? respond(match) : respond({ error: "Reading not found." }, 404);
+}
+
 async function profile(request: Request, env: Env) {
   const current = await reader(request, env);
   if (!current)
@@ -206,6 +223,8 @@ export default {
     try {
       if (url.pathname === "/api/readings" && request.method === "GET")
         return catalog(request, env);
+      if (url.pathname === "/api/reading" && request.method === "GET")
+        return readingBySlug(request, env);
       if (url.pathname === "/api/profile" && request.method === "GET") return profile(request, env);
       if (url.pathname === "/api/progress" && request.method === "POST")
         return progress(request, env);
@@ -226,7 +245,11 @@ export default {
         return response;
       }
       if (url.pathname.startsWith("/api/")) return respond({ error: "Not found." }, 404);
-      if (url.pathname === "/app" || url.pathname.startsWith("/app/"))
+      if (
+        url.pathname === "/app" ||
+        url.pathname.startsWith("/app/") ||
+        url.pathname.startsWith("/read/")
+      )
         return env.ASSETS.fetch(new URL("/app/index.html", request.url));
       return env.ASSETS.fetch(request);
     } catch (error) {

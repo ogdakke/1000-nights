@@ -11,6 +11,8 @@ A reading program with external links, search, and private reading progress. The
 
 The audited input is `data/catalog.json`. Run `pnpm import:sql` to generate `data/catalog.sql`, then `pnpm import:local` or `pnpm import:remote` to load it.
 
+Image provenance, scripts, and the work-slug database contract are in [data/IMAGE_SOURCES.md](data/IMAGE_SOURCES.md).
+
 ## Deploy
 
 The D1 database is bound in `cloudflare.config.ts`, and the site is deployed at [thousand-nights.dwe.workers.dev](https://thousand-nights.dwe.workers.dev/). Apply migrations with `pnpm db:remote`, then import with `pnpm import:remote` when updating the catalog. Deploy with `pnpm deploy`.

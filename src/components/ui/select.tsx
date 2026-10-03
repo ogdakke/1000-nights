@@ -32,18 +32,20 @@ export function Select({ options, value, onValueChange, disabled, ...props }: Se
         <SelectPrimitive.Positioner className="select-positioner" sideOffset={6}>
           <SelectPrimitive.Popup className="select-popup">
             <SelectPrimitive.List>
-              {options.map((option) => (
-                <SelectPrimitive.Item
-                  className="select-item"
-                  key={option.value}
-                  value={option.value}
-                >
-                  <SelectPrimitive.ItemText>{option.label}</SelectPrimitive.ItemText>
-                  <SelectPrimitive.ItemIndicator className="select-indicator">
-                    <Check aria-hidden="true" size={14} strokeWidth={2.5} />
-                  </SelectPrimitive.ItemIndicator>
-                </SelectPrimitive.Item>
-              ))}
+              <SelectPrimitive.Group>
+                {options.map((option) => (
+                  <SelectPrimitive.Item
+                    className="select-item"
+                    key={option.value}
+                    value={option.value}
+                  >
+                    <SelectPrimitive.ItemText>{option.label}</SelectPrimitive.ItemText>
+                    <SelectPrimitive.ItemIndicator className="select-indicator">
+                      <Check aria-hidden="true" size={14} strokeWidth={2.5} />
+                    </SelectPrimitive.ItemIndicator>
+                  </SelectPrimitive.Item>
+                ))}
+              </SelectPrimitive.Group>
             </SelectPrimitive.List>
           </SelectPrimitive.Popup>
         </SelectPrimitive.Positioner>

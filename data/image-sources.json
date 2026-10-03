@@ -1,0 +1,1871 @@
+{
+  "10": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10",
+    "source_image": "https://www.gutenberg.org/cache/epub/10/pg10.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10.jpg",
+    "title": "The King James Version of the Bible",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "13": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/13",
+    "source_image": "https://www.gutenberg.org/cache/epub/13/pg13.cover.medium.jpg",
+    "image_url": "/images/gutenberg-13.jpg",
+    "title": "The Hunting of the Snark: An Agony in Eight Fits",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "19": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/19",
+    "source_image": "https://www.gutenberg.org/cache/epub/19/pg19.cover.medium.jpg",
+    "image_url": "/images/gutenberg-19.jpg",
+    "title": "The Song of Hiawatha",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "21": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/21",
+    "source_image": "https://www.gutenberg.org/cache/epub/21/pg21.cover.medium.jpg",
+    "image_url": "/images/gutenberg-21.jpg",
+    "title": "Three hundred Aesop’s fables\r\nTranslated by George Fyler Townsend",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "26": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/26",
+    "source_image": "https://www.gutenberg.org/cache/epub/26/pg26.cover.medium.jpg",
+    "image_url": "/images/gutenberg-26.jpg",
+    "title": "Paradise Lost",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "35": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/35",
+    "source_image": "https://www.gutenberg.org/cache/epub/35/pg35.cover.medium.jpg",
+    "image_url": "/images/gutenberg-35.jpg",
+    "title": "The Time Machine",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "36": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/36",
+    "source_image": "https://www.gutenberg.org/cache/epub/36/pg36.cover.medium.jpg",
+    "image_url": "/images/gutenberg-36.jpg",
+    "title": "The war of the worlds",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "41": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/41",
+    "source_image": "https://www.gutenberg.org/cache/epub/41/pg41.cover.medium.jpg",
+    "image_url": "/images/gutenberg-41.jpg",
+    "title": "The Legend of Sleepy Hollow",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "43": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/43",
+    "source_image": "https://www.gutenberg.org/cache/epub/43/pg43.cover.medium.jpg",
+    "image_url": "/images/gutenberg-43.jpg",
+    "title": "The strange case of Dr. Jekyll and Mr. Hyde",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "46": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/46",
+    "source_image": "https://www.gutenberg.org/cache/epub/46/pg46.cover.medium.jpg",
+    "image_url": "/images/gutenberg-46.jpg",
+    "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "59": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/59",
+    "source_image": "https://www.gutenberg.org/cache/epub/59/pg59.cover.medium.jpg",
+    "image_url": "/images/gutenberg-59.jpg",
+    "title": "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "71": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/71",
+    "source_image": "https://www.gutenberg.org/cache/epub/71/pg71.cover.medium.jpg",
+    "image_url": "/images/gutenberg-71.jpg",
+    "title": "On the Duty of Civil Disobedience",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "97": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/97",
+    "source_image": "https://www.gutenberg.org/cache/epub/97/pg97.cover.medium.jpg",
+    "image_url": "/images/gutenberg-97.jpg",
+    "title": "Flatland: A Romance of Many Dimensions",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "100": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/100",
+    "source_image": "https://www.gutenberg.org/cache/epub/100/pg100.cover.medium.jpg",
+    "image_url": "/images/gutenberg-100.jpg",
+    "title": "The Complete Works of William Shakespeare",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "108": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/108",
+    "source_image": "https://www.gutenberg.org/cache/epub/108/pg108.cover.medium.jpg",
+    "image_url": "/images/gutenberg-108.jpg",
+    "title": "The Return of Sherlock Holmes",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "113": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/113",
+    "source_image": "https://www.gutenberg.org/cache/epub/113/pg113.cover.medium.jpg",
+    "image_url": "/images/gutenberg-113.jpg",
+    "title": "The Secret Garden",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "123": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/123",
+    "source_image": "https://www.gutenberg.org/cache/epub/123/pg123.cover.medium.jpg",
+    "image_url": "/images/gutenberg-123.jpg",
+    "title": "At the Earth's Core",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "131": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/131",
+    "source_image": "https://www.gutenberg.org/cache/epub/131/pg131.cover.medium.jpg",
+    "image_url": "/images/gutenberg-131.jpg",
+    "title": "The Pilgrim's Progress from this world to that which is to come\r\nDelivered under the similitude of a dream, by John Bunyan",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "146": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/146",
+    "source_image": "https://www.gutenberg.org/cache/epub/146/pg146.cover.medium.jpg",
+    "image_url": "/images/gutenberg-146.jpg",
+    "title": "A Little Princess\r\nBeing the whole story of Sara Crewe now told for the first time",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "147": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/147",
+    "source_image": "https://www.gutenberg.org/cache/epub/147/pg147.cover.medium.jpg",
+    "image_url": "/images/gutenberg-147.jpg",
+    "title": "Common Sense",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "160": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/160",
+    "source_image": "https://www.gutenberg.org/cache/epub/160/pg160.cover.medium.jpg",
+    "image_url": "/images/gutenberg-160.jpg",
+    "title": "The Awakening, and Selected Short Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "205": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/205",
+    "source_image": "https://www.gutenberg.org/cache/epub/205/pg205.cover.medium.jpg",
+    "image_url": "/images/gutenberg-205.jpg",
+    "title": "Walden, and On The Duty Of Civil Disobedience",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "216": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/216",
+    "source_image": "https://www.gutenberg.org/cache/epub/216/pg216.cover.medium.jpg",
+    "image_url": "/images/gutenberg-216.jpg",
+    "title": "The Tao Teh King, or the Tao and its Characteristics",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "220": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/220",
+    "source_image": "https://www.gutenberg.org/cache/epub/220/pg220.cover.medium.jpg",
+    "image_url": "/images/gutenberg-220.jpg",
+    "title": "The Secret Sharer",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "228": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/228",
+    "source_image": "https://www.gutenberg.org/cache/epub/228/pg228.cover.medium.jpg",
+    "image_url": "/images/gutenberg-228.jpg",
+    "title": "The Aeneid",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "236": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/236",
+    "source_image": "https://www.gutenberg.org/cache/epub/236/pg236.cover.medium.jpg",
+    "image_url": "/images/gutenberg-236.jpg",
+    "title": "The Jungle Book",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "246": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/246",
+    "source_image": "https://www.gutenberg.org/cache/epub/246/pg246.cover.medium.jpg",
+    "image_url": "/images/gutenberg-246.jpg",
+    "title": "The Rubaiyat of Omar Khayyam",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "373": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/373",
+    "source_image": "https://www.gutenberg.org/cache/epub/373/pg373.cover.medium.jpg",
+    "image_url": "/images/gutenberg-373.jpg",
+    "title": "Lay Morals, and Other Papers",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "375": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/375",
+    "source_image": "https://www.gutenberg.org/cache/epub/375/pg375.cover.medium.jpg",
+    "image_url": "/images/gutenberg-375.jpg",
+    "title": "An Occurrence at Owl Creek Bridge",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "386": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/386",
+    "source_image": "https://www.gutenberg.org/cache/epub/386/pg386.cover.medium.jpg",
+    "image_url": "/images/gutenberg-386.jpg",
+    "title": "Virginibus Puerisque, and Other Papers",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "389": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/389",
+    "source_image": "https://www.gutenberg.org/cache/epub/389/pg389.cover.medium.jpg",
+    "image_url": "/images/gutenberg-389.jpg",
+    "title": "The Great God Pan",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "391": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/391",
+    "source_image": "https://www.gutenberg.org/cache/epub/391/pg391.cover.medium.jpg",
+    "image_url": "/images/gutenberg-391.jpg",
+    "title": "The Song of Roland",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "396": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/396",
+    "source_image": "https://www.gutenberg.org/cache/epub/396/pg396.cover.medium.jpg",
+    "image_url": "/images/gutenberg-396.jpg",
+    "title": "The Lady, or the Tiger?",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "470": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/470",
+    "source_image": "https://www.gutenberg.org/cache/epub/470/pg470.cover.medium.jpg",
+    "image_url": "/images/gutenberg-470.jpg",
+    "title": "Heretics",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "512": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/512",
+    "source_image": "https://www.gutenberg.org/cache/epub/512/pg512.cover.medium.jpg",
+    "image_url": "/images/gutenberg-512.jpg",
+    "title": "Mosses from an old manse",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "525": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/525",
+    "source_image": "https://www.gutenberg.org/cache/epub/525/pg525.cover.medium.jpg",
+    "image_url": "/images/gutenberg-525.jpg",
+    "title": "Youth, a Narrative",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "575": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/575",
+    "source_image": "https://www.gutenberg.org/cache/epub/575/pg575.cover.medium.jpg",
+    "image_url": "/images/gutenberg-575.jpg",
+    "title": "The Essays or Counsels, Civil and Moral",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "608": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/608",
+    "source_image": "https://www.gutenberg.org/cache/epub/608/pg608.cover.medium.jpg",
+    "image_url": "/images/gutenberg-608.jpg",
+    "title": "Areopagitica\r\nA Speech for the Liberty of Unlicensed Printing to the Parliament of England",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "610": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/610",
+    "source_image": "https://www.gutenberg.org/cache/epub/610/pg610.cover.medium.jpg",
+    "image_url": "/images/gutenberg-610.jpg",
+    "title": "Idylls of the King",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "654": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/654",
+    "source_image": "https://www.gutenberg.org/cache/epub/654/pg654.cover.medium.jpg",
+    "image_url": "/images/gutenberg-654.jpg",
+    "title": "Grace Abounding to the Chief of Sinners",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "674": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/674",
+    "source_image": "https://www.gutenberg.org/cache/epub/674/pg674.cover.medium.jpg",
+    "image_url": "/images/gutenberg-674.jpg",
+    "title": "Plutarch: Lives of the noble Grecians and Romans",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "773": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/773",
+    "source_image": "https://www.gutenberg.org/cache/epub/773/pg773.cover.medium.jpg",
+    "image_url": "/images/gutenberg-773.jpg",
+    "title": "Lord Arthur Savile's Crime; The Portrait of Mr. W.H., and Other Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "815": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/815",
+    "source_image": "https://www.gutenberg.org/cache/epub/815/pg815.cover.medium.jpg",
+    "image_url": "/images/gutenberg-815.jpg",
+    "title": "Democracy in America — Volume 1",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "834": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/834",
+    "source_image": "https://www.gutenberg.org/cache/epub/834/pg834.cover.medium.jpg",
+    "image_url": "/images/gutenberg-834.jpg",
+    "title": "The Memoirs of Sherlock Holmes",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "902": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/902",
+    "source_image": "https://www.gutenberg.org/cache/epub/902/pg902.cover.medium.jpg",
+    "image_url": "/images/gutenberg-902.jpg",
+    "title": "The Happy Prince, and Other Tales",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "910": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/910",
+    "source_image": "https://www.gutenberg.org/cache/epub/910/pg910.cover.medium.jpg",
+    "image_url": "/images/gutenberg-910.jpg",
+    "title": "White Fang",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "944": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/944",
+    "source_image": "https://www.gutenberg.org/cache/epub/944/pg944.cover.medium.jpg",
+    "image_url": "/images/gutenberg-944.jpg",
+    "title": "The Voyage of the Beagle",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "981": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/981",
+    "source_image": "https://www.gutenberg.org/cache/epub/981/pg981.cover.medium.jpg",
+    "image_url": "/images/gutenberg-981.jpg",
+    "title": "Beowulf",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "986": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/986",
+    "source_image": "https://www.gutenberg.org/cache/epub/986/pg986.cover.medium.jpg",
+    "image_url": "/images/gutenberg-986.jpg",
+    "title": "Master and Man",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1001": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1001",
+    "source_image": "https://www.gutenberg.org/cache/epub/1001/pg1001.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1001.jpg",
+    "title": "Divine Comedy, Longfellow's Translation, Hell",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1004": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1004",
+    "source_image": "https://www.gutenberg.org/cache/epub/1004/pg1004.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1004.jpg",
+    "title": "Divine Comedy, Longfellow's Translation, Complete",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1007": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1007",
+    "source_image": "https://www.gutenberg.org/cache/epub/1007/pg1007.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1007.jpg",
+    "title": "Divine Comedy, Cary's Translation, Paradise",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1015": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1015",
+    "source_image": "https://www.gutenberg.org/cache/epub/1015/pg1015.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1015.jpg",
+    "title": "The Oregon Trail: Sketches of Prairie and Rocky-Mountain Life",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1022": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1022",
+    "source_image": "https://www.gutenberg.org/cache/epub/1022/pg1022.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1022.jpg",
+    "title": "Walking",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1041": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1041",
+    "source_image": "https://www.gutenberg.org/cache/epub/1041/pg1041.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1041.jpg",
+    "title": "Shakespeare's Sonnets",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1045": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1045",
+    "source_image": "https://www.gutenberg.org/cache/epub/1045/pg1045.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1045.jpg",
+    "title": "Venus and Adonis",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1170": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1170",
+    "source_image": "https://www.gutenberg.org/cache/epub/1170/pg1170.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1170.jpg",
+    "title": "Anabasis",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1228": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1228",
+    "source_image": "https://www.gutenberg.org/cache/epub/1228/pg1228.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1228.jpg",
+    "title": "On the Origin of Species By Means of Natural Selection\r\nOr, the Preservation of Favoured Races in the Struggle for Life",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1232": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1232",
+    "source_image": "https://www.gutenberg.org/cache/epub/1232/pg1232.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1232.jpg",
+    "title": "The Prince",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1270": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1270",
+    "source_image": "https://www.gutenberg.org/cache/epub/1270/pg1270.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1270.jpg",
+    "title": "In Defense of Women",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1279": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1279",
+    "source_image": "https://www.gutenberg.org/cache/epub/1279/pg1279.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1279.jpg",
+    "title": "Poems and Songs of Robert Burns",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1293": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1293",
+    "source_image": "https://www.gutenberg.org/cache/epub/1293/pg1293.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1293.jpg",
+    "title": "Sesame and Lilies",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1322": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1322",
+    "source_image": "https://www.gutenberg.org/cache/epub/1322/pg1322.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1322.jpg",
+    "title": "Leaves of Grass",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1404": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1404",
+    "source_image": "https://www.gutenberg.org/cache/epub/1404/pg1404.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1404.jpg",
+    "title": "The Federalist Papers",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1408": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1408",
+    "source_image": "https://www.gutenberg.org/cache/epub/1408/pg1408.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1408.jpg",
+    "title": "The Natural History of Selborne",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1429": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1429",
+    "source_image": "https://www.gutenberg.org/cache/epub/1429/pg1429.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1429.jpg",
+    "title": "The Garden Party, and Other Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1467": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1467",
+    "source_image": "https://www.gutenberg.org/cache/epub/1467/pg1467.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1467.jpg",
+    "title": "Some Christmas Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1477": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1477",
+    "source_image": "https://www.gutenberg.org/cache/epub/1477/pg1477.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1477.jpg",
+    "title": "The Toys of Peace, and Other Papers",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1497": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1497",
+    "source_image": "https://www.gutenberg.org/cache/epub/1497/pg1497.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1497.jpg",
+    "title": "The Republic",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1597": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1597",
+    "source_image": "https://www.gutenberg.org/cache/epub/1597/pg1597.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1597.jpg",
+    "title": "Andersen's Fairy Tales",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1600": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1600",
+    "source_image": "https://www.gutenberg.org/cache/epub/1600/pg1600.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1600.jpg",
+    "title": "Symposium",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1636": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1636",
+    "source_image": "https://www.gutenberg.org/cache/epub/1636/pg1636.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1636.jpg",
+    "title": "Phaedrus",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1656": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1656",
+    "source_image": "https://www.gutenberg.org/cache/epub/1656/pg1656.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1656.jpg",
+    "title": "Apology",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1658": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1658",
+    "source_image": "https://www.gutenberg.org/cache/epub/1658/pg1658.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1658.jpg",
+    "title": "Phaedo",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1661": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1661",
+    "source_image": "https://www.gutenberg.org/cache/epub/1661/pg1661.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1661.jpg",
+    "title": "The Adventures of Sherlock Holmes",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1719": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1719",
+    "source_image": "https://www.gutenberg.org/cache/epub/1719/pg1719.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1719.jpg",
+    "title": "The Ballad of the White Horse",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1727": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1727",
+    "source_image": "https://www.gutenberg.org/cache/epub/1727/pg1727.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1727.jpg",
+    "title": "The Odyssey\r\nRendered into English prose for the use of those who cannot read the original",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1858": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1858",
+    "source_image": "https://www.gutenberg.org/cache/epub/1858/pg1858.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1858.jpg",
+    "title": "Plain Tales from the Hills",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1952": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1952",
+    "source_image": "https://www.gutenberg.org/cache/epub/1952/pg1952.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1952.jpg",
+    "title": "The Yellow Wallpaper",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1962": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1962",
+    "source_image": "https://www.gutenberg.org/cache/epub/1962/pg1962.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1962.jpg",
+    "title": "A Defence of Poesie and Poems",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "1974": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/1974",
+    "source_image": "https://www.gutenberg.org/cache/epub/1974/pg1974.cover.medium.jpg",
+    "image_url": "/images/gutenberg-1974.jpg",
+    "title": "The Poetics of Aristotle",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2040": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2040",
+    "source_image": "https://www.gutenberg.org/cache/epub/2040/pg2040.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2040.jpg",
+    "title": "Confessions of an English Opium-Eater",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2130": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2130",
+    "source_image": "https://www.gutenberg.org/cache/epub/2130/pg2130.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2130.jpg",
+    "title": "Utopia",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2147": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2147",
+    "source_image": "https://www.gutenberg.org/cache/epub/2147/pg2147.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2147.jpg",
+    "title": "The Works of Edgar Allan Poe — Volume 1",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2148": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2148",
+    "source_image": "https://www.gutenberg.org/cache/epub/2148/pg2148.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2148.jpg",
+    "title": "The Works of Edgar Allan Poe — Volume 2",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2149": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2149",
+    "source_image": "https://www.gutenberg.org/cache/epub/2149/pg2149.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2149.jpg",
+    "title": "The Works of Edgar Allan Poe — Volume 3",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2150": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2150",
+    "source_image": "https://www.gutenberg.org/cache/epub/2150/pg2150.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2150.jpg",
+    "title": "The Works of Edgar Allan Poe — Volume 4",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2151": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2151",
+    "source_image": "https://www.gutenberg.org/cache/epub/2151/pg2151.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2151.jpg",
+    "title": "The Works of Edgar Allan Poe — Volume 5",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2176": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2176",
+    "source_image": "https://www.gutenberg.org/cache/epub/2176/pg2176.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2176.jpg",
+    "title": "Seven Discourses on Art",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2199": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2199",
+    "source_image": "https://www.gutenberg.org/cache/epub/2199/pg2199.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2199.jpg",
+    "title": "The Iliad",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2229": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2229",
+    "source_image": "https://www.gutenberg.org/cache/epub/2229/pg2229.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2229.jpg",
+    "title": "Faust: Der Tragödie erster Teil",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2272": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2272",
+    "source_image": "https://www.gutenberg.org/cache/epub/2272/pg2272.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2272.jpg",
+    "title": "The Discovery of Guiana",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2300": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2300",
+    "source_image": "https://www.gutenberg.org/cache/epub/2300/pg2300.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2300.jpg",
+    "title": "The Descent of Man, and Selection in Relation to Sex",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2332": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2332",
+    "source_image": "https://www.gutenberg.org/cache/epub/2332/pg2332.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2332.jpg",
+    "title": "Critical and Historical Essays — Volume 1",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2346": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2346",
+    "source_image": "https://www.gutenberg.org/cache/epub/2346/pg2346.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2346.jpg",
+    "title": "The Adventure of the Bruce-Partington Plans",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2383": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2383",
+    "source_image": "https://www.gutenberg.org/cache/epub/2383/pg2383.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2383.jpg",
+    "title": "The Canterbury Tales, and Other Poems",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2388": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2388",
+    "source_image": "https://www.gutenberg.org/cache/epub/2388/pg2388.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2388.jpg",
+    "title": "The Song Celestial; Or, Bhagavad-Gîtâ (from the Mahâbhârata)\r\nBeing a discourse between Arjuna, Prince of India, and the Supreme Being under the form of Krishna",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2428": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2428",
+    "source_image": "https://www.gutenberg.org/cache/epub/2428/pg2428.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2428.jpg",
+    "title": "An Essay on Man; Moral Essays and Satires",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2439": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2439",
+    "source_image": "https://www.gutenberg.org/cache/epub/2439/pg2439.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2439.jpg",
+    "title": "The History of England, from the Accession of James II — Volume 2",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2707": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2707",
+    "source_image": "https://www.gutenberg.org/cache/epub/2707/pg2707.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2707.jpg",
+    "title": "The History of Herodotus — Volume 1",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2776": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2776",
+    "source_image": "https://www.gutenberg.org/cache/epub/2776/pg2776.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2776.jpg",
+    "title": "The Four Million",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2777": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2777",
+    "source_image": "https://www.gutenberg.org/cache/epub/2777/pg2777.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2777.jpg",
+    "title": "Cabbages and Kings",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2814": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2814",
+    "source_image": "https://www.gutenberg.org/cache/epub/2814/pg2814.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2814.jpg",
+    "title": "Dubliners",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "2941": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/2941",
+    "source_image": "https://www.gutenberg.org/cache/epub/2941/pg2941.cover.medium.jpg",
+    "image_url": "/images/gutenberg-2941.jpg",
+    "title": "The Chinese Classics — Prolegomena",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3020": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3020",
+    "source_image": "https://www.gutenberg.org/cache/epub/3020/pg3020.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3020.jpg",
+    "title": "Table Talk: Essays on Men and Manners",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3090": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3090",
+    "source_image": "https://www.gutenberg.org/cache/epub/3090/pg3090.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3090.jpg",
+    "title": "Complete Original Short Stories of Guy De Maupassant",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3174": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3174",
+    "source_image": "https://www.gutenberg.org/cache/epub/3174/pg3174.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3174.jpg",
+    "title": "A Dog's Tale",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3177": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3177",
+    "source_image": "https://www.gutenberg.org/cache/epub/3177/pg3177.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3177.jpg",
+    "title": "Roughing It",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3178": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3178",
+    "source_image": "https://www.gutenberg.org/cache/epub/3178/pg3178.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3178.jpg",
+    "title": "The Gilded Age: A Tale of Today",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3180": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3180",
+    "source_image": "https://www.gutenberg.org/cache/epub/3180/pg3180.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3180.jpg",
+    "title": "A Double Barrelled Detective Story",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3207": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3207",
+    "source_image": "https://www.gutenberg.org/cache/epub/3207/pg3207.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3207.jpg",
+    "title": "Leviathan",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3251": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3251",
+    "source_image": "https://www.gutenberg.org/cache/epub/3251/pg3251.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3251.jpg",
+    "title": "The Man That Corrupted Hadleyburg, and Other Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3296": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3296",
+    "source_image": "https://www.gutenberg.org/cache/epub/3296/pg3296.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3296.jpg",
+    "title": "The Confessions of St. Augustine",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3300": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3300",
+    "source_image": "https://www.gutenberg.org/cache/epub/3300/pg3300.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3300.jpg",
+    "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3330": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3330",
+    "source_image": "https://www.gutenberg.org/cache/epub/3330/pg3330.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3330.jpg",
+    "title": "The Analects of Confucius (from the Chinese Classics)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3435": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3435",
+    "source_image": "https://www.gutenberg.org/cache/epub/3435/pg3435.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3435.jpg",
+    "title": "The Book of the Thousand Nights and a Night — Volume 01 (of 10)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3600": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3600",
+    "source_image": "https://www.gutenberg.org/cache/epub/3600/pg3600.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3600.jpg",
+    "title": "Essays of Michel de Montaigne — Complete",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3741": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3741",
+    "source_image": "https://www.gutenberg.org/cache/epub/3741/pg3741.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3741.jpg",
+    "title": "The Writings of Thomas Paine — Volume 1 (1774-1779): The American Crisis",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "3800": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/3800",
+    "source_image": "https://www.gutenberg.org/cache/epub/3800/pg3800.cover.medium.jpg",
+    "image_url": "/images/gutenberg-3800.jpg",
+    "title": "Ethics",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4212": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4212",
+    "source_image": "https://www.gutenberg.org/cache/epub/4212/pg4212.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4212.jpg",
+    "title": "Culture and Anarchy",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4239": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4239",
+    "source_image": "https://www.gutenberg.org/cache/epub/4239/pg4239.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4239.jpg",
+    "title": "An Essay on the Principle of Population",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4280": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4280",
+    "source_image": "https://www.gutenberg.org/cache/epub/4280/pg4280.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4280.jpg",
+    "title": "The Critique of Pure Reason",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4517": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4517",
+    "source_image": "https://www.gutenberg.org/cache/epub/4517/pg4517.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4517.jpg",
+    "title": "Ethan Frome",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4705": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4705",
+    "source_image": "https://www.gutenberg.org/cache/epub/4705/pg4705.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4705.jpg",
+    "title": "A Treatise of Human Nature",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4800": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4800",
+    "source_image": "https://www.gutenberg.org/cache/epub/4800/pg4800.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4800.jpg",
+    "title": "The Complete Poetical Works of Percy Bysshe Shelley — Complete",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "4943": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/4943",
+    "source_image": "https://www.gutenberg.org/cache/epub/4943/pg4943.cover.medium.jpg",
+    "image_url": "/images/gutenberg-4943.jpg",
+    "title": "The River War: An Account of the Reconquest of the Sudan",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5001": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5001",
+    "source_image": "https://www.gutenberg.org/cache/epub/5001/pg5001.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5001.jpg",
+    "title": "Relativity : the Special and General Theory",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5131": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5131",
+    "source_image": "https://www.gutenberg.org/cache/epub/5131/pg5131.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5131.jpg",
+    "title": "Childe Harold's Pilgrimage",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5230": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5230",
+    "source_image": "https://www.gutenberg.org/cache/epub/5230/pg5230.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5230.jpg",
+    "title": "The Invisible Man: A Grotesque Romance",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5314": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5314",
+    "source_image": "https://www.gutenberg.org/cache/epub/5314/pg5314.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5314.jpg",
+    "title": "Household Tales by Brothers Grimm",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5428": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5428",
+    "source_image": "https://www.gutenberg.org/cache/epub/5428/pg5428.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5428.jpg",
+    "title": "A Defence of Poetry and Other Essays",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5429": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5429",
+    "source_image": "https://www.gutenberg.org/cache/epub/5429/pg5429.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5429.jpg",
+    "title": "Preface to Shakespeare",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "5682": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/5682",
+    "source_image": "https://www.gutenberg.org/cache/epub/5682/pg5682.cover.medium.jpg",
+    "image_url": "/images/gutenberg-5682.jpg",
+    "title": "Fundamental Principles of the Metaphysic of Morals",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "6081": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/6081",
+    "source_image": "https://www.gutenberg.org/cache/epub/6081/pg6081.cover.medium.jpg",
+    "image_url": "/images/gutenberg-6081.jpg",
+    "title": "Biographia Literaria",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "6695": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/6695",
+    "source_image": "https://www.gutenberg.org/cache/epub/6695/pg6695.cover.medium.jpg",
+    "image_url": "/images/gutenberg-6695.jpg",
+    "title": "Tales of the Jazz Age",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "6762": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/6762",
+    "source_image": "https://www.gutenberg.org/cache/epub/6762/pg6762.cover.medium.jpg",
+    "image_url": "/images/gutenberg-6762.jpg",
+    "title": "Politics: A Treatise on Government",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "6797": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/6797",
+    "source_image": "https://www.gutenberg.org/cache/epub/6797/pg6797.cover.medium.jpg",
+    "image_url": "/images/gutenberg-6797.jpg",
+    "title": "The Poems of Schiller — Suppressed poems",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "7142": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/7142",
+    "source_image": "https://www.gutenberg.org/cache/epub/7142/pg7142.cover.medium.jpg",
+    "image_url": "/images/gutenberg-7142.jpg",
+    "title": "The History of the Peloponnesian War",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "7370": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/7370",
+    "source_image": "https://www.gutenberg.org/cache/epub/7370/pg7370.cover.medium.jpg",
+    "image_url": "/images/gutenberg-7370.jpg",
+    "title": "Second Treatise of Government",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "7409": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/7409",
+    "source_image": "https://www.gutenberg.org/cache/epub/7409/pg7409.cover.medium.jpg",
+    "image_url": "/images/gutenberg-7409.jpg",
+    "title": "An Essay on Criticism",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "7524": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/7524",
+    "source_image": "https://www.gutenberg.org/cache/epub/7524/pg7524.cover.medium.jpg",
+    "image_url": "/images/gutenberg-7524.jpg",
+    "title": "The Germany and the Agricola of Tacitus",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "8147": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/8147",
+    "source_image": "https://www.gutenberg.org/cache/epub/8147/pg8147.cover.medium.jpg",
+    "image_url": "/images/gutenberg-8147.jpg",
+    "title": "The Man Who Would Be King",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "8438": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/8438",
+    "source_image": "https://www.gutenberg.org/cache/epub/8438/pg8438.cover.medium.jpg",
+    "image_url": "/images/gutenberg-8438.jpg",
+    "title": "The Nicomachean ethics of Aristotle",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "9404": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/9404",
+    "source_image": "https://www.gutenberg.org/cache/epub/9404/pg9404.cover.medium.jpg",
+    "image_url": "/images/gutenberg-9404.jpg",
+    "title": "The Story of the Malakand Field Force: An Episode of Frontier War",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "9622": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/9622",
+    "source_image": "https://www.gutenberg.org/cache/epub/9622/pg9622.cover.medium.jpg",
+    "image_url": "/images/gutenberg-9622.jpg",
+    "title": "Lyrical Ballads, With a Few Other Poems (1798)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "9662": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/9662",
+    "source_image": "https://www.gutenberg.org/cache/epub/9662/pg9662.cover.medium.jpg",
+    "image_url": "/images/gutenberg-9662.jpg",
+    "title": "An Enquiry Concerning Human Understanding",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "9741": {
+    "status": "rights_review",
+    "source_page": "https://www.gutenberg.org/ebooks/9741",
+    "title": "The Uncommercial Traveller",
+    "rights": "Copyrighted. Read the copyright notice inside this book for details."
+  },
+  "9800": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/9800",
+    "source_image": "https://www.gutenberg.org/cache/epub/9800/pg9800.cover.medium.jpg",
+    "image_url": "/images/gutenberg-9800.jpg",
+    "title": "The Rape of the Lock, and Other Poems",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10343": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10343",
+    "source_image": "https://www.gutenberg.org/cache/epub/10343/pg10343.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10343.jpg",
+    "title": "The Works of Charles and Mary Lamb — Volume 2\r\nElia and The Last Essays of Elia",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10615": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10615",
+    "source_image": "https://www.gutenberg.org/cache/epub/10615/pg10615.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10615.jpg",
+    "title": "An Essay Concerning Humane Understanding, Volume 1\r\nMDCXC, Based on the 2nd Edition, Books 1 and 2",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10657": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10657",
+    "source_image": "https://www.gutenberg.org/cache/epub/10657/pg10657.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10657.jpg",
+    "title": "\"De Bello Gallico\" and Other Commentaries",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10661": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10661",
+    "source_image": "https://www.gutenberg.org/cache/epub/10661/pg10661.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10661.jpg",
+    "title": "A Selection from the Discourses of Epictetus with the Encheiridion",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10708": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10708",
+    "source_image": "https://www.gutenberg.org/cache/epub/10708/pg10708.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10708.jpg",
+    "title": "Miscellaneous Essays",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "10827": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/10827",
+    "source_image": "https://www.gutenberg.org/cache/epub/10827/pg10827.cover.medium.jpg",
+    "image_url": "/images/gutenberg-10827.jpg",
+    "title": "Discourses on the First Decade of Titus Livius",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11101": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11101",
+    "source_image": "https://www.gutenberg.org/cache/epub/11101/pg11101.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11101.jpg",
+    "title": "Coleridge's Ancient Mariner and Select Poems",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11224": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11224",
+    "source_image": "https://www.gutenberg.org/cache/epub/11224/pg11224.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11224.jpg",
+    "title": "Utilitarianism",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11231": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11231",
+    "source_image": "https://www.gutenberg.org/cache/epub/11231/pg11231.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11231.jpg",
+    "title": "Bartleby, the Scrivener: A Story of Wall-Street",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11438": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11438",
+    "source_image": "https://www.gutenberg.org/cache/epub/11438/pg11438.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11438.jpg",
+    "title": "The Willows",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11505": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11505",
+    "source_image": "https://www.gutenberg.org/cache/epub/11505/pg11505.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11505.jpg",
+    "title": "All Things Considered",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "11870": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/11870",
+    "source_image": "https://www.gutenberg.org/cache/epub/11870/pg11870.cover.medium.jpg",
+    "image_url": "/images/gutenberg-11870.jpg",
+    "title": "The Country of the Blind, and Other Stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12030": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12030",
+    "source_image": "https://www.gutenberg.org/cache/epub/12030/pg12030.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12030.jpg",
+    "title": "The Spectator, Volumes 1, 2 and 3\nWith Translations and Index for the Series",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12122": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12122",
+    "source_image": "https://www.gutenberg.org/cache/epub/12122/pg12122.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12122.jpg",
+    "title": "The Monkey's Paw\nThe Lady of the Barge and Others, Part 2.",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12242": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12242",
+    "source_image": "https://www.gutenberg.org/cache/epub/12242/pg12242.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12242.jpg",
+    "title": "Poems by Emily Dickinson, Three Series, Complete",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12245": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12245",
+    "source_image": "https://www.gutenberg.org/cache/epub/12245/pg12245.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12245.jpg",
+    "title": "The Defendant",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12383": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12383",
+    "source_image": "https://www.gutenberg.org/cache/epub/12383/pg12383.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12383.jpg",
+    "title": "The Poetical Works of William Wordsworth — Volume 3 (of 8)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "12410": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/12410",
+    "source_image": "https://www.gutenberg.org/cache/epub/12410/pg12410.cover.medium.jpg",
+    "image_url": "/images/gutenberg-12410.jpg",
+    "title": "The Travels of Marco Polo — Volume 2",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "14020": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/14020",
+    "source_image": "https://www.gutenberg.org/cache/epub/14020/pg14020.cover.medium.jpg",
+    "image_url": "/images/gutenberg-14020.jpg",
+    "title": "The Works of Horace",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "14426": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/14426",
+    "source_image": "https://www.gutenberg.org/cache/epub/14426/pg14426.cover.medium.jpg",
+    "image_url": "/images/gutenberg-14426.jpg",
+    "title": "London to Ladysmith via Pretoria",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "14522": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/14522",
+    "source_image": "https://www.gutenberg.org/cache/epub/14522/pg14522.cover.medium.jpg",
+    "image_url": "/images/gutenberg-14522.jpg",
+    "title": "The Canterville Ghost",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "14568": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/14568",
+    "source_image": "https://www.gutenberg.org/cache/epub/14568/pg14568.cover.medium.jpg",
+    "image_url": "/images/gutenberg-14568.jpg",
+    "title": "Sir Gawayne and the Green Knight\nAn Alliterative Romance-Poem (c. 1360 A.D.)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "15043": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/15043",
+    "source_image": "https://www.gutenberg.org/cache/epub/15043/pg15043.cover.medium.jpg",
+    "image_url": "/images/gutenberg-15043.jpg",
+    "title": "The Works of the Right Honourable Edmund Burke, Vol. 01 (of 12)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "15272": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/15272",
+    "source_image": "https://www.gutenberg.org/cache/epub/15272/pg15272.cover.medium.jpg",
+    "image_url": "/images/gutenberg-15272.jpg",
+    "title": "Spenser's The Faerie Queene, Book I",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "15679": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/15679",
+    "source_image": "https://www.gutenberg.org/cache/epub/15679/pg15679.cover.medium.jpg",
+    "image_url": "/images/gutenberg-15679.jpg",
+    "title": "The Works of the Right Honourable Edmund Burke, Vol. 03 (of 12)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "15877": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/15877",
+    "source_image": "https://www.gutenberg.org/cache/epub/15877/pg15877.cover.medium.jpg",
+    "image_url": "/images/gutenberg-15877.jpg",
+    "title": "Thoughts of Marcus Aurelius Antoninus",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "16209": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/16209",
+    "source_image": "https://www.gutenberg.org/cache/epub/16209/pg16209.cover.medium.jpg",
+    "image_url": "/images/gutenberg-16209.jpg",
+    "title": "Lectures on the English Poets; Delivered at the Surrey Institution",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "16643": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/16643",
+    "source_image": "https://www.gutenberg.org/cache/epub/16643/pg16643.cover.medium.jpg",
+    "image_url": "/images/gutenberg-16643.jpg",
+    "title": "Essays by Ralph Waldo Emerson",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "16769": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/16769",
+    "source_image": "https://www.gutenberg.org/cache/epub/16769/pg16769.cover.medium.jpg",
+    "image_url": "/images/gutenberg-16769.jpg",
+    "title": "Orthodoxy",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "16786": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/16786",
+    "source_image": "https://www.gutenberg.org/cache/epub/16786/pg16786.cover.medium.jpg",
+    "image_url": "/images/gutenberg-16786.jpg",
+    "title": "The World's Best Poetry, Volume 03: Sorrow and Consolation",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "16927": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/16927",
+    "source_image": "https://www.gutenberg.org/cache/epub/16927/pg16927.cover.medium.jpg",
+    "image_url": "/images/gutenberg-16927.jpg",
+    "title": "Tacitus: The Histories, Volumes I and II",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "17384": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/17384",
+    "source_image": "https://www.gutenberg.org/cache/epub/17384/pg17384.cover.medium.jpg",
+    "image_url": "/images/gutenberg-17384.jpg",
+    "title": "The Foundations of Geometry",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "17611": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/17611",
+    "source_image": "https://www.gutenberg.org/cache/epub/17611/pg17611.cover.medium.jpg",
+    "image_url": "/images/gutenberg-17611.jpg",
+    "title": "Summa Theologica, Part I (Prima Pars)\nFrom the Complete American Edition",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "17650": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/17650",
+    "source_image": "https://www.gutenberg.org/cache/epub/17650/pg17650.cover.medium.jpg",
+    "image_url": "/images/gutenberg-17650.jpg",
+    "title": "The sonnets, triumphs, and other poems of Petrarch",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "19355": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/19355",
+    "source_image": "https://www.gutenberg.org/cache/epub/19355/pg19355.cover.medium.jpg",
+    "image_url": "/images/gutenberg-19355.jpg",
+    "title": "A Book of Prefaces",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "20203": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/20203",
+    "source_image": "https://www.gutenberg.org/cache/epub/20203/pg20203.cover.medium.jpg",
+    "image_url": "/images/gutenberg-20203.jpg",
+    "title": "Autobiography of Benjamin Franklin",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "21700": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/21700",
+    "source_image": "https://www.gutenberg.org/cache/epub/21700/pg21700.cover.medium.jpg",
+    "image_url": "/images/gutenberg-21700.jpg",
+    "title": "Don Juan",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "23306": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/23306",
+    "source_image": "https://www.gutenberg.org/cache/epub/23306/pg23306.cover.medium.jpg",
+    "image_url": "/images/gutenberg-23306.jpg",
+    "title": "Meditationes de prima philosophia",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "23700": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/23700",
+    "source_image": "https://www.gutenberg.org/cache/epub/23700/pg23700.cover.medium.jpg",
+    "image_url": "/images/gutenberg-23700.jpg",
+    "title": "The Decameron of Giovanni Boccaccio",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "24280": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/24280",
+    "source_image": "https://www.gutenberg.org/cache/epub/24280/pg24280.cover.medium.jpg",
+    "image_url": "/images/gutenberg-24280.jpg",
+    "title": "Endymion: A Poetic Romance",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "25326": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/25326",
+    "source_image": "https://www.gutenberg.org/cache/epub/25326/pg25326.cover.medium.jpg",
+    "image_url": "/images/gutenberg-25326.jpg",
+    "title": "Lives of the Most Eminent Painters Sculptors and Architects, Vol. 01 (of 10)\r\nCimabue to Agnolo Gaddi",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "25717": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/25717",
+    "source_image": "https://www.gutenberg.org/cache/epub/25717/pg25717.cover.medium.jpg",
+    "image_url": "/images/gutenberg-25717.jpg",
+    "title": "The History of the Decline and Fall of the Roman Empire\r\nTable of Contents with links in the HTML file to the two Project Gutenberg editions (12 volumes)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "28020": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/28020",
+    "source_image": "https://www.gutenberg.org/cache/epub/28020/pg28020.cover.medium.jpg",
+    "image_url": "/images/gutenberg-28020.jpg",
+    "title": "History of Woman Suffrage, Volume I",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "29345": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/29345",
+    "source_image": "https://www.gutenberg.org/cache/epub/29345/pg29345.cover.medium.jpg",
+    "image_url": "/images/gutenberg-29345.jpg",
+    "title": "Mountain Interval",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "30107": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/30107",
+    "source_image": "https://www.gutenberg.org/cache/epub/30107/pg30107.cover.medium.jpg",
+    "image_url": "/images/gutenberg-30107.jpg",
+    "title": "Principles of Political Economy\r\nAbridged with Critical, Bibliographical, and Explanatory Notes, and a Sketch of the History of Political Economy",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "33310": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/33310",
+    "source_image": "https://www.gutenberg.org/cache/epub/33310/pg33310.cover.medium.jpg",
+    "image_url": "/images/gutenberg-33310.jpg",
+    "title": "On The Principles of Political Economy, and Taxation",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "34901": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/34901",
+    "source_image": "https://www.gutenberg.org/cache/epub/34901/pg34901.cover.medium.jpg",
+    "image_url": "/images/gutenberg-34901.jpg",
+    "title": "On Liberty",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "35898": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/35898",
+    "source_image": "https://www.gutenberg.org/cache/epub/35898/pg35898.cover.medium.jpg",
+    "image_url": "/images/gutenberg-35898.jpg",
+    "title": "The Seven Lamps of Architecture",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "36034": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/36034",
+    "source_image": "https://www.gutenberg.org/cache/epub/36034/pg36034.cover.medium.jpg",
+    "image_url": "/images/gutenberg-36034.jpg",
+    "title": "White nights, and other stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "36098": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/36098",
+    "source_image": "https://www.gutenberg.org/cache/epub/36098/pg36098.cover.medium.jpg",
+    "image_url": "/images/gutenberg-36098.jpg",
+    "title": "The Flowers of Evil",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "36541": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/36541",
+    "source_image": "https://www.gutenberg.org/cache/epub/36541/pg36541.cover.medium.jpg",
+    "image_url": "/images/gutenberg-36541.jpg",
+    "title": "Unto This Last, and Other Essays on Political Economy",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "37478": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/37478",
+    "source_image": "https://www.gutenberg.org/cache/epub/37478/pg37478.cover.medium.jpg",
+    "image_url": "/images/gutenberg-37478.jpg",
+    "title": "The Prose Writings of Heinrich Heine",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "43656": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/43656",
+    "source_image": "https://www.gutenberg.org/cache/epub/43656/pg43656.cover.medium.jpg",
+    "image_url": "/images/gutenberg-43656.jpg",
+    "title": "The Works of Samuel Johnson, LL.D. in Nine Volumes, Volume 02\r\nThe Rambler, Volume I",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "45001": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/45001",
+    "source_image": "https://www.gutenberg.org/cache/epub/45001/pg45001.cover.medium.jpg",
+    "image_url": "/images/gutenberg-45001.jpg",
+    "title": "Institutes of the Christian Religion (Vol. 1 of 2)",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "45109": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/45109",
+    "source_image": "https://www.gutenberg.org/cache/epub/45109/pg45109.cover.medium.jpg",
+    "image_url": "/images/gutenberg-45109.jpg",
+    "title": "The Enchiridion",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "45304": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/45304",
+    "source_image": "https://www.gutenberg.org/cache/epub/45304/pg45304.cover.medium.jpg",
+    "image_url": "/images/gutenberg-45304.jpg",
+    "title": "The City of God, Volume I",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "47549": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/47549",
+    "source_image": "https://www.gutenberg.org/cache/epub/47549/pg47549.cover.medium.jpg",
+    "image_url": "/images/gutenberg-47549.jpg",
+    "title": "Bonnie Scotland\nPainted by Sutton Palmer; Described by A.R. Hope Moncrieff",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "55024": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/55024",
+    "source_image": "https://www.gutenberg.org/cache/epub/55024/pg55024.cover.medium.jpg",
+    "image_url": "/images/gutenberg-55024.jpg",
+    "title": "The Queen of Spades, and other stories",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "57333": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/57333",
+    "source_image": "https://www.gutenberg.org/cache/epub/57333/pg57333.cover.medium.jpg",
+    "image_url": "/images/gutenberg-57333.jpg",
+    "title": "Project Gutenberg Compilation of Short Stories by Chekhov",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  },
+  "68283": {
+    "status": "downloaded",
+    "source_page": "https://www.gutenberg.org/ebooks/68283",
+    "source_image": "https://www.gutenberg.org/cache/epub/68283/pg68283.cover.medium.jpg",
+    "image_url": "/images/gutenberg-68283.jpg",
+    "title": "The call of Cthulhu",
+    "rights": "Public domain in the USA.",
+    "credit": "Project Gutenberg"
+  }
+}
