@@ -74,7 +74,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
       pendingMove.current = null;
       initialRoute.current = undefined;
       carousel.current?.scrollTo({ left: 0 });
-      if (route) void navigate({ to: "/app", replace: true });
+      if (route) void navigate({ to: "/app", search: {}, replace: true });
     }, 250);
     return () => window.clearTimeout(timeout);
   }, [query, search, route, navigate]);
@@ -172,7 +172,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     setSelectedId(reading.id);
     const params = readingParams(reading);
     client.setQueryData(["reading", params.author, params.title, undefined], reading);
-    void navigate({ to: "/read/$author/$title", params, replace });
+    void navigate({ to: "/read/$author/$title", params, search: {}, replace });
   }
 
   useEffect(() => {

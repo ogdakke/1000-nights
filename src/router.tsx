@@ -3,10 +3,11 @@ import { GalleryPage } from "./features/gallery/GalleryPage";
 import { JourneyPage } from "./features/journey/JourneyPage";
 
 function GalleryRoot() {
-  const path = useRouterState({ select: (state) => state.location.pathname });
+  const location = useRouterState({ select: (state) => state.location });
+  const path = location.pathname;
   if (path === "/progress" || path === "/progress/") return <JourneyPage />;
   const match = /^\/read\/([^/]+)\/([^/]+)\/?$/.exec(path);
-  const night = Number.parseInt(new URLSearchParams(window.location.search).get("night") || "", 10);
+  const night = Number.parseInt(new URLSearchParams(location.searchStr).get("night") || "", 10);
   return <GalleryPage route={match ? { author: match[1], title: match[2], night: Number.isInteger(night) && night >= 1 && night <= 1000 ? night : undefined } : undefined} />;
 }
 
