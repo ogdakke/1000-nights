@@ -10,556 +10,6 @@
     "image_url": "/images/author-a-e-housman.jpg",
     "credit": "E. O. Hoppé"
   },
-  "Alfred, Lord Tennyson": {
-    "status": "downloaded",
-    "wiki_page": "Alfred, Lord Tennyson",
-    "file": "Alfred,_Lord_Tennyson_by_Elliott_&_Fry_-_Original.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Alfred,_Lord_Tennyson_by_Elliott_%26_Fry_-_Original.jpg",
-    "license": "Public domain",
-    "artist": "Elliott & Fry",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Alfred%2C_Lord_Tennyson_by_Elliott_%26_Fry_-_Original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-alfred-lord-tennyson.jpg",
-    "credit": "Elliott & Fry"
-  },
-  "Andrew Marvell": {
-    "status": "downloaded",
-    "wiki_page": "Andrew Marvell",
-    "file": "Portrait_of_Marvell.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Marvell.jpg",
-    "license": "Public domain",
-    "artist": "Unknown authorUnknown author",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Portrait_of_Marvell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-andrew-marvell.jpg",
-    "credit": "Unknown authorUnknown author"
-  },
-  "Christina Rossetti": {
-    "status": "downloaded",
-    "wiki_page": "Christina Rossetti",
-    "file": "Christina_Rossetti_3.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christina_Rossetti_3.jpg",
-    "license": "Public domain",
-    "artist": "Dante Gabriel Rossetti",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christina_Rossetti_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-christina-rossetti.jpg",
-    "credit": "Dante Gabriel Rossetti"
-  },
-  "Christopher Marlowe": {
-    "status": "downloaded",
-    "wiki_page": "Christopher Marlowe",
-    "file": "Christopher_Marlowe.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christopher_Marlowe.jpg",
-    "license": "Public domain",
-    "artist": "anonymous",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Christopher_Marlowe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-christopher-marlowe.jpg",
-    "credit": "anonymous"
-  },
-  "Dante Gabriel Rossetti": {
-    "status": "downloaded",
-    "wiki_page": "Dante Gabriel Rossetti",
-    "file": "William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg",
-    "license": "Public domain",
-    "artist": "William Holman Hunt",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/84/William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-dante-gabriel-rossetti.jpg",
-    "credit": "William Holman Hunt"
-  },
-  "Dylan Thomas": {
-    "status": "downloaded",
-    "wiki_page": "Dylan Thomas",
-    "file": "Dylan_Thomas_icon_Blashford_1937.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Dylan_Thomas_icon_Blashford_1937.jpg",
-    "license": "Public domain",
-    "artist": "Nora Summers",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dylan_Thomas_icon_Blashford_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-dylan-thomas.jpg",
-    "credit": "Nora Summers"
-  },
-  "Edgar Allan Poe": {
-    "status": "downloaded",
-    "wiki_page": "Edgar Allan Poe",
-    "file": "Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg",
-    "license": "Public domain",
-    "artist": "Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-edgar-allan-poe.jpg",
-    "credit": "Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden"
-  },
-  "Edmund Spenser": {
-    "status": "downloaded",
-    "wiki_page": "Edmund Spenser",
-    "file": "Edmund_Spenser_oil_painting.JPG",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Edmund_Spenser_oil_painting.JPG",
-    "license": "Public domain",
-    "artist": "English School / Unidentified painter",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Edmund_Spenser_oil_painting.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-edmund-spenser.jpg",
-    "credit": "English School / Unidentified painter"
-  },
-  "Elizabeth Barrett Browning": {
-    "status": "downloaded",
-    "wiki_page": "Elizabeth Barrett Browning",
-    "file": "Elizabeth_Barrett_Browning.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Elizabeth_Barrett_Browning.jpg",
-    "license": "Public domain",
-    "artist": "",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Elizabeth_Barrett_Browning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-elizabeth-barrett-browning.jpg",
-    "credit": "Wikimedia Commons"
-  },
-  "Emily Dickinson": {
-    "status": "downloaded",
-    "wiki_page": "Emily Dickinson",
-    "file": "Black-white_photograph_of_Emily_Dickinson2.png",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Black-white_photograph_of_Emily_Dickinson2.png",
-    "license": "Public domain",
-    "artist": "Unknown authorUnknown author",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Black-white_photograph_of_Emily_Dickinson2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-emily-dickinson.png",
-    "credit": "Unknown authorUnknown author"
-  },
-  "Ernest Lawrence Thayer": {
-    "status": "downloaded",
-    "wiki_page": "Ernest Thayer",
-    "file": "Ernest_Thayer.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Ernest_Thayer.jpg",
-    "license": "Public domain",
-    "artist": "Unknown authorUnknown author",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Ernest_Thayer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-ernest-lawrence-thayer.jpg",
-    "credit": "Unknown authorUnknown author"
-  },
-  "G. K. Chesterton": {
-    "status": "downloaded",
-    "wiki_page": "G. K. Chesterton",
-    "file": "Gilbert_Chesterton.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Gilbert_Chesterton.jpg",
-    "license": "Public domain",
-    "artist": "Ernest Herbert Mills",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gilbert_Chesterton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-g-k-chesterton.jpg",
-    "credit": "Ernest Herbert Mills"
-  },
-  "George Herbert": {
-    "status": "downloaded",
-    "wiki_page": "George Herbert",
-    "file": "George_Herbert.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:George_Herbert.jpg",
-    "license": "Public domain",
-    "artist": "Robert White",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/80/George_Herbert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-george-herbert.jpg",
-    "credit": "Robert White"
-  },
-  "George Orwell": {
-    "status": "downloaded",
-    "wiki_page": "George Orwell",
-    "file": "George_Orwell_press_photo.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:George_Orwell_press_photo.jpg",
-    "license": "Public domain",
-    "artist": "Branch of the National Union of Journalists (BNUJ).",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/George_Orwell_press_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-george-orwell.jpg",
-    "credit": "Branch of the National Union of Journalists (BNUJ)."
-  },
-  "Gerard Manley Hopkins": {
-    "status": "downloaded",
-    "wiki_page": "Gerard Manley Hopkins",
-    "file": "GerardManleyHopkins.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:GerardManleyHopkins.jpg",
-    "license": "Public domain",
-    "artist": "Unknown authorUnknown author",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/72/GerardManleyHopkins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-gerard-manley-hopkins.jpg",
-    "credit": "Unknown authorUnknown author"
-  },
-  "Henry Wadsworth Longfellow": {
-    "status": "downloaded",
-    "wiki_page": "Henry Wadsworth Longfellow",
-    "file": "Henry_Wadsworth_Longfellow,_photographed_by_Julia_Margaret_Cameron_in_1868.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Henry_Wadsworth_Longfellow,_photographed_by_Julia_Margaret_Cameron_in_1868.jpg",
-    "license": "Public domain",
-    "artist": "Julia Margaret Cameron",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Henry_Wadsworth_Longfellow%2C_photographed_by_Julia_Margaret_Cameron_in_1868.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-henry-wadsworth-longfellow.jpg",
-    "credit": "Julia Margaret Cameron"
-  },
-  "Immanuel Kant": {
-    "status": "downloaded",
-    "wiki_page": "Immanuel Kant",
-    "file": "Immanuel_Kant_-_Gemaelde_1.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg",
-    "license": "Public domain",
-    "artist": "Johann Gottlieb Becker (1720-1782)",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Immanuel_Kant_-_Gemaelde_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-immanuel-kant.jpg",
-    "credit": "Johann Gottlieb Becker (1720-1782)"
-  },
-  "John Donne": {
-    "status": "downloaded",
-    "wiki_page": "John Donne",
-    "file": "John_Donne_by_Isaac_Oliver.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_Donne_by_Isaac_Oliver.jpg",
-    "license": "Public domain",
-    "artist": "After Isaac Oliver",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/96/John_Donne_by_Isaac_Oliver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-donne.jpg",
-    "credit": "After Isaac Oliver"
-  },
-  "John Dryden": {
-    "status": "downloaded",
-    "wiki_page": "John Dryden",
-    "file": "John_Dryden_portrait_painting.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_Dryden_portrait_painting.jpg",
-    "license": "Public domain",
-    "artist": "Godfrey Kneller",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_Dryden_portrait_painting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-dryden.jpg",
-    "credit": "Godfrey Kneller"
-  },
-  "John Greenleaf Whittier": {
-    "status": "downloaded",
-    "wiki_page": "John Greenleaf Whittier",
-    "file": "John_Greenleaf_Whittier_portrait.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_Greenleaf_Whittier_portrait.jpg",
-    "license": "Public domain",
-    "artist": "File:John Greenleaf Whittier LCCN2002722860.jpg: Miscellaneous Items in High Demand, PPOC, Library of Congress derivative work: Robertus Pius",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/John_Greenleaf_Whittier_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-greenleaf-whittier.jpg",
-    "credit": "File:John Greenleaf Whittier LCCN2002722860.jpg: Miscellaneous Items in High Demand, PPOC, Library of Congress derivative work: Robertus Pius"
-  },
-  "John Keats": {
-    "status": "downloaded",
-    "wiki_page": "John Keats",
-    "file": "John_Keats_by_William_Hilton_circa_1822_02.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_Keats_by_William_Hilton_circa_1822_02.jpg",
-    "license": "Public domain",
-    "artist": "William Hilton",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/John_Keats_by_William_Hilton_circa_1822_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-keats.jpg",
-    "credit": "William Hilton"
-  },
-  "John McCrae": {
-    "status": "downloaded",
-    "wiki_page": "John McCrae",
-    "file": "John_McCrae_in_uniform_circa_1914.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_McCrae_in_uniform_circa_1914.jpg",
-    "license": "Public domain",
-    "artist": "William Notman and Son",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/08/John_McCrae_in_uniform_circa_1914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-mccrae.jpg",
-    "credit": "William Notman and Son"
-  },
-  "John Milton": {
-    "status": "downloaded",
-    "wiki_page": "John Milton",
-    "file": "John-milton.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John-milton.jpg",
-    "license": "Public domain",
-    "artist": "anonymous",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/91/John-milton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-john-milton.jpg",
-    "credit": "anonymous"
-  },
-  "Leigh Hunt": {
-    "status": "downloaded",
-    "wiki_page": "Leigh Hunt",
-    "file": "James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg",
-    "license": "Public domain",
-    "artist": "Benjamin Robert Haydon (died 1846)",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/72/James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-leigh-hunt.jpg",
-    "credit": "Benjamin Robert Haydon (died 1846)"
-  },
-  "Lewis Carroll": {
-    "status": "downloaded",
-    "wiki_page": "Lewis Carroll",
-    "file": "LewisCarrollSelfPhoto.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg",
-    "license": "Public domain",
-    "artist": "Lewis Carroll",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/LewisCarrollSelfPhoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-lewis-carroll.jpg",
-    "credit": "Lewis Carroll"
-  },
-  "Lord Byron": {
-    "status": "downloaded",
-    "wiki_page": "Lord Byron",
-    "file": "Byron_1813_by_Phillips.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Byron_1813_by_Phillips.jpg",
-    "license": "Public domain",
-    "artist": "Thomas Phillips",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Byron_1813_by_Phillips.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-lord-byron.jpg",
-    "credit": "Thomas Phillips"
-  },
-  "Matthew Arnold": {
-    "status": "downloaded",
-    "wiki_page": "Matthew Arnold",
-    "file": "Matthew_Arnold.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Matthew_Arnold.jpg",
-    "license": "Public domain",
-    "artist": "Elliott & Fry",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Matthew_Arnold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-matthew-arnold.jpg",
-    "credit": "Elliott & Fry"
-  },
-  "Oliver Wendell Holmes Sr.": {
-    "status": "downloaded",
-    "wiki_page": "Oliver Wendell Holmes Sr.",
-    "file": "Oliver_Wendell_Holmes_Sr_c1879.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Oliver_Wendell_Holmes_Sr_c1879.jpg",
-    "license": "Public domain",
-    "artist": "Armstrong & Co. (Boston, Mass.),",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Oliver_Wendell_Holmes_Sr_c1879.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-oliver-wendell-holmes-sr.jpg",
-    "credit": "Armstrong & Co. (Boston, Mass.),"
-  },
-  "Percy Bysshe Shelley": {
-    "status": "downloaded",
-    "wiki_page": "Percy Bysshe Shelley",
-    "file": "Percy_Bysshe_Shelley_by_Alfred_Clint.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Percy_Bysshe_Shelley_by_Alfred_Clint.jpg",
-    "license": "Public domain",
-    "artist": "After Amelia Curran",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Percy_Bysshe_Shelley_by_Alfred_Clint.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-percy-bysshe-shelley.jpg",
-    "credit": "After Amelia Curran"
-  },
-  "Ralph Waldo Emerson": {
-    "status": "downloaded",
-    "wiki_page": "Ralph Waldo Emerson",
-    "file": "Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
-    "license": "Public domain",
-    "artist": "Josiah Johnson Hawes",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-ralph-waldo-emerson.jpg",
-    "credit": "Josiah Johnson Hawes"
-  },
-  "Robert Browning": {
-    "status": "downloaded",
-    "wiki_page": "Robert Browning",
-    "file": "Robert_Browning_by_Herbert_Rose_Barraud,_circa_1888.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Browning_by_Herbert_Rose_Barraud,_circa_1888.jpg",
-    "license": "Public domain",
-    "artist": "Herbert Rose Barraud / Adam Cuerden",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Robert_Browning_by_Herbert_Rose_Barraud%2C_circa_1888.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-robert-browning.jpg",
-    "credit": "Herbert Rose Barraud / Adam Cuerden"
-  },
-  "Robert Burns": {
-    "status": "downloaded",
-    "wiki_page": "Robert Burns",
-    "file": "PG_1063Burns_Naysmith.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:PG_1063Burns_Naysmith.jpg",
-    "license": "Public domain",
-    "artist": "Alexander Nasmyth",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/PG_1063Burns_Naysmith.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-robert-burns.jpg",
-    "credit": "Alexander Nasmyth"
-  },
-  "Robert Frost": {
-    "status": "downloaded",
-    "wiki_page": "Robert Frost",
-    "file": "Robert_Frost_NYWTS_4.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Frost_NYWTS_4.jpg",
-    "license": "Public domain",
-    "artist": "Walter Albertin, World Telegram staff photographer",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Robert_Frost_NYWTS_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-robert-frost.jpg",
-    "credit": "Walter Albertin, World Telegram staff photographer"
-  },
-  "Rudyard Kipling": {
-    "status": "downloaded",
-    "wiki_page": "Rudyard Kipling",
-    "file": "Rudyard_Kipling_(portrait).jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Rudyard_Kipling_(portrait).jpg",
-    "license": "Public domain",
-    "artist": "Elliott & Fry",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rudyard_Kipling_%28portrait%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-rudyard-kipling.jpg",
-    "credit": "Elliott & Fry"
-  },
-  "Rupert Brooke": {
-    "status": "downloaded",
-    "wiki_page": "Rupert Brooke",
-    "file": "Frontispiece_(cropped)_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Frontispiece_(cropped)_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg",
-    "license": "Public domain",
-    "artist": "\"From a photograph by Sherril Schell\" taken in 1913.",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Frontispiece_%28cropped%29_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-rupert-brooke.jpg",
-    "credit": "\"From a photograph by Sherril Schell\" taken in 1913."
-  },
-  "Samuel Taylor Coleridge": {
-    "status": "downloaded",
-    "wiki_page": "Samuel Taylor Coleridge",
-    "file": "Samuel_Taylor_Coleridge_at_age_42.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Samuel_Taylor_Coleridge_at_age_42.jpg",
-    "license": "Public domain",
-    "artist": "Samuel Cousins / After Washington Allston",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Samuel_Taylor_Coleridge_at_age_42.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-samuel-taylor-coleridge.jpg",
-    "credit": "Samuel Cousins / After Washington Allston"
-  },
-  "Sidney Lanier": {
-    "status": "downloaded",
-    "wiki_page": "Sidney Lanier",
-    "file": "Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg",
-    "license": "Public domain",
-    "artist": "",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-sidney-lanier.jpg",
-    "credit": "Wikimedia Commons"
-  },
-  "Sir Philip Sidney": {
-    "status": "downloaded",
-    "wiki_page": "Philip Sidney",
-    "file": "Sir_Philip_Sidney_from_NPG.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Sir_Philip_Sidney_from_NPG.jpg",
-    "license": "Public domain",
-    "artist": "After Antonis Mor",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sir_Philip_Sidney_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-sir-philip-sidney.jpg",
-    "credit": "After Antonis Mor"
-  },
-  "Sir Walter Raleigh": {
-    "status": "downloaded",
-    "wiki_page": "Walter Raleigh",
-    "file": "Sir_Walter_Ralegh_by_'H'_monogrammist.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg",
-    "license": "Public domain",
-    "artist": "anonymous",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-sir-walter-raleigh.jpg",
-    "credit": "anonymous"
-  },
-  "T. S. Eliot": {
-    "status": "downloaded",
-    "wiki_page": "T. S. Eliot",
-    "file": "Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg",
-    "license": "Public domain",
-    "artist": "Thomas Stearns Eliot with his sister and his cousin by Lady Ottoline Morrell.jpg: Lady Ottoline Morrell (1873–1938) derivative work: Octave.H",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_%281934%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-t-s-eliot.jpg",
-    "credit": "Thomas Stearns Eliot with his sister and his cousin by Lady Ottoline Morrell.jpg: Lady Ottoline Morrell (1873–1938) derivative work: Octave.H"
-  },
-  "Thomas Gray": {
-    "status": "downloaded",
-    "wiki_page": "Thomas Gray",
-    "file": "PortraitThomasGrayByJohnGilesEccart1747to1748.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:PortraitThomasGrayByJohnGilesEccart1747to1748.jpg",
-    "license": "Public domain",
-    "artist": "John Giles Eccardt",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/PortraitThomasGrayByJohnGilesEccart1747to1748.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-thomas-gray.jpg",
-    "credit": "John Giles Eccardt"
-  },
-  "Thomas Hardy": {
-    "status": "downloaded",
-    "wiki_page": "Thomas Hardy",
-    "file": "Thomas_Hardy_Restored_Portrait_1910–1915_(3x4_cropped).jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Hardy_Restored_Portrait_1910%E2%80%931915_(3x4_cropped).jpg",
-    "license": "Public domain",
-    "artist": "Bain News Service, publisher",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Thomas_Hardy_Restored_Portrait_1910%E2%80%931915_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-thomas-hardy.jpg",
-    "credit": "Bain News Service, publisher"
-  },
-  "Thomas Hood": {
-    "status": "downloaded",
-    "wiki_page": "Thomas Hood",
-    "file": "Thomas_Hood_from_NPG.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Hood_from_NPG.jpg",
-    "license": "Public domain",
-    "artist": "anonymous",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Thomas_Hood_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-thomas-hood.jpg",
-    "credit": "anonymous"
-  },
-  "W. B. Yeats": {
-    "status": "downloaded",
-    "wiki_page": "W. B. Yeats",
-    "file": "William_Butler_Yeats_by_George_Charles_Beresford.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:William_Butler_Yeats_by_George_Charles_Beresford.jpg",
-    "license": "Public domain",
-    "artist": "George Charles Beresford",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/88/William_Butler_Yeats_by_George_Charles_Beresford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-w-b-yeats.jpg",
-    "credit": "George Charles Beresford"
-  },
-  "W. H. Auden": {
-    "status": "downloaded",
-    "wiki_page": "W. H. Auden",
-    "file": "AudenVanVechten1939.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:AudenVanVechten1939.jpg",
-    "license": "Public domain",
-    "artist": "Carl Van Vechten",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/AudenVanVechten1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-w-h-auden.jpg",
-    "credit": "Carl Van Vechten"
-  },
-  "Walt Whitman": {
-    "status": "downloaded",
-    "wiki_page": "Walt Whitman",
-    "file": "Walt_Whitman_-_George_Collins_Cox.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Walt_Whitman_-_George_Collins_Cox.jpg",
-    "license": "Public domain",
-    "artist": "George Collins Cox / Adam Cuerden",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Walt_Whitman_-_George_Collins_Cox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-walt-whitman.jpg",
-    "credit": "George Collins Cox / Adam Cuerden"
-  },
-  "William Blake": {
-    "status": "downloaded",
-    "wiki_page": "William Blake",
-    "file": "William_Blake_by_Thomas_Phillips.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:William_Blake_by_Thomas_Phillips.jpg",
-    "license": "Public domain",
-    "artist": "Thomas Phillips",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/00/William_Blake_by_Thomas_Phillips.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-william-blake.jpg",
-    "credit": "Thomas Phillips"
-  },
-  "William Cullen Bryant": {
-    "status": "downloaded",
-    "wiki_page": "William Cullen Bryant",
-    "file": "William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg",
-    "license": "Public domain",
-    "artist": "José María Mora",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-william-cullen-bryant.jpg",
-    "credit": "José María Mora"
-  },
-  "William Ernest Henley": {
-    "status": "downloaded",
-    "wiki_page": "William Ernest Henley",
-    "file": "William_Ernest_Henley`s_Portrait.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:William_Ernest_Henley%60s_Portrait.jpg",
-    "license": "Public domain",
-    "artist": "not stated",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/William_Ernest_Henley%60s_Portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-william-ernest-henley.jpg",
-    "credit": "not stated"
-  },
-  "William Wordsworth": {
-    "status": "downloaded",
-    "wiki_page": "William Wordsworth",
-    "file": "Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg",
-    "license": "Public domain",
-    "artist": "Benjamin Haydon",
-    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-    "image_url": "/images/author-william-wordsworth.jpg",
-    "credit": "Benjamin Haydon"
-  },
   "Alexander Pushkin": {
     "status": "downloaded",
     "wiki_page": "Alexander Pushkin",
@@ -581,6 +31,17 @@
     "source_image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Alfred-Russel-Wallace-c1895.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_url": "/images/author-alfred-russel-wallace.jpg",
     "credit": "London Stereoscopic and Photographic Company (active 1855-1922)"
+  },
+  "Alfred, Lord Tennyson": {
+    "status": "downloaded",
+    "wiki_page": "Alfred, Lord Tennyson",
+    "file": "Alfred,_Lord_Tennyson_by_Elliott_&_Fry_-_Original.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Alfred,_Lord_Tennyson_by_Elliott_%26_Fry_-_Original.jpg",
+    "license": "Public domain",
+    "artist": "Elliott & Fry",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Alfred%2C_Lord_Tennyson_by_Elliott_%26_Fry_-_Original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-alfred-lord-tennyson.jpg",
+    "credit": "Elliott & Fry"
   },
   "Alphonse de Lamartine": {
     "status": "downloaded",
@@ -604,15 +65,16 @@
     "image_url": "/images/author-ambrose-bierce.jpg",
     "credit": "Wikimedia Commons"
   },
-  "Anonymous": {
-    "status": "no_portrait",
-    "wiki_page": "Anonymous",
-    "file": null
-  },
-  "Anonymous (Old Irish, tr.)": {
-    "status": "no_portrait",
-    "wiki_page": "Anonymous (Old Irish, tr.)",
-    "file": null
+  "Andrew Marvell": {
+    "status": "downloaded",
+    "wiki_page": "Andrew Marvell",
+    "file": "Portrait_of_Marvell.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Marvell.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Portrait_of_Marvell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-andrew-marvell.jpg",
+    "credit": "Unknown authorUnknown author"
   },
   "Arthur Rimbaud": {
     "status": "downloaded",
@@ -669,21 +131,16 @@
     "image_url": "/images/author-bret-harte.jpg",
     "credit": "Napoleon Sarony / Adam Cuerden"
   },
-  "Catullus": {
-    "status": "rights_review",
-    "wiki_page": "Catullus",
-    "file": "Catull_Sirmione.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Catull_Sirmione.jpg",
-    "license": "CC BY-SA 3.0",
-    "artist": "Schorle"
-  },
-  "Charles Waterton": {
-    "status": "rights_review",
-    "wiki_page": "Charles Waterton",
-    "file": "Charles_Waterton_by_Charles_Willson_Peale,_1824,_National_Gallery,_London.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Charles_Waterton_by_Charles_Willson_Peale,_1824,_National_Gallery,_London.jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Stephencdickson"
+  "Christina Rossetti": {
+    "status": "downloaded",
+    "wiki_page": "Christina Rossetti",
+    "file": "Christina_Rossetti_3.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Christina_Rossetti_3.jpg",
+    "license": "Public domain",
+    "artist": "Dante Gabriel Rossetti",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christina_Rossetti_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-christina-rossetti.jpg",
+    "credit": "Dante Gabriel Rossetti"
   },
   "Christopher Columbus": {
     "status": "downloaded",
@@ -696,6 +153,17 @@
     "image_url": "/images/author-christopher-columbus.jpg",
     "credit": "Sebastiano del Piombo"
   },
+  "Christopher Marlowe": {
+    "status": "downloaded",
+    "wiki_page": "Christopher Marlowe",
+    "file": "Christopher_Marlowe.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Christopher_Marlowe.jpg",
+    "license": "Public domain",
+    "artist": "anonymous",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Christopher_Marlowe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-christopher-marlowe.jpg",
+    "credit": "anonymous"
+  },
   "D. H. Lawrence": {
     "status": "downloaded",
     "wiki_page": "D. H. Lawrence",
@@ -706,6 +174,28 @@
     "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/44/D_H_Lawrence_passport_photograph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_url": "/images/author-d-h-lawrence.jpg",
     "credit": "Unknown authorUnknown author (passport office)"
+  },
+  "Dante Gabriel Rossetti": {
+    "status": "downloaded",
+    "wiki_page": "Dante Gabriel Rossetti",
+    "file": "William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "artist": "William Holman Hunt",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/84/William_Holman_Hunt_-_Portrait_of_Dante_Gabriel_Rossetti_at_22_years_of_Age_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-dante-gabriel-rossetti.jpg",
+    "credit": "William Holman Hunt"
+  },
+  "Dylan Thomas": {
+    "status": "downloaded",
+    "wiki_page": "Dylan Thomas",
+    "file": "Dylan_Thomas_icon_Blashford_1937.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dylan_Thomas_icon_Blashford_1937.jpg",
+    "license": "Public domain",
+    "artist": "Nora Summers",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Dylan_Thomas_icon_Blashford_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-dylan-thomas.jpg",
+    "credit": "Nora Summers"
   },
   "E. M. Forster": {
     "status": "downloaded",
@@ -718,6 +208,17 @@
     "image_url": "/images/author-e-m-forster.jpg",
     "credit": "Dora Carrington (1893–1932)"
   },
+  "Edgar Allan Poe": {
+    "status": "downloaded",
+    "wiki_page": "Edgar Allan Poe",
+    "file": "Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Edgar_Allan_Poe,_circa_1849,_restored,_squared_off.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Edgar_Allan_Poe%2C_circa_1849%2C_restored%2C_squared_off.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-edgar-allan-poe.jpg",
+    "credit": "Unknown authorUnknown author; Restored by Yann Forget and Adam Cuerden"
+  },
   "Edith Wharton": {
     "status": "downloaded",
     "wiki_page": "Edith Wharton",
@@ -728,6 +229,50 @@
     "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Edith_Newbold_Jones_Wharton_%28cropped_02%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_url": "/images/author-edith-wharton.jpg",
     "credit": "E. F. Cooper, Newport, Rhode Island"
+  },
+  "Edmund Spenser": {
+    "status": "downloaded",
+    "wiki_page": "Edmund Spenser",
+    "file": "Edmund_Spenser_oil_painting.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Edmund_Spenser_oil_painting.JPG",
+    "license": "Public domain",
+    "artist": "English School / Unidentified painter",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Edmund_Spenser_oil_painting.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-edmund-spenser.jpg",
+    "credit": "English School / Unidentified painter"
+  },
+  "Elizabeth Barrett Browning": {
+    "status": "downloaded",
+    "wiki_page": "Elizabeth Barrett Browning",
+    "file": "Elizabeth_Barrett_Browning.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Elizabeth_Barrett_Browning.jpg",
+    "license": "Public domain",
+    "artist": "",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Elizabeth_Barrett_Browning.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-elizabeth-barrett-browning.jpg",
+    "credit": "Wikimedia Commons"
+  },
+  "Emily Dickinson": {
+    "status": "downloaded",
+    "wiki_page": "Emily Dickinson",
+    "file": "Black-white_photograph_of_Emily_Dickinson2.png",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Black-white_photograph_of_Emily_Dickinson2.png",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Black-white_photograph_of_Emily_Dickinson2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-emily-dickinson.png",
+    "credit": "Unknown authorUnknown author"
+  },
+  "Ernest Lawrence Thayer": {
+    "status": "downloaded",
+    "wiki_page": "Ernest Thayer",
+    "file": "Ernest_Thayer.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ernest_Thayer.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Ernest_Thayer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-ernest-lawrence-thayer.jpg",
+    "credit": "Unknown authorUnknown author"
   },
   "Fitz-James O'Brien": {
     "status": "downloaded",
@@ -773,15 +318,49 @@
     "image_url": "/images/author-g-h-hardy.jpg",
     "credit": "Unknown authorUnknown author"
   },
-  "George Anson": {
-    "status": "no_portrait",
-    "wiki_page": "George Anson",
-    "file": null
+  "G. K. Chesterton": {
+    "status": "downloaded",
+    "wiki_page": "G. K. Chesterton",
+    "file": "Gilbert_Chesterton.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Gilbert_Chesterton.jpg",
+    "license": "Public domain",
+    "artist": "Ernest Herbert Mills",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gilbert_Chesterton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-g-k-chesterton.jpg",
+    "credit": "Ernest Herbert Mills"
   },
-  "George J. Romanes": {
-    "status": "no_portrait",
-    "wiki_page": "George J. Romanes",
-    "file": null
+  "George Herbert": {
+    "status": "downloaded",
+    "wiki_page": "George Herbert",
+    "file": "George_Herbert.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:George_Herbert.jpg",
+    "license": "Public domain",
+    "artist": "Robert White",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/80/George_Herbert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-george-herbert.jpg",
+    "credit": "Robert White"
+  },
+  "George Orwell": {
+    "status": "downloaded",
+    "wiki_page": "George Orwell",
+    "file": "George_Orwell_press_photo.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:George_Orwell_press_photo.jpg",
+    "license": "Public domain",
+    "artist": "Branch of the National Union of Journalists (BNUJ).",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/George_Orwell_press_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-george-orwell.jpg",
+    "credit": "Branch of the National Union of Journalists (BNUJ)."
+  },
+  "Gerard Manley Hopkins": {
+    "status": "downloaded",
+    "wiki_page": "Gerard Manley Hopkins",
+    "file": "GerardManleyHopkins.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:GerardManleyHopkins.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/72/GerardManleyHopkins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-gerard-manley-hopkins.jpg",
+    "credit": "Unknown authorUnknown author"
   },
   "Gustave Flaubert": {
     "status": "downloaded",
@@ -816,14 +395,6 @@
     "image_url": "/images/author-h-p-lovecraft.jpg",
     "credit": "Lucius B. Truesdell"
   },
-  "Heinrich Schliemann": {
-    "status": "rights_review",
-    "wiki_page": "Heinrich Schliemann",
-    "file": "Heinrich_Schliemann_(HeidICON_28763)_(cropped)_(cropped).jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Heinrich_Schliemann_(HeidICON_28763)_(cropped)_(cropped).jpg",
-    "license": "CC BY-SA 4.0",
-    "artist": "Ed. Schultze Hofphotograph Heidelberg Plöckstrasse 79"
-  },
   "Henry James": {
     "status": "downloaded",
     "wiki_page": "Henry James",
@@ -835,6 +406,17 @@
     "image_url": "/images/author-henry-james.jpg",
     "credit": "John Singer Sargent (died 1925)"
   },
+  "Henry Wadsworth Longfellow": {
+    "status": "downloaded",
+    "wiki_page": "Henry Wadsworth Longfellow",
+    "file": "Henry_Wadsworth_Longfellow,_photographed_by_Julia_Margaret_Cameron_in_1868.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Henry_Wadsworth_Longfellow,_photographed_by_Julia_Margaret_Cameron_in_1868.jpg",
+    "license": "Public domain",
+    "artist": "Julia Margaret Cameron",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Henry_Wadsworth_Longfellow%2C_photographed_by_Julia_Margaret_Cameron_in_1868.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-henry-wadsworth-longfellow.jpg",
+    "credit": "Julia Margaret Cameron"
+  },
   "Henry Walter Bates": {
     "status": "downloaded",
     "wiki_page": "Henry Walter Bates",
@@ -845,6 +427,17 @@
     "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/HenryWalterBates.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     "image_url": "/images/author-henry-walter-bates.jpg",
     "credit": "J. Thomson"
+  },
+  "Immanuel Kant": {
+    "status": "downloaded",
+    "wiki_page": "Immanuel Kant",
+    "file": "Immanuel_Kant_-_Gemaelde_1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_-_Gemaelde_1.jpg",
+    "license": "Public domain",
+    "artist": "Johann Gottlieb Becker (1720-1782)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Immanuel_Kant_-_Gemaelde_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-immanuel-kant.jpg",
+    "credit": "Johann Gottlieb Becker (1720-1782)"
   },
   "Jack London": {
     "status": "downloaded",
@@ -868,6 +461,50 @@
     "image_url": "/images/author-james-cook.jpg",
     "credit": "Nathaniel Dance-Holland"
   },
+  "John Donne": {
+    "status": "downloaded",
+    "wiki_page": "John Donne",
+    "file": "John_Donne_by_Isaac_Oliver.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_Donne_by_Isaac_Oliver.jpg",
+    "license": "Public domain",
+    "artist": "After Isaac Oliver",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/96/John_Donne_by_Isaac_Oliver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-donne.jpg",
+    "credit": "After Isaac Oliver"
+  },
+  "John Dryden": {
+    "status": "downloaded",
+    "wiki_page": "John Dryden",
+    "file": "John_Dryden_portrait_painting.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_Dryden_portrait_painting.jpg",
+    "license": "Public domain",
+    "artist": "Godfrey Kneller",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_Dryden_portrait_painting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-dryden.jpg",
+    "credit": "Godfrey Kneller"
+  },
+  "John Greenleaf Whittier": {
+    "status": "downloaded",
+    "wiki_page": "John Greenleaf Whittier",
+    "file": "John_Greenleaf_Whittier_portrait.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_Greenleaf_Whittier_portrait.jpg",
+    "license": "Public domain",
+    "artist": "File:John Greenleaf Whittier LCCN2002722860.jpg: Miscellaneous Items in High Demand, PPOC, Library of Congress derivative work: Robertus Pius",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/John_Greenleaf_Whittier_portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-greenleaf-whittier.jpg",
+    "credit": "File:John Greenleaf Whittier LCCN2002722860.jpg: Miscellaneous Items in High Demand, PPOC, Library of Congress derivative work: Robertus Pius"
+  },
+  "John Keats": {
+    "status": "downloaded",
+    "wiki_page": "John Keats",
+    "file": "John_Keats_by_William_Hilton_circa_1822_02.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_Keats_by_William_Hilton_circa_1822_02.jpg",
+    "license": "Public domain",
+    "artist": "William Hilton",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/John_Keats_by_William_Hilton_circa_1822_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-keats.jpg",
+    "credit": "William Hilton"
+  },
   "John Lloyd Stephens": {
     "status": "downloaded",
     "wiki_page": "John Lloyd Stephens",
@@ -879,13 +516,27 @@
     "image_url": "/images/author-john-lloyd-stephens.png",
     "credit": "John Lloyd Stephens"
   },
-  "John Masefield": {
-    "status": "rights_review",
-    "wiki_page": "John Masefield",
-    "file": "John_Masefield,_1936.jpg",
-    "source_page": "https://commons.wikimedia.org/wiki/File:John_Masefield,_1936.jpg",
-    "license": "CC BY 4.0",
-    "artist": "Los Angeles Times"
+  "John McCrae": {
+    "status": "downloaded",
+    "wiki_page": "John McCrae",
+    "file": "John_McCrae_in_uniform_circa_1914.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_McCrae_in_uniform_circa_1914.jpg",
+    "license": "Public domain",
+    "artist": "William Notman and Son",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/08/John_McCrae_in_uniform_circa_1914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-mccrae.jpg",
+    "credit": "William Notman and Son"
+  },
+  "John Milton": {
+    "status": "downloaded",
+    "wiki_page": "John Milton",
+    "file": "John-milton.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John-milton.jpg",
+    "license": "Public domain",
+    "artist": "anonymous",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/91/John-milton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-milton.jpg",
+    "credit": "anonymous"
   },
   "John Ruskin": {
     "status": "downloaded",
@@ -909,6 +560,17 @@
     "image_url": "/images/author-joseph-conrad.png",
     "credit": "George Charles Beresford"
   },
+  "Leigh Hunt": {
+    "status": "downloaded",
+    "wiki_page": "Leigh Hunt",
+    "file": "James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg",
+    "license": "Public domain",
+    "artist": "Benjamin Robert Haydon (died 1846)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/72/James_Henry_Leigh_Hunt_by_Benjamin_Robert_Haydon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-leigh-hunt.jpg",
+    "credit": "Benjamin Robert Haydon (died 1846)"
+  },
   "Leo Tolstoy": {
     "status": "downloaded",
     "wiki_page": "Leo Tolstoy",
@@ -920,136 +582,604 @@
     "image_url": "/images/author-leo-tolstoy.jpg",
     "credit": "Sergei Prokudin-Gorskii"
   },
+  "Lewis Carroll": {
+    "status": "downloaded",
+    "wiki_page": "Lewis Carroll",
+    "file": "LewisCarrollSelfPhoto.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg",
+    "license": "Public domain",
+    "artist": "Lewis Carroll",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/LewisCarrollSelfPhoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-lewis-carroll.jpg",
+    "credit": "Lewis Carroll"
+  },
+  "Lord Byron": {
+    "status": "downloaded",
+    "wiki_page": "Lord Byron",
+    "file": "Byron_1813_by_Phillips.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Byron_1813_by_Phillips.jpg",
+    "license": "Public domain",
+    "artist": "Thomas Phillips",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Byron_1813_by_Phillips.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-lord-byron.jpg",
+    "credit": "Thomas Phillips"
+  },
   "Mark Twain": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Mark Twain",
     "file": "Mark_Twain_by_AF_Bradley_(cropped_2).jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mark_Twain_by_AF_Bradley_(cropped_2).jpg",
+    "license": "Public domain",
+    "artist": "A.F. Bradley, New York",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mark_Twain_by_AF_Bradley_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-mark-twain.jpg",
+    "credit": "A.F. Bradley, New York"
   },
   "Matsuo Bashō": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Matsuo Bashō",
     "file": "Basho_by_Morikawa_Kyoriku_(1656-1715).jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Basho_by_Morikawa_Kyoriku_(1656-1715).jpg",
+    "license": "Public domain",
+    "artist": "Morikawa Kyoriku (1656-1715)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Basho_by_Morikawa_Kyoriku_%281656-1715%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-matsuo-bash.jpg",
+    "credit": "Morikawa Kyoriku (1656-1715)"
+  },
+  "Matthew Arnold": {
+    "status": "downloaded",
+    "wiki_page": "Matthew Arnold",
+    "file": "Matthew_Arnold.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Matthew_Arnold.jpg",
+    "license": "Public domain",
+    "artist": "Elliott & Fry",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Matthew_Arnold.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-matthew-arnold.jpg",
+    "credit": "Elliott & Fry"
   },
   "Murasaki Shikibu": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Murasaki Shikibu",
     "file": "Murasaki-Shikibu-composing-Genji-Monogatari.png",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Murasaki-Shikibu-composing-Genji-Monogatari.png",
+    "license": "Public domain",
+    "artist": "Tosa Mitsuoki (1617 - 1691)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Murasaki-Shikibu-composing-Genji-Monogatari.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-murasaki-shikibu.png",
+    "credit": "Tosa Mitsuoki (1617 - 1691)"
   },
   "Nikolai Gogol": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Nikolai Gogol",
     "file": "NV_Gogol.png",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:NV_Gogol.png",
+    "license": "Public domain",
+    "artist": "Sergey Lvovich Levitsky",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/31/NV_Gogol.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-nikolai-gogol.png",
+    "credit": "Sergey Lvovich Levitsky"
   },
   "Oliver Goldsmith": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Oliver Goldsmith",
     "file": "Joshua_Reynolds_(1723-1792)_-_Oliver_Goldsmith_(1728–1774)_-_129929_-_National_Trust.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Joshua_Reynolds_(1723-1792)_-_Oliver_Goldsmith_(1728%E2%80%931774)_-_129929_-_National_Trust.jpg",
+    "license": "Public domain",
+    "artist": "Joshua Reynolds",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Joshua_Reynolds_%281723-1792%29_-_Oliver_Goldsmith_%281728%E2%80%931774%29_-_129929_-_National_Trust.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-oliver-goldsmith.jpg",
+    "credit": "Joshua Reynolds"
+  },
+  "Oliver Wendell Holmes Sr.": {
+    "status": "downloaded",
+    "wiki_page": "Oliver Wendell Holmes Sr.",
+    "file": "Oliver_Wendell_Holmes_Sr_c1879.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Oliver_Wendell_Holmes_Sr_c1879.jpg",
+    "license": "Public domain",
+    "artist": "Armstrong & Co. (Boston, Mass.),",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Oliver_Wendell_Holmes_Sr_c1879.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-oliver-wendell-holmes-sr.jpg",
+    "credit": "Armstrong & Co. (Boston, Mass.),"
   },
   "Paul Verlaine": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Paul Verlaine",
     "file": "Netsurf17_-_Paul_Verlaine.png",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Netsurf17_-_Paul_Verlaine.png",
+    "license": "Public domain",
+    "artist": "",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Netsurf17_-_Paul_Verlaine.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-paul-verlaine.png",
+    "credit": "Wikimedia Commons"
+  },
+  "Percy Bysshe Shelley": {
+    "status": "downloaded",
+    "wiki_page": "Percy Bysshe Shelley",
+    "file": "Percy_Bysshe_Shelley_by_Alfred_Clint.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Percy_Bysshe_Shelley_by_Alfred_Clint.jpg",
+    "license": "Public domain",
+    "artist": "After Amelia Curran",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Percy_Bysshe_Shelley_by_Alfred_Clint.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-percy-bysshe-shelley.jpg",
+    "credit": "After Amelia Curran"
   },
   "Pierre de Ronsard": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Pierre de Ronsard",
     "file": "Portrait_de_Ronsard_par_Benjamin_Foulon.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Portrait_de_Ronsard_par_Benjamin_Foulon.jpg",
+    "license": "Public domain",
+    "artist": "Benjamin Foulon",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Portrait_de_Ronsard_par_Benjamin_Foulon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-pierre-de-ronsard.jpg",
+    "credit": "Benjamin Foulon"
   },
-  "Richard Lovelace": {
-    "status": "no_portrait",
-    "wiki_page": "Richard Lovelace",
-    "file": null
+  "Ralph Waldo Emerson": {
+    "status": "downloaded",
+    "wiki_page": "Ralph Waldo Emerson",
+    "file": "Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg",
+    "license": "Public domain",
+    "artist": "Josiah Johnson Hawes",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ralph_Waldo_Emerson_by_Josiah_Johnson_Hawes_1857.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-ralph-waldo-emerson.jpg",
+    "credit": "Josiah Johnson Hawes"
   },
   "Richard Steele": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Richard Steele",
     "file": "Sir_Richard_Steele_by_Jonathan_Richardson.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sir_Richard_Steele_by_Jonathan_Richardson.jpg",
+    "license": "Public domain",
+    "artist": "Jonathan Richardson (died 1745)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sir_Richard_Steele_by_Jonathan_Richardson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-richard-steele.jpg",
+    "credit": "Jonathan Richardson (died 1745)"
   },
-  "Robert Herrick": {
-    "status": "no_portrait",
-    "wiki_page": "Robert Herrick",
-    "file": null
+  "Robert Browning": {
+    "status": "downloaded",
+    "wiki_page": "Robert Browning",
+    "file": "Robert_Browning_by_Herbert_Rose_Barraud,_circa_1888.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Browning_by_Herbert_Rose_Barraud,_circa_1888.jpg",
+    "license": "Public domain",
+    "artist": "Herbert Rose Barraud / Adam Cuerden",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Robert_Browning_by_Herbert_Rose_Barraud%2C_circa_1888.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-robert-browning.jpg",
+    "credit": "Herbert Rose Barraud / Adam Cuerden"
+  },
+  "Robert Burns": {
+    "status": "downloaded",
+    "wiki_page": "Robert Burns",
+    "file": "PG_1063Burns_Naysmith.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:PG_1063Burns_Naysmith.jpg",
+    "license": "Public domain",
+    "artist": "Alexander Nasmyth",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/PG_1063Burns_Naysmith.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-robert-burns.jpg",
+    "credit": "Alexander Nasmyth"
+  },
+  "Robert Frost": {
+    "status": "downloaded",
+    "wiki_page": "Robert Frost",
+    "file": "Robert_Frost_NYWTS_4.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Frost_NYWTS_4.jpg",
+    "license": "Public domain",
+    "artist": "Walter Albertin, World Telegram staff photographer",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Robert_Frost_NYWTS_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-robert-frost.jpg",
+    "credit": "Walter Albertin, World Telegram staff photographer"
   },
   "Robert Louis Stevenson": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Robert Louis Stevenson",
     "file": "Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg",
+    "license": "Public domain",
+    "artist": "Henry Walter Barnett",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Robert_Louis_Stevenson_by_Henry_Walter_Barnett_bw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-robert-louis-stevenson.jpg",
+    "credit": "Henry Walter Barnett"
+  },
+  "Rudyard Kipling": {
+    "status": "downloaded",
+    "wiki_page": "Rudyard Kipling",
+    "file": "Rudyard_Kipling_(portrait).jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rudyard_Kipling_(portrait).jpg",
+    "license": "Public domain",
+    "artist": "Elliott & Fry",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rudyard_Kipling_%28portrait%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-rudyard-kipling.jpg",
+    "credit": "Elliott & Fry"
+  },
+  "Rupert Brooke": {
+    "status": "downloaded",
+    "wiki_page": "Rupert Brooke",
+    "file": "Frontispiece_(cropped)_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Frontispiece_(cropped)_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg",
+    "license": "Public domain",
+    "artist": "\"From a photograph by Sherril Schell\" taken in 1913.",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Frontispiece_%28cropped%29_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-rupert-brooke.jpg",
+    "credit": "\"From a photograph by Sherril Schell\" taken in 1913."
   },
   "Samuel Johnson": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Samuel Johnson",
     "file": "Samuel_Johnson_by_Joshua_Reynolds.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Samuel_Johnson_by_Joshua_Reynolds.jpg",
+    "license": "Public domain",
+    "artist": "Joshua Reynolds",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Samuel_Johnson_by_Joshua_Reynolds.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-samuel-johnson.jpg",
+    "credit": "Joshua Reynolds"
   },
-  "Seneca": {
-    "status": "no_portrait",
-    "wiki_page": "Seneca",
-    "file": null
+  "Samuel Taylor Coleridge": {
+    "status": "downloaded",
+    "wiki_page": "Samuel Taylor Coleridge",
+    "file": "Samuel_Taylor_Coleridge_at_age_42.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Samuel_Taylor_Coleridge_at_age_42.jpg",
+    "license": "Public domain",
+    "artist": "Samuel Cousins / After Washington Allston",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Samuel_Taylor_Coleridge_at_age_42.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-samuel-taylor-coleridge.jpg",
+    "credit": "Samuel Cousins / After Washington Allston"
   },
-  "Sir John Suckling": {
-    "status": "no_portrait",
-    "wiki_page": "John Suckling",
-    "file": null
+  "Sidney Lanier": {
+    "status": "downloaded",
+    "wiki_page": "Sidney Lanier",
+    "file": "Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg",
+    "license": "Public domain",
+    "artist": "",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sidney_Lanier_-_Project_Gutenberg_eText_16622.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-sidney-lanier.jpg",
+    "credit": "Wikimedia Commons"
+  },
+  "Sir Philip Sidney": {
+    "status": "downloaded",
+    "wiki_page": "Philip Sidney",
+    "file": "Sir_Philip_Sidney_from_NPG.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sir_Philip_Sidney_from_NPG.jpg",
+    "license": "Public domain",
+    "artist": "After Antonis Mor",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sir_Philip_Sidney_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-sir-philip-sidney.jpg",
+    "credit": "After Antonis Mor"
+  },
+  "Sir Walter Raleigh": {
+    "status": "downloaded",
+    "wiki_page": "Walter Raleigh",
+    "file": "Sir_Walter_Ralegh_by_'H'_monogrammist.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg",
+    "license": "Public domain",
+    "artist": "anonymous",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-sir-walter-raleigh.jpg",
+    "credit": "anonymous"
   },
   "Stephen Crane": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Stephen Crane",
     "file": "SCrane2.JPG",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:SCrane2.JPG",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/SCrane2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-stephen-crane.jpg",
+    "credit": "Unknown authorUnknown author"
+  },
+  "T. S. Eliot": {
+    "status": "downloaded",
+    "wiki_page": "T. S. Eliot",
+    "file": "Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_(1934).jpg",
+    "license": "Public domain",
+    "artist": "Thomas Stearns Eliot with his sister and his cousin by Lady Ottoline Morrell.jpg: Lady Ottoline Morrell (1873–1938) derivative work: Octave.H",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Thomas_Stearns_Eliot_by_Lady_Ottoline_Morrell_%281934%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-t-s-eliot.jpg",
+    "credit": "Thomas Stearns Eliot with his sister and his cousin by Lady Ottoline Morrell.jpg: Lady Ottoline Morrell (1873–1938) derivative work: Octave.H"
+  },
+  "Thomas Gray": {
+    "status": "downloaded",
+    "wiki_page": "Thomas Gray",
+    "file": "PortraitThomasGrayByJohnGilesEccart1747to1748.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:PortraitThomasGrayByJohnGilesEccart1747to1748.jpg",
+    "license": "Public domain",
+    "artist": "John Giles Eccardt",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/PortraitThomasGrayByJohnGilesEccart1747to1748.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-thomas-gray.jpg",
+    "credit": "John Giles Eccardt"
+  },
+  "Thomas Hardy": {
+    "status": "downloaded",
+    "wiki_page": "Thomas Hardy",
+    "file": "Thomas_Hardy_Restored_Portrait_1910–1915_(3x4_cropped).jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Hardy_Restored_Portrait_1910%E2%80%931915_(3x4_cropped).jpg",
+    "license": "Public domain",
+    "artist": "Bain News Service, publisher",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Thomas_Hardy_Restored_Portrait_1910%E2%80%931915_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-thomas-hardy.jpg",
+    "credit": "Bain News Service, publisher"
+  },
+  "Thomas Hood": {
+    "status": "downloaded",
+    "wiki_page": "Thomas Hood",
+    "file": "Thomas_Hood_from_NPG.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_Hood_from_NPG.jpg",
+    "license": "Public domain",
+    "artist": "anonymous",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Thomas_Hood_from_NPG.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-thomas-hood.jpg",
+    "credit": "anonymous"
   },
   "Thomas à Kempis": {
-    "status": "fetch_error",
+    "status": "downloaded",
     "wiki_page": "Thomas à Kempis",
     "file": "Thomas_von_Kempen_JS.JPG",
-    "error": "Request failed: HTTP 429"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Thomas_von_Kempen_JS.JPG",
+    "license": "Public domain",
+    "artist": "zeitgenössischer Maler",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Thomas_von_Kempen_JS.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-thomas-kempis.jpg",
+    "credit": "zeitgenössischer Maler"
+  },
+  "Victor Hugo": {
+    "status": "downloaded",
+    "wiki_page": "Victor Hugo",
+    "file": "Victor_Hugo_by_Étienne_Carjat_1876_-_full.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg",
+    "license": "Public domain",
+    "artist": "Étienne Carjat",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-victor-hugo.jpg",
+    "credit": "Étienne Carjat"
+  },
+  "W. B. Yeats": {
+    "status": "downloaded",
+    "wiki_page": "W. B. Yeats",
+    "file": "William_Butler_Yeats_by_George_Charles_Beresford.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Butler_Yeats_by_George_Charles_Beresford.jpg",
+    "license": "Public domain",
+    "artist": "George Charles Beresford",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/88/William_Butler_Yeats_by_George_Charles_Beresford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-w-b-yeats.jpg",
+    "credit": "George Charles Beresford"
+  },
+  "W. H. Auden": {
+    "status": "downloaded",
+    "wiki_page": "W. H. Auden",
+    "file": "AudenVanVechten1939.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:AudenVanVechten1939.jpg",
+    "license": "Public domain",
+    "artist": "Carl Van Vechten",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/AudenVanVechten1939.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-w-h-auden.jpg",
+    "credit": "Carl Van Vechten"
+  },
+  "Walt Whitman": {
+    "status": "downloaded",
+    "wiki_page": "Walt Whitman",
+    "file": "Walt_Whitman_-_George_Collins_Cox.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Walt_Whitman_-_George_Collins_Cox.jpg",
+    "license": "Public domain",
+    "artist": "George Collins Cox / Adam Cuerden",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Walt_Whitman_-_George_Collins_Cox.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-walt-whitman.jpg",
+    "credit": "George Collins Cox / Adam Cuerden"
+  },
+  "Washington Irving": {
+    "status": "downloaded",
+    "wiki_page": "Washington Irving",
+    "file": "Portrait_of_Washington_Irving_attr._to_Charles_Robert_Leslie.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Washington_Irving_attr._to_Charles_Robert_Leslie.jpg",
+    "license": "Public domain",
+    "artist": "Attributed to Charles Robert Leslie",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Portrait_of_Washington_Irving_attr._to_Charles_Robert_Leslie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-washington-irving.jpg",
+    "credit": "Attributed to Charles Robert Leslie"
+  },
+  "William Blake": {
+    "status": "downloaded",
+    "wiki_page": "William Blake",
+    "file": "William_Blake_by_Thomas_Phillips.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Blake_by_Thomas_Phillips.jpg",
+    "license": "Public domain",
+    "artist": "Thomas Phillips",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/00/William_Blake_by_Thomas_Phillips.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-william-blake.jpg",
+    "credit": "Thomas Phillips"
+  },
+  "William Cullen Bryant": {
+    "status": "downloaded",
+    "wiki_page": "William Cullen Bryant",
+    "file": "William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg",
+    "license": "Public domain",
+    "artist": "José María Mora",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/William_Cullen_Bryant_Cabinet_Card_by_Mora-crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-william-cullen-bryant.jpg",
+    "credit": "José María Mora"
+  },
+  "William Ernest Henley": {
+    "status": "downloaded",
+    "wiki_page": "William Ernest Henley",
+    "file": "William_Ernest_Henley`s_Portrait.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Ernest_Henley%60s_Portrait.jpg",
+    "license": "Public domain",
+    "artist": "not stated",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/William_Ernest_Henley%60s_Portrait.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-william-ernest-henley.jpg",
+    "credit": "not stated"
+  },
+  "William H. Prescott": {
+    "status": "downloaded",
+    "wiki_page": "William H. Prescott",
+    "file": "William_Hickling_Prescott_by_Southworth_&_Hawes,_c1850-9-crop.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:William_Hickling_Prescott_by_Southworth_%26_Hawes,_c1850-9-crop.jpg",
+    "license": "Public domain",
+    "artist": "Southworth & Hawes",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/80/William_Hickling_Prescott_by_Southworth_%26_Hawes%2C_c1850-9-crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-william-h-prescott.jpg",
+    "credit": "Southworth & Hawes"
+  },
+  "William Wordsworth": {
+    "status": "downloaded",
+    "wiki_page": "William Wordsworth",
+    "file": "Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg",
+    "license": "Public domain",
+    "artist": "Benjamin Haydon",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-william-wordsworth.jpg",
+    "credit": "Benjamin Haydon"
+  },
+  "Anonymous": {
+    "status": "no_portrait",
+    "wiki_page": "Anonymous",
+    "file": null
+  },
+  "Anonymous (Old Irish, tr.)": {
+    "status": "no_portrait",
+    "wiki_page": "Anonymous (Old Irish, tr.)",
+    "file": null
+  },
+  "Catullus": {
+    "status": "downloaded",
+    "file": "Bakalovich catullus.jpg",
+    "image_alt": "Painting depicting Catullus",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bakalovich_catullus.jpg",
+    "license": "Public domain",
+    "artist": "Stefan Bakałowicz",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bakalovich_catullus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-catullus.jpg",
+    "credit": "Stefan Bakałowicz"
+  },
+  "Charles Waterton": {
+    "status": "downloaded",
+    "file": "Charles Waterton.jpg",
+    "image_alt": "Portrait of Charles Waterton",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Charles_Waterton.jpg",
+    "license": "Public domain",
+    "artist": "After Charles Willson Peale",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Charles_Waterton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-charles-waterton.jpg",
+    "credit": "After Charles Willson Peale"
+  },
+  "George Anson": {
+    "status": "downloaded",
+    "file": "George Anson, 1st Baron Anson, Admiral of the Fleet, 1697-1762 RMG L8416.jpg",
+    "image_alt": "Portrait of Admiral George Anson",
+    "source_page": "https://commons.wikimedia.org/wiki/File:George_Anson,_1st_Baron_Anson,_Admiral_of_the_Fleet,_1697-1762_RMG_L8416.jpg",
+    "license": "Public domain",
+    "artist": "Attributed to Thomas Hudson",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/George_Anson%2C_1st_Baron_Anson%2C_Admiral_of_the_Fleet%2C_1697-1762_RMG_L8416.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-george-anson.jpg",
+    "credit": "Attributed to Thomas Hudson"
+  },
+  "George J. Romanes": {
+    "status": "downloaded",
+    "file": "George John Romanes, photograph by Elliott & Fry.jpg",
+    "image_alt": "Portrait of George J. Romanes",
+    "source_page": "https://commons.wikimedia.org/wiki/File:George_John_Romanes,_photograph_by_Elliott_%26_Fry.jpg",
+    "license": "Public domain",
+    "artist": "Elliott & Fry",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/George_John_Romanes%2C_photograph_by_Elliott_%26_Fry.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-george-j-romanes.jpg",
+    "credit": "Elliott & Fry"
+  },
+  "Heinrich Schliemann": {
+    "status": "downloaded",
+    "file": "Heinrich Schliemann, half-length portrait, facing front LCCN96516246.jpg",
+    "image_alt": "Portrait of Heinrich Schliemann",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Heinrich_Schliemann,_half-length_portrait,_facing_front_LCCN96516246.jpg",
+    "license": "Public domain",
+    "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Heinrich_Schliemann%2C_half-length_portrait%2C_facing_front_LCCN96516246.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-heinrich-schliemann.jpg",
+    "credit": "Miscellaneous Items in High Demand, PPOC, Library of Congress"
+  },
+  "John Masefield": {
+    "status": "downloaded",
+    "file": "John Masefield by Alvin Langdon Coburn, January 13, 1913, photogravure, from the National Portrait Gallery - NPG-S-NPG 87 288 cc.jpg",
+    "image_alt": "Portrait of John Masefield",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_Masefield_by_Alvin_Langdon_Coburn,_January_13,_1913,_photogravure,_from_the_National_Portrait_Gallery_-_NPG-S-NPG_87_288_cc.jpg",
+    "license": "Public domain",
+    "artist": "Alvin Langdon Coburn",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/John_Masefield_by_Alvin_Langdon_Coburn%2C_January_13%2C_1913%2C_photogravure%2C_from_the_National_Portrait_Gallery_-_NPG-S-NPG_87_288_cc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-john-masefield.jpg",
+    "credit": "Alvin Langdon Coburn"
+  },
+  "Richard Lovelace": {
+    "status": "downloaded",
+    "file": "RichardLovelace.jpg",
+    "image_alt": "Portrait of Richard Lovelace",
+    "source_page": "https://commons.wikimedia.org/wiki/File:RichardLovelace.jpg",
+    "license": "Public domain",
+    "artist": "William Dobson",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/57/RichardLovelace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-richard-lovelace.jpg",
+    "credit": "William Dobson"
+  },
+  "Robert Herrick": {
+    "status": "downloaded",
+    "file": "Robert Herrick (poet).jpg",
+    "image_alt": "Portrait of Robert Herrick",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Robert_Herrick_(poet).jpg",
+    "license": "Public domain",
+    "artist": "Edward Everett Hale (April 3, 1822 – June 10, 1909)",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Robert_Herrick_%28poet%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-robert-herrick.jpg",
+    "credit": "Edward Everett Hale (April 3, 1822 – June 10, 1909)"
+  },
+  "Seneca": {
+    "status": "downloaded",
+    "file": "Peter Paul Rubens - Brustbild des Philosophen Seneca - 178 - Staatliche Kunsthalle Karlsruhe.jpg",
+    "image_alt": "Later painted depiction of Seneca",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Brustbild_des_Philosophen_Seneca_-_178_-_Staatliche_Kunsthalle_Karlsruhe.jpg",
+    "license": "Public domain",
+    "artist": "Peter Paul Rubens",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Peter_Paul_Rubens_-_Brustbild_des_Philosophen_Seneca_-_178_-_Staatliche_Kunsthalle_Karlsruhe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-seneca.jpg",
+    "credit": "Peter Paul Rubens"
+  },
+  "Sir John Suckling": {
+    "status": "downloaded",
+    "file": "Van Dyck - Sir John Suckling, ca. 1638.jpg",
+    "image_alt": "Portrait of Sir John Suckling",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Van_Dyck_-_Sir_John_Suckling,_ca._1638.jpg",
+    "license": "Public domain",
+    "artist": "Anthony van Dyck",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Van_Dyck_-_Sir_John_Suckling%2C_ca._1638.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-sir-john-suckling.jpg",
+    "credit": "Anthony van Dyck"
   },
   "Various Japanese poets": {
     "status": "no_portrait",
     "wiki_page": "Various Japanese poets",
     "file": null
   },
-  "Victor Hugo": {
-    "status": "fetch_error",
-    "wiki_page": "Victor Hugo",
-    "file": "Victor_Hugo_by_Étienne_Carjat_1876_-_full.jpg",
-    "error": "Request failed: HTTP 429"
-  },
   "Walter Besant / Henry James": {
     "status": "no_portrait",
     "wiki_page": "Walter Besant / Henry James",
     "file": null
   },
-  "Washington Irving": {
-    "status": "fetch_error",
-    "wiki_page": "Washington Irving",
-    "file": "Portrait_of_Washington_Irving_attr._to_Charles_Robert_Leslie.jpg",
-    "error": "Request failed: HTTP 429"
-  },
   "Wilfred Owen": {
-    "status": "fetch_error",
-    "wiki_page": "Wilfred Owen",
-    "file": "Wilfred_Owen_à_l'Arrouaise.jpg",
-    "error": "Request failed: HTTP 429"
-  },
-  "William H. Prescott": {
-    "status": "fetch_error",
-    "wiki_page": "William H. Prescott",
-    "file": "William_Hickling_Prescott_by_Southworth_&_Hawes,_c1850-9-crop.jpg",
-    "error": "Request failed: HTTP 429"
+    "status": "downloaded",
+    "file": "Wilfred Owen.png",
+    "image_alt": "Portrait of Wilfred Owen",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Wilfred_Owen.png",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "source_image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Wilfred_Owen.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "image_url": "/images/author-wilfred-owen.png",
+    "credit": "Unknown authorUnknown author"
   },
   "William Langland": {
-    "status": "fetch_error",
+    "status": "rights_review",
     "wiki_page": "William Langland",
     "file": "Will_Dreaming.jpg",
-    "error": "Request failed: HTTP 429"
+    "source_page": null,
+    "license": "",
+    "artist": ""
   }
 }

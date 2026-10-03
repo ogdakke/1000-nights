@@ -4,17 +4,20 @@
 `public/images/`. The downloader reads the ebook's RDF record and copies only
 listed medium JPEG covers when the record says `Public domain in the USA.`.
 `author-images.json` maps authors to portraits selected from their English
-Wikipedia pages and copies only files whose Wikimedia Commons metadata says
-`Public domain` or `CC0`. Both manifests retain the source page, source image,
-rights information, and credit. Records requiring rights review stay out of the
-site. Run `python3 scripts/fetch-gutenberg-images.py` and
-`python3 scripts/fetch-author-images.py` to refresh them.
+Wikipedia pages or reviewed Commons files. `work-image-sources.json` holds five
+reviewed scans for works without an identifiable author portrait. Both downloaders
+accept only Commons files marked `Public domain` or `CC0`; the manifests retain
+the source page, source image, rights information, and credit. Records requiring
+rights review stay out of the site. Run `python3 scripts/fetch-gutenberg-images.py`,
+`python3 scripts/fetch-author-images.py`, and `python3 scripts/fetch-work-images.py`
+to refresh them.
 
 The SQL importer prefers the linked source volume's cover. If a cover is not
-available or the linked source is a known content mismatch, it uses an author
-portrait when one was checked. Otherwise `image_url` is `NULL`; the UI has no
-invented cover. An anthology cover is labelled as the **source volume** in
-`image_alt`, and a portrait is labelled as a portrait.
+available or the linked source is a known content mismatch, it uses a reviewed
+work scan, then an author portrait. An anthology cover is labelled as the
+**source volume** in `image_alt`; historical artwork is described as a depiction
+rather than a contemporary portrait. All 3,000 current catalog rows now have a
+verified image URL. The UI retains a designed fallback for image load failures.
 
 The `readings` table has `author_slug` and `title_slug` columns with a composite
 index. Repeated appearances of the same author and title share a slug pair.

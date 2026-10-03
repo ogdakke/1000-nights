@@ -155,7 +155,8 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   const items = useMemo(() => data?.pages.flatMap((page) => page.items) ?? EMPTY_READINGS, [data]);
   const total = data?.pages[0]?.total ?? 0;
   const routeMatch = route
-    ? items.find((reading) => routeMatches(reading, route.author, route.title))
+    ? items.find((reading) => reading.id === selectedId && routeMatches(reading, route.author, route.title)) ??
+      items.find((reading) => routeMatches(reading, route.author, route.title))
     : null;
   const routedItem = routedReading.data;
   const selected = route
@@ -327,6 +328,7 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
             selected={selected}
             position={selectedPosition}
             total={total}
+            showNightGroups={!search}
             canGoBack={readings.hasPreviousPage || selected.id !== items[0]?.id}
             canGoForward={readings.hasNextPage || selected.id !== items.at(-1)?.id}
             hasNextPage={readings.hasNextPage}

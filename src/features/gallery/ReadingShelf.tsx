@@ -15,6 +15,7 @@ type ReadingShelfProps = {
   selected: Reading;
   position: number;
   total: number;
+  showNightGroups: boolean;
   canGoBack: boolean;
   canGoForward: boolean;
   hasNextPage: boolean;
@@ -35,6 +36,7 @@ export function ReadingShelf({
   selected,
   position,
   total,
+  showNightGroups,
   canGoBack,
   canGoForward,
   hasNextPage,
@@ -143,21 +145,29 @@ export function ReadingShelf({
                 </li>
               );
             const active = reading.id === selected.id;
+            const nights = reading.appearance_nights?.split(",").map(Number).sort((a, b) => a - b) ?? [reading.night];
+            const nightLabel = showNightGroups
+              ? reading.position === 1 ? `Night ${reading.night}` : null
+              : nights.length > 2 ? `Nights ${nights[0]} +${nights.length - 1}`
+                : `${nights.length === 1 ? "Night" : "Nights"} ${nights.join(", ")}`;
+            const nightTitle = nights.length > 1 ? `Scheduled for nights ${nights.join(", ")}` : `Scheduled for night ${nights[0]}`;
             return (
               <li
                 className="gallery-virtual-item"
                 key={reading.id}
                 style={{ transform: `translateX(${virtualItem.start}px)` }}
+                data-night-start={showNightGroups && reading.position === 1 || undefined}
                 aria-setsize={total}
                 aria-posinset={selectedIndex >= 0 ? position - selectedIndex + virtualItem.index : undefined}
               >
+                {nightLabel && <span className="gallery-night-marker" title={nightTitle} aria-hidden="true">{nightLabel}</span>}
                 <button
                   type="button"
                   className="gallery-card"
                   data-active={active || undefined}
                   data-reading-id={reading.id}
                   aria-current={active ? "true" : undefined}
-                  aria-label={`${reading.title} by ${reading.author || "unknown author"}`}
+                  aria-label={`${reading.title} by ${reading.author || "unknown author"}. ${nightTitle}`}
                   onClick={() => onSelect(reading)}
                 >
                   <CoverArtwork reading={reading} compact />

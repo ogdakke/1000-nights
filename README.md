@@ -2,7 +2,7 @@
 
 A reading program with external links, search, and private reading progress. The landing page is static HTML. The catalog is a React app served by a Cloudflare Worker, with D1 storing the catalog and progress.
 
-The gallery requests readings in 30-item pages as the shelf scrolls and virtualizes the cards so the DOM stays small. Search uses the same paged API across the full catalog; direct work URLs begin near their matching reading.
+The gallery requests readings in 30-item pages as the shelf scrolls and virtualizes the cards so the DOM stays small. The normal shelf shows all 3,000 scheduled readings, grouped by night. Search pages through distinct works and lists the nights when each recurs; direct work URLs begin near their matching reading.
 
 ## Run locally
 

@@ -376,6 +376,31 @@
     scroll-snap-align: none;
 }
 
+.gallery-night-marker {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    max-width: 96px;
+    overflow: hidden;
+    color: var(--faint);
+    font-size: 0.5625rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.gallery-virtual-item[data-night-start]::before {
+    position: absolute;
+    top: 2px;
+    bottom: 10px;
+    left: -9px;
+    border-left: 1px solid rgba(29, 29, 31, 0.1);
+    content: "";
+    pointer-events: none;
+}
+
 .gallery-load-item button {
     width: 82px;
     min-height: 112px;

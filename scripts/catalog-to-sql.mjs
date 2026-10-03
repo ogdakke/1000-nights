@@ -9,6 +9,9 @@ const images = existsSync("data/image-sources.json")
 const portraits = existsSync("data/author-images.json")
   ? JSON.parse(readFileSync("data/author-images.json", "utf8"))
   : {};
+const workImages = existsSync("data/work-image-sources.json")
+  ? new Map(JSON.parse(readFileSync("data/work-image-sources.json", "utf8")).map((item) => [JSON.stringify([item.author, item.title]), item]))
+  : new Map();
 const quote = (value) => (value == null ? "NULL" : `'${String(value).replaceAll("'", "''")}'`);
 const slug = (value) =>
   String(value || "unknown")
@@ -60,7 +63,10 @@ const sql = readings.map((row) => {
     ? images[bookId]
     : null;
   const cover = image?.status === "downloaded" ? image : null;
-  const portrait = !cover && portraits[row.author]?.status === "downloaded"
+  const workImage = !cover && workImages.get(JSON.stringify([row.author || "", row.title]))?.status === "downloaded"
+    ? workImages.get(JSON.stringify([row.author || "", row.title]))
+    : null;
+  const portrait = !cover && !workImage && portraits[row.author]?.status === "downloaded"
     ? portraits[row.author]
     : null;
   const normalized = {
@@ -69,10 +75,10 @@ const sql = readings.map((row) => {
     link_status: row.corrected_url ? "corrected" : row.link_status,
     author_slug: authorSlug,
     title_slug: titleSlug,
-    image_url: cover?.image_url ?? portrait?.image_url ?? null,
-    image_source_url: cover?.source_page ?? portrait?.source_page ?? null,
-    image_credit: cover?.credit ?? portrait?.credit ?? null,
-    image_alt: cover ? `Cover of ${cover.title}, the source volume` : portrait ? `Portrait of ${row.author}` : null,
+    image_url: cover?.image_url ?? workImage?.image_url ?? portrait?.image_url ?? null,
+    image_source_url: cover?.source_page ?? workImage?.source_page ?? portrait?.source_page ?? null,
+    image_credit: cover?.credit ?? workImage?.credit ?? portrait?.credit ?? null,
+    image_alt: cover ? `Cover of ${cover.title}, the source volume` : workImage?.image_alt ?? portrait?.image_alt ?? (portrait ? `Portrait of ${row.author}` : null),
   };
   return `INSERT INTO readings(${fields.join(",")}) VALUES (${fields.map((field) => quote(normalized[field])).join(",")}) ON CONFLICT(id) DO UPDATE SET ${fields
     .slice(1)

@@ -46,18 +46,23 @@ async function catalog(request: Request, env: Env) {
   while (new TextEncoder().encode(`%${q.replace(/[\\%_]/g, "\\$&")}%`).length > 50)
     q = q.slice(0, -1);
   const term = `%${q.replace(/[\\%_]/g, "\\$&")}%`;
-  const where = q
-    ? "WHERE readings.title LIKE ? ESCAPE '\\' OR readings.author LIKE ? ESCAPE '\\'"
-    : "";
   const args = q ? [term, term] : [];
   const current = await reader(request, env);
-  const count = await env.DB.prepare(`SELECT count(*) AS total FROM readings ${where}`)
+  const matches = q
+    ? `WITH matches AS (
+         SELECT MIN(id) AS id, GROUP_CONCAT(night) AS appearance_nights
+         FROM readings
+         WHERE title LIKE ? ESCAPE '\\' OR author LIKE ? ESCAPE '\\'
+         GROUP BY author_slug, title_slug
+       )`
+    : "";
+  const count = await env.DB.prepare(q ? `${matches} SELECT count(*) AS total FROM matches` : "SELECT count(*) AS total FROM readings")
     .bind(...args)
     .first<{ total: number }>();
   const rows = await env.DB.prepare(
-    `SELECT readings.*, ${current ? "progress.status" : "NULL"} AS progress FROM readings ${current ? "LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?" : ""} ${where} ORDER BY night, position LIMIT 30 OFFSET ?`,
+    `${matches} SELECT readings.*, ${q ? "matches.appearance_nights" : "NULL"} AS appearance_nights, ${current ? "progress.status" : "NULL"} AS progress FROM ${q ? "matches JOIN readings ON readings.id = matches.id" : "readings"} ${current ? "LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?" : ""} ORDER BY readings.night, readings.position LIMIT 30 OFFSET ?`,
   )
-    .bind(...(current ? [current.id] : []), ...args, (page - 1) * 30)
+    .bind(...args, ...(current ? [current.id] : []), (page - 1) * 30)
     .all();
   return respond({ items: rows.results, total: count?.total ?? 0, page, pageSize: 30 });
 }

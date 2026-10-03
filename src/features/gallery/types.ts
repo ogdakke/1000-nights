@@ -17,6 +17,7 @@ export type Reading = {
   image_source_url: string | null;
   image_credit: string | null;
   image_alt: string | null;
+  appearance_nights?: string | null;
   progress: ReadingStatus | null;
 };
 

@@ -15,6 +15,19 @@ CATALOG = ROOT / "data/catalog.json"
 MANIFEST = ROOT / "data/author-images.json"
 OUTPUT = ROOT / "public/images"
 HEADERS = {"User-Agent": "ThousandNightsImageCatalog/1.0 (public literary catalog)"}
+CURATED_FILES = {
+    "Catullus": ("Bakalovich catullus.jpg", "Painting depicting Catullus"),
+    "Charles Waterton": ("Charles Waterton.jpg", "Portrait of Charles Waterton"),
+    "George Anson": ("George Anson, 1st Baron Anson, Admiral of the Fleet, 1697-1762 RMG L8416.jpg", "Portrait of Admiral George Anson"),
+    "George J. Romanes": ("George John Romanes, photograph by Elliott & Fry.jpg", "Portrait of George J. Romanes"),
+    "Heinrich Schliemann": ("Heinrich Schliemann, half-length portrait, facing front LCCN96516246.jpg", "Portrait of Heinrich Schliemann"),
+    "John Masefield": ("John Masefield by Alvin Langdon Coburn, January 13, 1913, photogravure, from the National Portrait Gallery - NPG-S-NPG 87 288 cc.jpg", "Portrait of John Masefield"),
+    "Richard Lovelace": ("RichardLovelace.jpg", "Portrait of Richard Lovelace"),
+    "Robert Herrick": ("Robert Herrick (poet).jpg", "Portrait of Robert Herrick"),
+    "Seneca": ("Peter Paul Rubens - Brustbild des Philosophen Seneca - 178 - Staatliche Kunsthalle Karlsruhe.jpg", "Later painted depiction of Seneca"),
+    "Sir John Suckling": ("Van Dyck - Sir John Suckling, ca. 1638.jpg", "Portrait of Sir John Suckling"),
+    "Wilfred Owen": ("Wilfred Owen.png", "Portrait of Wilfred Owen"),
+}
 
 
 class PlainText(HTMLParser):
@@ -91,6 +104,9 @@ def main():
         except (requests.RequestException, KeyError, ValueError, RuntimeError) as error:
             for author in batch:
                 result[author] = {"status": "fetch_error", "error": str(error)}
+    for author, (filename, alt) in CURATED_FILES.items():
+        if author in pending:
+            result[author] = {"status": "candidate", "file": filename, "image_alt": alt}
     candidates = [(author, item["file"]) for author, item in result.items() if item["status"] == "candidate"]
     for batch in chunks(candidates, 8):
         titles = [f"File:{filename.replace('_', ' ')}" for _, filename in batch]
