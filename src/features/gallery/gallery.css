@@ -383,17 +383,25 @@
 .gallery-night-marker {
     position: absolute;
     z-index: 2;
-    top: -17px;
-    left: 0;
-    max-width: 96px;
+    top: -21px;
+    left: -5px;
+    max-width: 108px;
     overflow: hidden;
-    color: var(--faint);
+    border: 1px solid rgba(72, 67, 62, 0.1);
+    border-radius: 5px;
+    padding: 3px 5px;
+    background: linear-gradient(90deg, rgba(250, 249, 248, 0.96), rgba(250, 249, 248, 0.86));
+    box-shadow: 0 1px 4px rgba(29, 29, 31, 0.08);
+    color: #504b46;
     font-size: 0.5625rem;
     font-weight: 600;
     letter-spacing: 0.04em;
+    line-height: 1.2;
     text-overflow: ellipsis;
     white-space: nowrap;
     pointer-events: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .gallery-virtual-item[data-night-start]::before {
@@ -806,6 +814,12 @@
 }
 
 @media (prefers-reduced-transparency: reduce) {
+    .gallery-night-marker {
+        background: #faf9f8;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
     .gallery-backdrop-layer img {
         opacity: 0.16;
     }
