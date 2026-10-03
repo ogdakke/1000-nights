@@ -35,7 +35,9 @@
   color: var(--muted);
   font-size: 0.8125rem;
   font-weight: 540;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
 .journey-back svg {
@@ -450,7 +452,6 @@
   .journey-history-list li > span:last-child {
     grid-column: 2;
   }
-
 }
 
 @media (prefers-reduced-motion: reduce) {

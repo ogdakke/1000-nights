@@ -71,7 +71,7 @@
     <main>
       <section class="hero">
         <div class="landing-backdrop" aria-hidden="true">
-          <img src="/images/gutenberg-57333.jpg" alt="" />
+          <img class="is-visible" src="/images/gutenberg-57333.jpg" alt="" />
           <div class="landing-backdrop-wash"></div>
         </div>
         <div class="hero-stage shell">
@@ -81,18 +81,24 @@
             </div>
             <div class="landing-reveal landing-reveal-copy">
               <p class="hero-sub">
-                A hand-picked story, poem, and essay for every evening. Start anywhere, read at
-                your own pace, and keep your place.
+                A hand-picked story, poem, and essay for every evening. Start anywhere, read at your
+                own pace, and keep your place.
               </p>
             </div>
             <div class="hero-actions landing-reveal landing-reveal-action">
               <a class="button button-primary" href="/app/">Browse the library</a>
-              <a class="hero-text-link" href="/read/anton-chekhov/the-duel">Preview tonight’s read</a>
+              <a class="hero-text-link" href="/read/anton-chekhov/the-duel"
+                >Preview tonight’s read</a
+              >
             </div>
           </div>
           <figure class="hero-artwork landing-reveal landing-reveal-artwork">
             <a href="/read/anton-chekhov/the-duel" aria-label="Preview The Duel by Anton Chekhov">
-              <img src="/images/gutenberg-57333.jpg" alt="Cover of The Duel by Anton Chekhov" />
+              <img
+                class="hero-cover-image is-visible"
+                src="/images/gutenberg-57333.jpg"
+                alt="Cover of The Duel by Anton Chekhov"
+              />
             </a>
             <figcaption><strong>The Duel</strong><span>Anton Chekhov</span></figcaption>
           </figure>
@@ -116,9 +122,14 @@
                 <img src="/images/author-george-orwell.jpg" alt="" />
                 <span><strong>Good Bad Books</strong><small>George Orwell</small></span>
               </a>
-              <a class="landing-book" href="/read/william-shakespeare/tomorrow-and-tomorrow-macbeth">
+              <a
+                class="landing-book"
+                href="/read/william-shakespeare/tomorrow-and-tomorrow-macbeth"
+              >
                 <img src="/images/gutenberg-100.jpg" alt="" />
-                <span><strong>Tomorrow, and tomorrow</strong><small>William Shakespeare</small></span>
+                <span
+                  ><strong>Tomorrow, and tomorrow</strong><small>William Shakespeare</small></span
+                >
               </a>
               <a class="landing-book" href="/read/arthur-conan-doyle/the-red-headed-league">
                 <img src="/images/gutenberg-1661.jpg" alt="" />
@@ -149,5 +160,6 @@
         <a class="button button-primary" href="/app/">Find your next read</a>
       </section>
     </main>
+    <script type="module" src="/src/landing.ts"></script>
   </body>
 </html>

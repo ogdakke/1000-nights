@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { type InfiniteData, useInfiniteQuery, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import {
+  type InfiniteData,
+  useInfiniteQuery,
+  useMutation,
+  useQuery,
+  useQueryClient,
+} from "@tanstack/react-query";
 import { useNavigate } from "@tanstack/react-router";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { CoverImage } from "./CoverArtwork";
@@ -20,7 +26,11 @@ const EMPTY_READINGS: Reading[] = [];
 
 function GalleryLoading() {
   return (
-    <section className="gallery-stage gallery-loading" aria-label="Loading the reading" aria-live="polite">
+    <section
+      className="gallery-stage gallery-loading"
+      aria-label="Loading the reading"
+      aria-live="polite"
+    >
       <div className="gallery-loading-copy">
         <span className="gallery-loading-line gallery-loading-title" />
         <span className="gallery-loading-line gallery-loading-author" />
@@ -86,17 +96,19 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     retry: false,
   });
 
-  const initialPage = initialRoute.current && !search && routedReading.data
-    ? Math.floor((routedReading.data.night - 1) / 10) + 1
-    : anchorPage;
+  const initialPage =
+    initialRoute.current && !search && routedReading.data
+      ? Math.floor((routedReading.data.night - 1) / 10) + 1
+      : anchorPage;
   const readings = useInfiniteQuery({
     queryKey: ["readings", search, initialPage],
     queryFn: ({ pageParam }) => getReadings(pageParam, search),
     initialPageParam: initialPage,
     getNextPageParam: (lastPage) =>
       lastPage.page * lastPage.pageSize < lastPage.total ? lastPage.page + 1 : undefined,
-    getPreviousPageParam: (firstPage) => firstPage.page > 1 ? firstPage.page - 1 : undefined,
-    enabled: !initialRoute.current || Boolean(routedReading.data || routedReading.isError || search),
+    getPreviousPageParam: (firstPage) => (firstPage.page > 1 ? firstPage.page - 1 : undefined),
+    enabled:
+      !initialRoute.current || Boolean(routedReading.data || routedReading.isError || search),
   });
 
   useEffect(() => {
@@ -117,19 +129,23 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
     onMutate: async ({ reading, status }) => {
       setNotice("");
       await client.cancelQueries({ queryKey: ["readings"] });
-      const snapshots = client.getQueriesData<InfiniteData<ReadingPage, number>>({ queryKey: ["readings"] });
-      client.setQueriesData<InfiniteData<ReadingPage, number>>({ queryKey: ["readings"] }, (current) =>
-        current
-          ? {
-              ...current,
-              pages: current.pages.map((page) => ({
-                ...page,
-                items: page.items.map((item) =>
-                  item.id === reading.id ? { ...item, progress: status } : item,
-                ),
-              })),
-            }
-          : current,
+      const snapshots = client.getQueriesData<InfiniteData<ReadingPage, number>>({
+        queryKey: ["readings"],
+      });
+      client.setQueriesData<InfiniteData<ReadingPage, number>>(
+        { queryKey: ["readings"] },
+        (current) =>
+          current
+            ? {
+                ...current,
+                pages: current.pages.map((page) => ({
+                  ...page,
+                  items: page.items.map((item) =>
+                    item.id === reading.id ? { ...item, progress: status } : item,
+                  ),
+                })),
+              }
+            : current,
       );
       client.setQueriesData<Reading>({ queryKey: ["reading"] }, (current) =>
         current?.id === reading.id ? { ...current, progress: status } : current,
@@ -155,14 +171,24 @@ export function GalleryPage({ route }: { route?: ReadingRouteParams }) {
   const items = useMemo(() => data?.pages.flatMap((page) => page.items) ?? EMPTY_READINGS, [data]);
   const total = data?.pages[0]?.total ?? 0;
   const routeMatch = route
-    ? items.find((reading) => reading.id === selectedId && routeMatches(reading, route.author, route.title) && (!route.night || reading.night === route.night)) ??
-      items.find((reading) => routeMatches(reading, route.author, route.title) && (!route.night || reading.night === route.night))
+    ? (items.find(
+        (reading) =>
+          reading.id === selectedId &&
+          routeMatches(reading, route.author, route.title) &&
+          (!route.night || reading.night === route.night),
+      ) ??
+      items.find(
+        (reading) =>
+          routeMatches(reading, route.author, route.title) &&
+          (!route.night || reading.night === route.night),
+      ))
     : null;
   const routedItem = routedReading.data;
   const selected = route
-    ? routeMatch ?? (readings.isSuccess ? routedItem : null) ??
-      (routedReading.isError && readings.isSuccess ? items[0] : null)
-    : items.find((reading) => reading.id === selectedId) ?? items[0] ?? null;
+    ? (routeMatch ??
+      (readings.isSuccess ? routedItem : null) ??
+      (routedReading.isError && readings.isSuccess ? items[0] : null))
+    : (items.find((reading) => reading.id === selectedId) ?? items[0] ?? null);
   const quickRouteEntrance = Boolean(route && firstReveal.current);
 
   function selectReading(reading: Reading, nextIntent: NavigationIntent, replace = false) {

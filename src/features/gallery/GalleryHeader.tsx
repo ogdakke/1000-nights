@@ -60,7 +60,10 @@ export function GalleryHeader({
         <div className="gallery-account">
           {profile?.user ? (
             <>
-              <a className={buttonVariants({ variant: "secondary", size: "small" })} href="/progress">
+              <a
+                className={buttonVariants({ variant: "secondary", size: "small" })}
+                href="/progress"
+              >
                 My journey
               </a>
               <Button variant="contrast" size="small" onClick={onSignOut} disabled={signingOut}>

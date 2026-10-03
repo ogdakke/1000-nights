@@ -56,7 +56,11 @@ async function catalog(request: Request, env: Env) {
          GROUP BY author_slug, title_slug
        )`
     : "";
-  const count = await env.DB.prepare(q ? `${matches} SELECT count(*) AS total FROM matches` : "SELECT count(*) AS total FROM readings")
+  const count = await env.DB.prepare(
+    q
+      ? `${matches} SELECT count(*) AS total FROM matches`
+      : "SELECT count(*) AS total FROM readings",
+  )
     .bind(...args)
     .first<{ total: number }>();
   const rows = await env.DB.prepare(
@@ -72,7 +76,10 @@ async function readingBySlug(request: Request, env: Env) {
   const authorSlug = url.searchParams.get("author") ?? "";
   const titleSlug = url.searchParams.get("title") ?? "";
   const requestedNight = Number.parseInt(url.searchParams.get("night") ?? "", 10);
-  const night = Number.isInteger(requestedNight) && requestedNight >= 1 && requestedNight <= 1000 ? requestedNight : null;
+  const night =
+    Number.isInteger(requestedNight) && requestedNight >= 1 && requestedNight <= 1000
+      ? requestedNight
+      : null;
   const validSlug = /^[a-z0-9](?:[a-z0-9-]{0,198}[a-z0-9])?$/;
   if (!validSlug.test(authorSlug) || !validSlug.test(titleSlug))
     return respond({ error: "Invalid reading path." }, 400);
@@ -114,21 +121,28 @@ async function journey(request: Request, env: Env) {
   const current = await reader(request, env);
   if (!current) return respond({ error: "Sign in to see your reading journey." }, 401);
   const url = new URL(request.url);
-  const page = Math.min(1000, Math.max(1, Number.parseInt(url.searchParams.get("page") ?? "1", 10) || 1));
+  const page = Math.min(
+    1000,
+    Math.max(1, Number.parseInt(url.searchParams.get("page") ?? "1", 10) || 1),
+  );
   const nights = await env.DB.prepare(
     `SELECT readings.night AS night, count(*) AS total,
       sum(CASE WHEN progress.status = 'read' THEN 1 ELSE 0 END) AS finished
      FROM readings LEFT JOIN progress
        ON progress.reading_id = readings.id AND progress.user_id = ?
      GROUP BY readings.night ORDER BY readings.night`,
-  ).bind(current.id).all<{ night: number; total: number; finished: number }>();
+  )
+    .bind(current.id)
+    .all<{ night: number; total: number; finished: number }>();
   const firstUnfinished = nights.results.find((night) => night.finished < night.total);
   const tonight = firstUnfinished
     ? await env.DB.prepare(
         `SELECT readings.*, progress.status AS progress FROM readings
          LEFT JOIN progress ON progress.reading_id = readings.id AND progress.user_id = ?
          WHERE readings.night = ? ORDER BY readings.position`,
-      ).bind(current.id, firstUnfinished.night).all()
+      )
+        .bind(current.id, firstUnfinished.night)
+        .all()
     : { results: [] };
   const history = await env.DB.prepare(
     `SELECT readings.*, progress.status AS progress, progress.updated_at AS finished_at
@@ -136,7 +150,9 @@ async function journey(request: Request, env: Env) {
      WHERE progress.user_id = ? AND progress.status = 'read'
      ORDER BY progress.updated_at DESC, readings.night DESC, readings.position DESC
      LIMIT 24 OFFSET ?`,
-  ).bind(current.id, (page - 1) * 24).all();
+  )
+    .bind(current.id, (page - 1) * 24)
+    .all();
   return respond({
     nights: nights.results,
     tonight: tonight.results,

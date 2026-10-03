@@ -10,9 +10,7 @@ export async function requestJson<T>(url: string, init?: RequestInit): Promise<T
 }
 
 export function getReadings(page: number, search: string) {
-  return requestJson<ReadingPage>(
-    `/api/readings?page=${page}&q=${encodeURIComponent(search)}`,
-  );
+  return requestJson<ReadingPage>(`/api/readings?page=${page}&q=${encodeURIComponent(search)}`);
 }
 
 export function getReading(author: string, title: string, night?: number) {

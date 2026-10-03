@@ -57,7 +57,8 @@ export function ReadingShelf({
   const lastCentered = useRef<string | null>(null);
   const [viewportWidth, setViewportWidth] = useState(0);
   const sidePadding = Math.max(0, (viewportWidth - CARD_STRIDE) / 2);
-  const previousLoadThreshold = sidePadding + firstItemIndex * CARD_STRIDE + Math.max(viewportWidth / 2, CARD_STRIDE * 6);
+  const previousLoadThreshold =
+    sidePadding + firstItemIndex * CARD_STRIDE + Math.max(viewportWidth / 2, CARD_STRIDE * 6);
   const lastItemIndex = firstItemIndex + items.length - 1;
   const virtualizer = useVirtualizer({
     horizontal: true,
@@ -85,14 +86,23 @@ export function ReadingShelf({
   useLayoutEffect(() => {
     const centeredKey = `${selected.id}:${viewportWidth}`;
     if (selectedIndex >= 0 && viewportWidth > 0 && lastCentered.current !== centeredKey) {
-      virtualizer.scrollToIndex(firstItemIndex + selectedIndex, { align: "center", behavior: "auto" });
+      virtualizer.scrollToIndex(firstItemIndex + selectedIndex, {
+        align: "center",
+        behavior: "auto",
+      });
       lastCentered.current = centeredKey;
     }
   }, [firstItemIndex, selectedIndex, selected.id, viewportWidth, virtualizer]);
 
   useEffect(() => {
     const last = visible.at(-1);
-    if (last && last.index >= lastItemIndex - 3 && hasNextPage && !isFetchingNextPage && !hasLoadError)
+    if (
+      last &&
+      last.index >= lastItemIndex - 3 &&
+      hasNextPage &&
+      !isFetchingNextPage &&
+      !hasLoadError
+    )
       onLoadNext();
   }, [visible, lastItemIndex, hasNextPage, isFetchingNextPage, hasLoadError, onLoadNext]);
 
@@ -101,11 +111,24 @@ export function ReadingShelf({
   useEffect(() => {
     const element = carousel.current;
     if (
-      element && viewportWidth > 0 && hasPreviousPage && !isFetchingPreviousPage &&
+      element &&
+      viewportWidth > 0 &&
+      hasPreviousPage &&
+      !isFetchingPreviousPage &&
       !hasPreviousLoadError &&
       element.scrollLeft <= previousLoadThreshold
-    ) onLoadPrevious();
-  }, [items, viewportWidth, previousLoadThreshold, hasPreviousPage, isFetchingPreviousPage, hasPreviousLoadError, onLoadPrevious, carousel]);
+    )
+      onLoadPrevious();
+  }, [
+    items,
+    viewportWidth,
+    previousLoadThreshold,
+    hasPreviousPage,
+    isFetchingPreviousPage,
+    hasPreviousLoadError,
+    onLoadPrevious,
+    carousel,
+  ]);
 
   return (
     <section className="gallery-shelf" aria-label="Reading gallery">
@@ -124,14 +147,28 @@ export function ReadingShelf({
         }
       >
         <div className="gallery-shelf-arrows">
-          <Button variant="ghost" size="icon" onClick={() => onMove(-1)} disabled={!canGoBack} aria-label="Previous reading">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => onMove(-1)}
+            disabled={!canGoBack}
+            aria-label="Previous reading"
+          >
             <ChevronLeft aria-hidden="true" />
           </Button>
-          <Button variant="ghost" size="icon" onClick={() => onMove(1)} disabled={!canGoForward} aria-label="Next reading">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => onMove(1)}
+            disabled={!canGoForward}
+            aria-label="Next reading"
+          >
             <ChevronRight aria-hidden="true" />
           </Button>
         </div>
-        <span aria-live="polite">{position.toLocaleString()} of {total.toLocaleString()}</span>
+        <span aria-live="polite">
+          {position.toLocaleString()} of {total.toLocaleString()}
+        </span>
       </motion.div>
 
       <div
@@ -140,7 +177,9 @@ export function ReadingShelf({
         onScroll={(event) => {
           if (
             event.currentTarget.scrollLeft <= previousLoadThreshold &&
-            hasPreviousPage && !isFetchingPreviousPage && !hasPreviousLoadError
+            hasPreviousPage &&
+            !isFetchingPreviousPage &&
+            !hasPreviousLoadError
           )
             onLoadPrevious();
         }}
@@ -150,7 +189,11 @@ export function ReadingShelf({
             const reading = items[virtualItem.index - firstItemIndex];
             if (!reading && virtualItem.index === lastItemIndex + 1 && hasNextPage)
               return (
-                <li className="gallery-virtual-item gallery-load-item" key={virtualItem.key} style={{ transform: `translateX(${virtualItem.start}px)` }}>
+                <li
+                  className="gallery-virtual-item gallery-load-item"
+                  key={virtualItem.key}
+                  style={{ transform: `translateX(${virtualItem.start}px)` }}
+                >
                   <button type="button" onClick={onLoadNext} disabled={isFetchingNextPage}>
                     {hasLoadError ? "Retry" : "More"}
                   </button>
@@ -158,28 +201,46 @@ export function ReadingShelf({
               );
             if (!reading)
               return (
-                <li className="gallery-virtual-item" key={virtualItem.key} style={{ transform: `translateX(${virtualItem.start}px)` }} aria-hidden="true">
+                <li
+                  className="gallery-virtual-item"
+                  key={virtualItem.key}
+                  style={{ transform: `translateX(${virtualItem.start}px)` }}
+                  aria-hidden="true"
+                >
                   <span className="gallery-card-placeholder" />
                 </li>
               );
             const active = reading.id === selected.id;
-            const nights = reading.appearance_nights?.split(",").map(Number).sort((a, b) => a - b) ?? [reading.night];
+            const nights = reading.appearance_nights
+              ?.split(",")
+              .map(Number)
+              .sort((a, b) => a - b) ?? [reading.night];
             const nightLabel = showNightGroups
-              ? reading.position === 1 ? `Night ${reading.night}` : null
-              : nights.length > 2 ? `Nights ${nights[0]} +${nights.length - 1}`
+              ? reading.position === 1
+                ? `Night ${reading.night}`
+                : null
+              : nights.length > 2
+                ? `Nights ${nights[0]} +${nights.length - 1}`
                 : `${nights.length === 1 ? "Night" : "Nights"} ${nights.join(", ")}`;
-            const nightTitle = nights.length > 1 ? `Scheduled for nights ${nights.join(", ")}` : `Scheduled for night ${nights[0]}`;
+            const nightTitle =
+              nights.length > 1
+                ? `Scheduled for nights ${nights.join(", ")}`
+                : `Scheduled for night ${nights[0]}`;
             return (
               <li
                 className="gallery-virtual-item"
                 key={reading.id}
                 style={{ transform: `translateX(${virtualItem.start}px)` }}
-                data-night-start={showNightGroups && reading.position === 1 || undefined}
+                data-active={active || undefined}
                 data-has-night-marker={Boolean(nightLabel) || undefined}
                 aria-setsize={total}
                 aria-posinset={virtualItem.index + 1}
               >
-                {nightLabel && <span className="gallery-night-marker" title={nightTitle} aria-hidden="true">{nightLabel}</span>}
+                {nightLabel && (
+                  <span className="gallery-night-marker" title={nightTitle} aria-hidden="true">
+                    {nightLabel}
+                  </span>
+                )}
                 <button
                   type="button"
                   className="gallery-card"
@@ -191,7 +252,9 @@ export function ReadingShelf({
                 >
                   <CoverArtwork reading={reading} compact />
                   <span className="gallery-card-title">{reading.title}</span>
-                  <span className="gallery-card-author">{reading.author || "Author not listed"}</span>
+                  <span className="gallery-card-author">
+                    {reading.author || "Author not listed"}
+                  </span>
                 </button>
               </li>
             );

@@ -8,7 +8,19 @@ function GalleryRoot() {
   if (path === "/progress" || path === "/progress/") return <JourneyPage />;
   const match = /^\/read\/([^/]+)\/([^/]+)\/?$/.exec(path);
   const night = Number.parseInt(new URLSearchParams(location.searchStr).get("night") || "", 10);
-  return <GalleryPage route={match ? { author: match[1], title: match[2], night: Number.isInteger(night) && night >= 1 && night <= 1000 ? night : undefined } : undefined} />;
+  return (
+    <GalleryPage
+      route={
+        match
+          ? {
+              author: match[1],
+              title: match[2],
+              night: Number.isInteger(night) && night >= 1 && night <= 1000 ? night : undefined,
+            }
+          : undefined
+      }
+    />
+  );
 }
 
 const rootRoute = createRootRoute({

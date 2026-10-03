@@ -45,7 +45,13 @@ export function CoverImage({
   );
 }
 
-export function CoverArtwork({ reading, compact = false }: { reading: Reading; compact?: boolean }) {
+export function CoverArtwork({
+  reading,
+  compact = false,
+}: {
+  reading: Reading;
+  compact?: boolean;
+}) {
   return (
     <div className={cn("book-cover", compact && "book-cover-compact")} data-kind={reading.kind}>
       <CoverImage reading={reading} decorative={compact} />

@@ -4,7 +4,14 @@ import { AnimatePresence, motion } from "motion/react";
 import { Button, buttonVariants } from "../../components/ui/button";
 import { Select } from "../../components/ui/select";
 import { CoverArtwork } from "./CoverArtwork";
-import { INITIAL_EASE, UI_EASE, isUnavailable, previewFor, readingKind, statusOptions } from "./reading";
+import {
+  INITIAL_EASE,
+  UI_EASE,
+  isUnavailable,
+  previewFor,
+  readingKind,
+  statusOptions,
+} from "./reading";
 import type { NavigationIntent, Reading, ReadingStatus } from "./types";
 
 type ReadingPreviewProps = {
@@ -45,15 +52,19 @@ export function ReadingPreview({
       : first && quickEntrance
         ? { duration: 0.18, ease: UI_EASE }
         : first
-        ? { duration: 1, delay: 0.3, ease: INITIAL_EASE }
-        : { duration: 0.18, ease: UI_EASE };
+          ? { duration: 1, delay: 0.3, ease: INITIAL_EASE }
+          : { duration: 0.18, ease: UI_EASE };
   const exit =
     intent === "keyboard"
       ? { opacity: 1 }
       : { opacity: 0, filter: "blur(4px)", transition: { duration: 0.1, ease: UI_EASE } };
 
   return (
-    <section className="gallery-stage" aria-labelledby="selected-reading-title" data-has-image="true">
+    <section
+      className="gallery-stage"
+      aria-labelledby="selected-reading-title"
+      data-has-image="true"
+    >
       <AnimatePresence initial={first} mode="wait">
         <motion.div
           className="gallery-copy"
@@ -68,7 +79,9 @@ export function ReadingPreview({
         >
           <h1 id="selected-reading-title">{reading.title}</h1>
           <p className="gallery-author">{reading.author || "Author not listed"}</p>
-          {preview.description ? <p className="gallery-description">{preview.description}</p> : null}
+          {preview.description ? (
+            <p className="gallery-description">{preview.description}</p>
+          ) : null}
 
           <div className="gallery-actions">
             {!isUnavailable(reading) && (reading.resolved_url || reading.original_url) ? (
@@ -120,7 +133,13 @@ export function ReadingPreview({
           transition={first && !quickEntrance ? { ...transition, delay: 0.34 } : transition}
         >
           <CoverArtwork reading={reading} />
-          {reading.image_source_url ? <figcaption className="gallery-image-credit"><a href={reading.image_source_url} target="_blank" rel="noopener noreferrer">Image: {reading.image_credit || "source"}</a></figcaption> : null}
+          {reading.image_source_url ? (
+            <figcaption className="gallery-image-credit">
+              <a href={reading.image_source_url} target="_blank" rel="noopener noreferrer">
+                Image: {reading.image_credit || "source"}
+              </a>
+            </figcaption>
+          ) : null}
         </motion.figure>
       </AnimatePresence>
     </section>
